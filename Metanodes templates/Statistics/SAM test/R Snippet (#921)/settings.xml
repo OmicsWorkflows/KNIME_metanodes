@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="script" type="xstring" value="# libraries required%%00010library(samr)%%00010library(dplyr)%%00010%%00010# data input%%00010data &lt;- data.frame(knime.in[, 1:(ncol(knime.in)-1)])%%00010%%00010# define variables%%00010groups &lt;- trimws(strsplit(knime.flow.in[[&quot;SAM_design&quot;]],',')[[1]])%%00010gene.names &lt;- as.character(knime.in$&quot;Gene names&quot;)%%00010response.type &lt;- knime.flow.in[[&quot;response.type&quot;]]%%00010nperm &lt;- knime.flow.in[[&quot;nperm&quot;]]%%00010FDR.threshold &lt;- knime.flow.in[[&quot;FDR_threshold&quot;]]%%00010logFC.threshold &lt;- knime.flow.in[[&quot;logFC_threshold&quot;]]%%00010padj.method &lt;- knime.flow.in[[&quot;adjP_method&quot;]]%%00010use.delta &lt;- knime.flow.in[[&quot;use_delta&quot;]]%%00010contrast &lt;- trimws(strsplit(knime.flow.in[[&quot;SAM-contrasts&quot;]],'-')[[1]])%%00010%%00010%%00010# set the seed%%00010seed &lt;- sample(1:1000000000, 1)%%00010set.seed(seed)%%00010%%00010colnames(data) &lt;- groups%%00010%%00010data.samr &lt;- list(x = as.matrix(data), %%00010                  y = groups,%%00010                  geneid = as.character(1:nrow(data)),%%00010                  genenames = gene.names,%%00010                  logged2 = TRUE)%%00010%%00010samr.obj&lt;-samr(data.samr, resp.type= response.type, nperms=nperm, random.seed = seed)%%00010%%00010# get the p-values%%00010pv &lt;- data.frame(samr.pvalues.from.perms(samr.obj$tt, samr.obj$ttstar))%%00010pv.df &lt;- data.frame(Protein = row.names(pv), pValue = pv[,1])%%00010pv.df$pAdj &lt;- p.adjust(pv.df$pValue, method = padj.method)%%00010%%00010# get the log fold changes%%00010logFC.df &lt;- data.frame(Protein= row.names(data), log2FC=rowMeans(data[, colnames(data) == contrast[1]], na.rm = TRUE)-rowMeans(data[, colnames(data) == contrast[2]], na.rm = TRUE))%%00010%%00010# join logFC and p-values%%00010stats.df &lt;- left_join(logFC.df, pv.df, by = c(&quot;Protein&quot;))%%00010rownames(stats.df) &lt;- stats.df$Protein%%00010%%00010# in case delta value should be used for significantly changed proteins as well:%%00010%%00010if (use.delta == TRUE) {%%00010delta.table &lt;- samr.compute.delta.table(samr.obj, min.foldchange = logFC.threshold)%%00010delta.value &lt;-  delta.table[delta.table[, &quot;median FDR&quot;] &lt; FDR.threshold/100, ][1, 1]%%00010samr.plot(samr.obj,del= delta.value, min.foldchange = logFC.threshold)%%00010%%00010SAM.tab &lt;- samr.compute.siggenes.table(samr.obj, delta.value, data.samr, delta.table, min.foldchange = logFC.threshold, all.genes = TRUE)%%00010%%00010SAM.genes.up &lt;- as.data.frame(SAM.tab$genes.up , stringsAsFactors = FALSE)%%00010SAM.genes.down &lt;- as.data.frame(SAM.tab$genes.lo, stringsAsFactors = FALSE)%%00010SAM.merged &lt;- rbind(SAM.genes.up, SAM.genes.down)%%00010%%00010SAM.merged$Row &lt;- paste(&quot;Row&quot;,SAM.merged$Row, sep = &quot;&quot;)%%00010SAM.merged$'Score(d)' &lt;- as.numeric(SAM.merged$'Score(d)')%%00010SAM.merged$'Numerator(r)' &lt;- as.numeric(SAM.merged$'Numerator(r)')%%00010SAM.merged$'Denominator(s+s0)' &lt;- as.numeric(SAM.merged$'Denominator(s+s0)')%%00010SAM.merged$'Fold Change' &lt;- as.numeric(SAM.merged$'Fold Change')%%00010SAM.merged$'q-value(%)' &lt;- as.numeric(SAM.merged$'q-value(%)')%%00010%%00010head(SAM.merged)%%00010%%00010stats.df.merged &lt;- left_join(stats.df, SAM.merged, by = c(&quot;Protein&quot; = &quot;Row&quot;))%%00010rownames(stats.df.merged) &lt;- stats.df.merged$Protein%%00010knime.out &lt;- stats.df.merged%%00010} else {%%00010knime.out &lt;- stats.df}%%00010"/>
+<entry key="templateUUID" type="xstring" isnull="true" value=""/>
+<entry key="version" type="xstring" value="version 1.x"/>
+<entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+<entry key="sendRowNames" type="xboolean" value="true"/>
+<entry key="sendBatchSize" type="xint" value="10000"/>
+<entry key="knimeInType" type="xstring" value="data.frame"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="SAM test"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="409"/>
+<entry key="y-coordinate" type="xint" value="579"/>
+<entry key="width" type="xint" value="142"/>
+<entry key="height" type="xint" value="17"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles">
+<config key="style_0">
+<entry key="start" type="xint" value="0"/>
+<entry key="length" type="xint" value="4"/>
+<entry key="fontname" type="xstring" value="Sans"/>
+<entry key="fontstyle" type="xint" value="0"/>
+<entry key="fontsize" type="xint" value="10"/>
+<entry key="fgcolor" type="xint" value="0"/>
+</config>
+</config>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
+<entry key="factory" type="xstring" value="org.knime.r.RSnippetNodeFactory"/>
+<entry key="node-name" type="xstring" value="R Snippet"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.1.v202001312017"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.1.v202001312017"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="R Snippet"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
