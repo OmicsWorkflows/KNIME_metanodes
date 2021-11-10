@@ -10,14 +10,14 @@
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value=""/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="829"/>
-<entry key="y-coordinate" type="xint" value="439"/>
+<entry key="x-coordinate" type="xint" value="129"/>
+<entry key="y-coordinate" type="xint" value="899"/>
 <entry key="width" type="xint" value="142"/>
 <entry key="height" type="xint" value="17"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <entry key="borderSize" type="xint" value="0"/>
-<entry key="borderColor" type="xint" value="0"/>
-<entry key="defFontSize" type="xint" value="-1"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
 <entry key="annotation-version" type="xint" value="20151123"/>
 <config key="styles"/>
 </config>
@@ -47,9 +47,31 @@
 </config>
 </config>
 </config>
+<config key="metadata">
+<entry key="description" type="xstring" value="Metanode to filter input data frame using selected column values based on the column specified percentile.%%00010%%00010Numerical and text (string) columns can be both selected for filtration.%%00010%%00010At first, values in the selected column are ranked and rank percentile is computed within the given column. Ranking is from the lowest to highest value (numbers) or alphabetically (text column), i.e. in ascending order and missing values are ignored. The values ranks and percentiles are returned as new columns (&quot;filtering column_rank&quot; and &quot;filtering column_percentile&quot;). 'Ranking method' settings can be used to define how to treat same values groups ranking with these options:%%00010- average: average rank of group%%00010- min: lowest rank in group%%00010- max: highest rank in group%%00010- first: ranks assigned in order they appear in the array%%00010- dense: like 'min', but rank always increases by 1 between groups.%%00010%%00010pandas.DataFrame.rank is used for rank and percentile calculations, see http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.rank.html for its full documentation.%%00010%%00010%%00010Percentile values are used for a rows based filtering of the input table. During the rows filtering step these two metanode settings are considered:%%00010- percentile threshold - from 0 to 1; e.g. 0.9 = 90%%%00010- operator - e.g. is greater than ('&gt;')%%00010%%00010Rows having rank percentile passing the specified threshold and operator (e.g. greater than 0.9) will appear in the top output table, otherwise they will be in the bottom one. Rows with missing value are returned in the bottom output table as well.%%00010%%00010Example:%%00010goal - to get rows having the 10 % of the highest values in the specified column (i.e. rank percentage should be equal or higher to 0.9)%%00010percentile threshold - 0.9 %%00010operator - '&gt;='%%00010ranking method - 'average'%%00010%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)%%00010%%00010The metanode was created in KNIME 4.1.3 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.1.3a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 0.3.0 from 2021-11-10%%00010Contact person: David Potesil (david.potesil@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes."/>
+<config key="inports">
+<config key="inport_0">
+<entry key="name" type="xstring" value="input data frame"/>
+<entry key="description" type="xstring" value=""/>
+<entry key="index" type="xint" value="0"/>
+</config>
+</config>
+<config key="outports">
+<config key="outport_0">
+<entry key="name" type="xstring" value="filtered data frame"/>
+<entry key="description" type="xstring" value="data frame containing rows passing the filtration criteria"/>
+<entry key="index" type="xint" value="0"/>
+</config>
+<config key="outport_1">
+<entry key="name" type="xstring" value="filtered out data"/>
+<entry key="description" type="xstring" value="data frame containing rows do not passing the filtration criteria and rows with not numerical value in filtering column"/>
+<entry key="index" type="xint" value="1"/>
+</config>
+</config>
+</config>
 <config key="workflow_template_information">
 <entry key="role" type="xstring" value="Template"/>
-<entry key="timestamp" type="xstring" value="2019-08-20 11:21:53"/>
+<entry key="timestamp" type="xstring" value="2021-11-10 11:56:02"/>
 <entry key="sourceURI" type="xstring" isnull="true" value=""/>
 <entry key="templateType" type="xstring" value="SubNode"/>
 </config>
