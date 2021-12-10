@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="sourceCode" type="xstring" value="# create flow variable for total height of the graph%%00010flow_variables['total_height'] = flow_variables['height']*flow_variables['Number Columns']"/>
+<entry key="sourceCode" type="xstring" value="# number of rows in the title%%00010%%00010# create flow variable sfor dimensions of the graph%%00010flow_variables['total_width'] = flow_variables['height'] * (flow_variables['Number Columns']+1)"/>
 <entry key="rowLimit" type="xint" value="1000"/>
 <entry key="pythonVersionOption" type="xstring" value="python3"/>
 <entry key="python2Command" type="xstring" value=""/>
