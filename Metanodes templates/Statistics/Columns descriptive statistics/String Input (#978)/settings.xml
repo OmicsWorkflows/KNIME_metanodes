@@ -7,42 +7,28 @@
 </config>
 <config key="model">
 <config key="defaultValue">
-<config key="variable_value">
-<entry key="array-size" type="xint" value="1"/>
-<entry key="0" type="xstring" value="count"/>
+<entry key="string" type="xstring" value="samples_"/>
 </config>
-</config>
-<entry key="label" type="xstring" value="What to compute?"/>
-<entry key="description" type="xstring" value="set of statistics to be computed from the provided columns"/>
+<entry key="label" type="xstring" value="Base column names"/>
+<entry key="description" type="xstring" value="base column name to be used for all new columns together with the individual statistics names"/>
 <entry key="hideInWizard" type="xboolean" value="false"/>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="required" type="xboolean" value="true"/>
-<entry key="parameterName" type="xstring" value="multiple-selection"/>
+<entry key="parameterName" type="xstring" value="string-input"/>
 <entry key="customCSS" type="xstring" value=""/>
-<entry key="flowvariablename" type="xstring" value="stats_selected"/>
-<config key="possible_choices">
-<entry key="array-size" type="xint" value="10"/>
-<entry key="0" type="xstring" value="count"/>
-<entry key="1" type="xstring" value="mad"/>
-<entry key="2" type="xstring" value="max"/>
-<entry key="3" type="xstring" value="min"/>
-<entry key="4" type="xstring" value="mean"/>
-<entry key="5" type="xstring" value="median"/>
-<entry key="6" type="xstring" value="sem"/>
-<entry key="7" type="xstring" value="sum"/>
-<entry key="8" type="xstring" value="std"/>
-<entry key="9" type="xstring" value="var"/>
-</config>
-<entry key="type" type="xstring" value="Check boxes (horizontal)"/>
-<entry key="limit_number_visible_options" type="xboolean" value="false"/>
-<entry key="number_visible_options" type="xint" value="10"/>
+<entry key="flowvariablename" type="xstring" value="common_name"/>
+<entry key="regex" type="xstring" value=""/>
+<entry key="error_message" type="xstring" value=""/>
+<entry key="editorType" type="xstring" value="Single-line"/>
+<entry key="multilineEditorWidth" type="xint" value="60"/>
+<entry key="multilineEditorHeight" type="xint" value="5"/>
 </config>
 <config key="nodeAnnotation">
-<entry key="text" type="xstring" value="What to compute?"/>
+<entry key="text" type="xstring" value="Common column names"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="29"/>
+<entry key="x-coordinate" type="xint" value="161"/>
 <entry key="y-coordinate" type="xint" value="239"/>
-<entry key="width" type="xint" value="142"/>
+<entry key="width" type="xint" value="159"/>
 <entry key="height" type="xint" value="17"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <entry key="borderSize" type="xint" value="0"/>
@@ -53,8 +39,8 @@
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
-<entry key="factory" type="xstring" value="org.knime.js.base.node.quickform.selection.multiple.MultipleSelectionQuickFormNodeFactory"/>
-<entry key="node-name" type="xstring" value="Multiple Selections"/>
+<entry key="factory" type="xstring" value="org.knime.js.base.node.quickform.input.string.StringInputQuickFormNodeFactory"/>
+<entry key="node-name" type="xstring" value="String Input"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
@@ -64,7 +50,7 @@
 <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
 <entry key="node-feature-version" type="xstring" value="4.1.3.v202005112253"/>
 <config key="factory_settings"/>
-<entry key="name" type="xstring" value="Multiple Selections"/>
+<entry key="name" type="xstring" value="String Input"/>
 <entry key="hasContent" type="xboolean" value="false"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports">

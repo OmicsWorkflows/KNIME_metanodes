@@ -6,16 +6,16 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="sourceCode" type="xstring" value="import pandas%%00010%%00010# creates the list with requested statistics%%00010stats_list = flow_variables['stats_selected'].split(&quot;,&quot;)%%00010%%00010# creates empty dataframe for the stats to be computed%%00010stats_df = pandas.DataFrame()%%00010%%00010# itertes through the list of requested stats and adds one column with the given statistics per iteration%%00010for stat in stats_list:%%00010%%00009stats_df [flow_variables['common_name']+stat] = getattr(input_table, stat)(axis=1)%%00010%%00010output_table = stats_df"/>
+<entry key="sourceCode" type="xstring" value="import numpy%%00010import pandas%%00010%%00010# separate string into list items%%00010def list_from_string(input):%%00010%%00009if input == &quot;none&quot;:%%00010%%00009%%00009raise Exception(&quot;Input was not provided for the requested operation, please check.&quot;)%%00010%%00009list_new = input.split(&quot;,&quot;)%%00010%%00009list_stripped = [i.strip() for i in list_new]%%00010%%00009list_stripped_cleaned = list(filter(None, list_stripped))%%00010%%00009return list_stripped_cleaned%%00010%%00009%%00010# creates the list with requested statistics%%00010stats_list = list_from_string(flow_variables['stats_selected'])%%00010%%00010# creates sample and replicate lists%%00010if flow_variables['sample_bool'] == 1:%%00010%%00009sample_list = list_from_string(flow_variables['sample'])%%00010%%00009%%00010if flow_variables['replicate_bool'] == 1:%%00010%%00009replicate_list = list_from_string(flow_variables['replicate'])%%00010%%00010# creates empty dataframe for the stats to be computed%%00010stats_df = pandas.DataFrame()%%00010%%00010# rename columns if experimental design and replicates are filled in%%00010if flow_variables['sample_bool'] == 1:%%00010%%00009if flow_variables['replicate_bool'] == 1:%%00010%%00009%%00009colnames = [str(sample_list[i])+'_'+str(replicate_list[i]) for i in range(len(input_table.columns))]%%00010%%00009else:%%00010%%00009%%00009colnames = [str(sample_list[i]) for i in range(len(input_table.columns))]%%00010%%00009input_table.columns = colnames%%00010%%00010# group columns based on new column names%%00010if flow_variables['sample_bool'] == 1:%%00010%%00009input_table_grouped = input_table.groupby(by=input_table.columns, axis=1)%%00010%%00009colnames_list = list(input_table_grouped.groups.keys())%%00010%%00010# iterates through the list of requested stats and adds one column with the given statistics per iteration%%00010for stat in stats_list:%%00010%%00009if flow_variables['sample_bool'] == 1:%%00010%%00009%%00009for colname in colnames_list:%%00010%%00009%%00009%%00009stats_df[colname+'_'+stat] = getattr(input_table_grouped.get_group(colname), stat)(axis=1)%%00010%%00009else:%%00010%%00009%%00009stats_df[flow_variables['common_name']+stat] = getattr(input_table, stat)(axis=1)%%00010%%00010output_table = stats_df"/>
 <entry key="rowLimit" type="xint" value="1000"/>
-<entry key="pythonVersionOption" type="xstring" value="PYTHON3"/>
+<entry key="pythonVersionOption" type="xstring" value="python3"/>
+<entry key="python2Command" type="xstring" value=""/>
+<entry key="python3Command" type="xstring" value=""/>
+<entry key="chunkSize" type="xint" value="500000"/>
 <entry key="convertMissingToPython" type="xboolean" value="false"/>
 <entry key="convertMissingFromPython" type="xboolean" value="false"/>
 <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
 <entry key="sentinelValue" type="xint" value="0"/>
-<entry key="chunkSize" type="xint" value="500000"/>
-<entry key="python2Command" type="xstring" value=""/>
-<entry key="python3Command" type="xstring" value=""/>
 </config>
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value="computes %%00010summary statistics"/>
@@ -38,11 +38,11 @@
 <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-<entry key="node-bundle-version" type="xstring" value="3.7.2.v201904170931"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.3.v202005112253"/>
 <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
 <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
 <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-<entry key="node-feature-version" type="xstring" value="3.7.2.v201904170931"/>
+<entry key="node-feature-version" type="xstring" value="4.1.3.v202005112253"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Python Script (1⇒1)"/>
 <entry key="hasContent" type="xboolean" value="false"/>
