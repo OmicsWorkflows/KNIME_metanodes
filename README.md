@@ -65,6 +65,10 @@ Metanodes are made within docker container running KNIME accessible via VNC (htt
 #### Python 3 packages (alphabetical order)
 - the follwoing list is not complete, mentions only selected packages without their dependencies etc.
 - please see the requirements.txt file for the given KNIME docker environment version for more details and concrete versions
+- [dash](https://github.com/plotly/dash)
+    - The dash-bio consists of the following MIT license. Licence terms are available here: https://github.com/plotly/dash/blob/master/LICENSE
+- [dash-bio](https://github.com/plotly/dash-bio)
+    - The dash-bio consists of the following MIT license. Licence terms are available here: https://github.com/plotly/dash-bio/blob/master/LICENSE
 - [matplotlib](https://matplotlib.org/)
     - The matplotlib consists of the following Python Software Foundation License (BSD compatible). Licence terms are available here: https://matplotlib.org/users/license.html
 - [numpy](http://www.numpy.org/)
