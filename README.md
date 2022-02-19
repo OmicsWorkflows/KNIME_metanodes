@@ -62,20 +62,20 @@ Metanodes are made within docker container running KNIME accessible via VNC (htt
 - [PIA](https://github.com/mpc-bioinformatics/pia)
     - The PIA consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause
 
-#### Python 3 or 2 packages (alphabetical order)
-- [matplotlib](https://matplotlib.org/) 3.1.0 (python3) and 2.2.4 (python2)
+#### Python 3 packages (alphabetical order)
+- the follwoing list is not complete, mentions only selected packages without their dependencies etc.
+- please see the requirements.txt file for the given KNIME docker environment version for more details and concrete versions
+- [matplotlib](https://matplotlib.org/)
     - The matplotlib consists of the following Python Software Foundation License (BSD compatible). Licence terms are available here: https://matplotlib.org/users/license.html
-- [numpy](http://www.numpy.org/) 1.16.4
+- [numpy](http://www.numpy.org/)
     - The numpy consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause
-- [pandas](https://pandas.pydata.org/) 0.24.2
+- [pandas](https://pandas.pydata.org/)
     - The pandas consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause
-- [pip](https://pypi.org/project/pip/) 19.2.1
-    - The pip consists of the following MIT License (MIT). Licence terms are available here: https://github.com/pypa/pip/blob/master/LICENSE.txt
-- [scipy](https://www.scipy.org/) 1.2.2
+- [scipy](https://www.scipy.org/)
     - The scipy consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause
-- [seaborn](https://seaborn.pydata.org/) 0.9.0
+- [seaborn](https://seaborn.pydata.org/)
     - The seaborn consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause
-- [statsmodels](https://www.statsmodels.org/stable/index.html) 0.10.1
+- [statsmodels](https://www.statsmodels.org/stable/index.html)
     - The statsmodels consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause
 
 
@@ -134,9 +134,9 @@ The project is maintained by people from several laboratories (in alphabetical o
   - Kristína Gömöryová
 - [Proteomics Research group](https://www.ceitec.eu/proteomics-zbynek-zdrahal/rg49), Central European Institute of Technology, Masaryk University, Brno, Czech Republic
   - Michal Cupák
-  - Karolina Krystofova
+  - Karolina Kryštofová
   - David Potěšil
-  - Anna Schneiderova
+  - Anna Schneiderová
 
 # Licence
 This version of metanodes is available under the GNU GPL 3.0 License (see the [LICENSE](../master/LICENSE) file for details), unless stated otherwise.
