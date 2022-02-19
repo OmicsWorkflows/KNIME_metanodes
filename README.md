@@ -46,22 +46,20 @@ Metanodes are made within docker container running KNIME accessible via VNC (htt
 
 #### Programs
 
-- [KNIME](https://www.knime.com/) 3.7.2
+- [KNIME](https://www.knime.com/)
   - The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.knime.com/downloads/full-license
-- [Python](https://www.python.org/) 3.6.8
-  - The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html
-- [Python](https://www.python.org/) 2.7.15+
-    - The Python consists of the following Python 2.7 License. Licence terms are available here: https://docs.python.org/2.7/license.html
-- [R](https://www.r-project.org/) 3.6.1
+- [Python](https://www.python.org/)
+  - The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html
+- [R](https://www.r-project.org/)
   - The R consists of the following GNU General Public Licences. Licence terms are available here: https://www.r-project.org/Licenses/
 
 #### KNIME extensions on top of the standard KNIME Analytics Platform installation
 
-- KNIME Python Integration (org.knime.features.python2.feature.group/3.6.1.v201808311614)
-- KNIME Interactive R Statistics Integration (org.knime.features.r.feature.group/3.6.1.v201808311614)
-- [OpenMS](http://www.openms.de/) 2.3.0 (de.openms.feature.feature.group/2.3.0.201712211252)
+- KNIME Python Integration
+- KNIME Interactive R Statistics Integration
+- [OpenMS](http://www.openms.de/)
     - The OpenMS consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause
-- [PIA](https://github.com/mpc-bioinformatics/pia) 1.3.7 (de.mpc.pia.feature.feature.group/1.3.7.v201803061425)
+- [PIA](https://github.com/mpc-bioinformatics/pia)
     - The PIA consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause
 
 #### Python 3 or 2 packages (alphabetical order)
