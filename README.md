@@ -71,6 +71,8 @@ Metanodes are made within docker container running KNIME accessible via VNC (htt
     - The numpy consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause
 - [pandas](https://pandas.pydata.org/)
     - The pandas consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause
+- [peptides](https://github.com/althonos/peptides.py)
+    - The peptides consists of the following GPL-3.0 license. Licence terms are available here: https://github.com/althonos/peptides.py/blob/main/COPYING
 - [scipy](https://www.scipy.org/)
     - The scipy consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause
 - [seaborn](https://seaborn.pydata.org/)
