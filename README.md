@@ -136,7 +136,9 @@ The project is maintained by people from several laboratories (in alphabetical o
   - Kristína Gömöryová
 - [Proteomics Research group](https://www.ceitec.eu/proteomics-zbynek-zdrahal/rg49), Central European Institute of Technology, Masaryk University, Brno, Czech Republic
   - Michal Cupák
+  - Karolina Krystofova
   - David Potěšil
+  - Anna Schneiderova
 
 # Licence
 This version of metanodes is available under the GNU GPL 3.0 License (see the [LICENSE](../master/LICENSE) file for details), unless stated otherwise.
