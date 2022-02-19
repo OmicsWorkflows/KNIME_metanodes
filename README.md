@@ -95,6 +95,8 @@ Metanodes are made within docker container running KNIME accessible via VNC (htt
     - The impute consists of the following General Public License (GPL), version 2 license. Licence terms are available here: https://www.r-project.org/Licenses/GPL-2
 - [limma](https://bioconductor.org/packages/release/bioc/html/limma.html)
     - The limma consists of the following General Public License (GPL), version 2 license. Licence terms are available here: https://www.r-project.org/Licenses/GPL-2
+- [Peptides](https://cran.r-project.org/web/packages/Peptides/index.html)
+    - The Peptides consists of the following General Public License (GPL), version 2 license. Licence terms are available here: https://www.r-project.org/Licenses/GPL-2
 - [pcaMethods](https://www.bioconductor.org/packages/release/bioc/html/pcaMethods.html)
     - The pcaMethods consists of the following General Public License (GPL), version 3 (or higher) license. Licence terms are available here: https://www.r-project.org/Licenses/GPL-3
 - [plotly](https://cran.r-project.org/web/packages/plotly/index.html)
