@@ -8,11 +8,12 @@
 <config key="model">
 <config key="defaultValue">
 <config key="variable_value">
-<entry key="array-size" type="xint" value="4"/>
+<entry key="array-size" type="xint" value="5"/>
 <entry key="0" type="xstring" value="MW"/>
 <entry key="1" type="xstring" value="GRAVY"/>
 <entry key="2" type="xstring" value="pI"/>
 <entry key="3" type="xstring" value="AA count"/>
+<entry key="4" type="xstring" value="AA composition"/>
 </config>
 </config>
 <entry key="hideInDialog" type="xboolean" value="false"/>
@@ -22,11 +23,12 @@
 <entry key="required" type="xboolean" value="true"/>
 <entry key="flowVariableName" type="xstring" value="parameters"/>
 <config key="possible_choices">
-<entry key="array-size" type="xint" value="4"/>
+<entry key="array-size" type="xint" value="5"/>
 <entry key="0" type="xstring" value="MW"/>
 <entry key="1" type="xstring" value="GRAVY"/>
 <entry key="2" type="xstring" value="pI"/>
 <entry key="3" type="xstring" value="AA count"/>
+<entry key="4" type="xstring" value="AA composition"/>
 </config>
 <entry key="type" type="xstring" value="Check boxes (horizontal)"/>
 <entry key="limit_number_visible_options" type="xboolean" value="false"/>
