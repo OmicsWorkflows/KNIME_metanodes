@@ -8,16 +8,16 @@
 <config key="model"/>
 <config key="variables"/>
 <config key="nodeAnnotation">
-<entry key="text" type="xstring" value=""/>
+<entry key="text" type="xstring" value="with the organism filtration"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="2350"/>
-<entry key="y-coordinate" type="xint" value="1099"/>
-<entry key="width" type="xint" value="142"/>
+<entry key="x-coordinate" type="xint" value="2450"/>
+<entry key="y-coordinate" type="xint" value="799"/>
+<entry key="width" type="xint" value="182"/>
 <entry key="height" type="xint" value="17"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <entry key="borderSize" type="xint" value="0"/>
-<entry key="borderColor" type="xint" value="0"/>
-<entry key="defFontSize" type="xint" value="-1"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
 <entry key="annotation-version" type="xint" value="20151123"/>
 <config key="styles"/>
 </config>
@@ -32,7 +32,7 @@
 </config>
 </config>
 </config>
-<entry key="virtual-out-ID" type="xint" value="1632"/>
+<entry key="virtual-out-ID" type="xint" value="1605"/>
 <config key="outports">
 <config key="outport_0">
 <entry key="index" type="xint" value="0"/>
@@ -40,27 +40,49 @@
 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
 </config>
 </config>
+<config key="outport_1">
+<entry key="index" type="xint" value="1"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+</config>
+</config>
+<config key="outport_2">
+<entry key="index" type="xint" value="2"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+</config>
+</config>
 </config>
 <config key="metadata">
-<entry key="description" type="xstring" value="Metanode makes api call to String-db.org to get the html link with the enrichment analysis results using provided list of protein accessions.%%00010%%00010So far only the multiple proteins search using he specified column containing the protein accessions is implemented. Protein accessions have to be in supported format (e.g. UniProtKB identified). Multiple protein accessions separated by delimiter (e.g. semicolon) are supported where you can select whether to use just the first protein accession or all of them.%%00010%%00010Metanode generates html link you can paste into your browser and browse the results or you can ask it to open the browser for you with the generated link as well.%%00010%%00010Please note there is limitation in the number of accessions searched on the String-db API. Thus, if you will provide more than 400 protein accessions, the enrichment analysis will not be performed and you will get the list of accessions instead of the link. The enrichment analysis can be done manually by pasting the list of accessions on the String-db site.%%00010%%00010More information on the used API can be found here https://version-11-5.string-db.org/help/api/#linking-to-the-network-on-string-webpage.%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)%%00010%%00010String-db API (the String-db API consists of the following Creative Commons Attribution 4.0 International (CC BY 4.0) License. Licence terms are available here: https://creativecommons.org/licenses/by/4.0/%%00010%%00010The metanode was created in KNIME 4.1.3 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.1.3a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 1.1.0 from 2022-04-03%%00010Contact person: David Potesil (david.potesil@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes."/>
+<entry key="description" type="xstring" value="Metanode that makes api call to String-db.org to retrieve the network analysis results. %%00010%%00010%%00010So far only overrepresentation analysis is implemented using the protein IDs present in the selected protein IDs column. Protein IDs have to be in supported format (e.g. UniProtKB identified; see https://reactome.org/dev/analysis for their full list). Multiple protein IDs separated by delimiter (e.g. semicolon) are supported.%%00010%%00010You can select whether to include also interactors during the analysis and what resource should be used during the analysis,%%00010%%00010Metanode generates 4 outputs in total%%000101) pathways table%%00010table of pathways returned by the analysis (similarly to downloading the pathway analysis results in csv format via web interface)%%00010%%000102) not mapped identifiers%%00010identifiers that were not found/mapped during the Reactome analysis%%00010%%000103) summary table%%00010summary information about the analysis including date of running, database version and more%%00010%%000104) complete analysis results%%00010complete analysis results in json format for further data mining if needed%%00010%%00010More information on the used API can be found here https://reactome.org/AnalysisService/#/identifiers and here https://reactome.org/dev/analysis.%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)%%00010Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)%%00010%%00010Reactome API (The Reactome API consists of the two Creative Commons licenses: Creative Commons Public Domain (CC0) License and Creative Commons Attribution 4.0 International (CC BY 4.0) License. Licence terms are available here: https://reactome.org/license%%00010%%00010The metanode was created in KNIME 3.7.1 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 3.7.1a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 0.2.1 from 2019-08-06%%00010Contact person: David Potesil (david.potesil@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.%%00010%%00010"/>
 <config key="inports">
 <config key="inport_0">
 <entry key="name" type="xstring" value="Port 1"/>
-<entry key="description" type="xstring" value="input table containing the column with the protein accessions to be used for the enrichment analysis"/>
+<entry key="description" type="xstring" value=""/>
 <entry key="index" type="xint" value="0"/>
 </config>
 </config>
 <config key="outports">
 <config key="outport_0">
-<entry key="name" type="xstring" value="html link"/>
-<entry key="description" type="xstring" value="link to the String-db"/>
+<entry key="name" type="xstring" value="Port 1"/>
+<entry key="description" type="xstring" value=""/>
 <entry key="index" type="xint" value="0"/>
+</config>
+<config key="outport_1">
+<entry key="name" type="xstring" value="Port 2"/>
+<entry key="description" type="xstring" value=""/>
+<entry key="index" type="xint" value="1"/>
+</config>
+<config key="outport_2">
+<entry key="name" type="xstring" value="Port 3"/>
+<entry key="description" type="xstring" value=""/>
+<entry key="index" type="xint" value="2"/>
 </config>
 </config>
 </config>
 <config key="workflow_template_information">
 <entry key="role" type="xstring" value="Template"/>
-<entry key="timestamp" type="xstring" value="2022-04-03 13:23:46"/>
+<entry key="timestamp" type="xstring" value="2022-04-03 13:32:19"/>
 <entry key="sourceURI" type="xstring" isnull="true" value=""/>
 <entry key="templateType" type="xstring" value="SubNode"/>
 </config>
