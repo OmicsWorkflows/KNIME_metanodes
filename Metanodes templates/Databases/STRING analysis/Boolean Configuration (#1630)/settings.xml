@@ -18,10 +18,10 @@
 <entry key="pushIntVar" type="xboolean" value="true"/>
 </config>
 <config key="nodeAnnotation">
-<entry key="text" type="xstring" value="open link %%00010automatically"/>
+<entry key="text" type="xstring" value="open link %%00010automatically?"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="169"/>
-<entry key="y-coordinate" type="xint" value="19"/>
+<entry key="x-coordinate" type="xint" value="9"/>
+<entry key="y-coordinate" type="xint" value="-201"/>
 <entry key="width" type="xint" value="142"/>
 <entry key="height" type="xint" value="34"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
