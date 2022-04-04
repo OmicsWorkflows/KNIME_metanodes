@@ -30,9 +30,9 @@
 </config>
 <config key="port-descriptions">
 <entry key="array-size" type="xint" value="3"/>
-<entry key="0" type="xstring" value=""/>
-<entry key="1" type="xstring" value=""/>
-<entry key="2" type="xstring" value=""/>
+<entry key="0" type="xstring" value="Only upregulated proteins"/>
+<entry key="1" type="xstring" value="Only downregulated proteins"/>
+<entry key="2" type="xstring" value="Original table containing columns containing information about expression change"/>
 </config>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
