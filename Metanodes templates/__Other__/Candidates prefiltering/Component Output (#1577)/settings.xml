@@ -23,16 +23,18 @@
 </config>
 <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
 <config key="port-names">
-<entry key="array-size" type="xint" value="3"/>
+<entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xstring" value="Upregulated proteins"/>
 <entry key="1" type="xstring" value="Downregulated proteins"/>
-<entry key="2" type="xstring" value="Original table with appended column"/>
+<entry key="2" type="xstring" value="Both upregulated and downregulated proteins"/>
+<entry key="3" type="xstring" value="Original table with appended column"/>
 </config>
 <config key="port-descriptions">
-<entry key="array-size" type="xint" value="3"/>
-<entry key="0" type="xstring" value="Only upregulated proteins"/>
-<entry key="1" type="xstring" value="Only downregulated proteins"/>
-<entry key="2" type="xstring" value="Original table containing columns containing information about expression change"/>
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xstring" value="Only upregulated protein list"/>
+<entry key="1" type="xstring" value="Only downregulated protein list"/>
+<entry key="2" type="xstring" value="Both upregulated and downregulated protein list"/>
+<entry key="3" type="xstring" value="Original table containing columns containing information about expression change"/>
 </config>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -63,6 +65,12 @@
 </config>
 <config key="port_2">
 <entry key="index" type="xint" value="2"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+</config>
+</config>
+<config key="port_3">
+<entry key="index" type="xint" value="3"/>
 <config key="type">
 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
 </config>
