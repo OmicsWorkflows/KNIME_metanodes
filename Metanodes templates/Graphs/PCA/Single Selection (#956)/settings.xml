@@ -9,7 +9,7 @@
 <config key="defaultValue">
 <entry key="variable_value" type="xstring" value="yes"/>
 </config>
-<entry key="label" type="xstring" value="Show datapoints selection?"/>
+<entry key="label" type="xstring" value="Show datapoints annotation?"/>
 <entry key="description" type="xstring" value="Set if you want to have annotations of data in PCA plot."/>
 <entry key="hideInWizard" type="xboolean" value="false"/>
 <entry key="hideInDialog" type="xboolean" value="false"/>

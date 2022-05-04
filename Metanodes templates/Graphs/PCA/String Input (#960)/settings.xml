@@ -9,7 +9,7 @@
 <config key="defaultValue">
 <entry key="string" type="xstring" value=""/>
 </config>
-<entry key="label" type="xstring" value="Prefix to remove"/>
+<entry key="label" type="xstring" value="Column name prefix to remove (annotation)"/>
 <entry key="description" type="xstring" value="common data columns prefix to be removed prior plotting"/>
 <entry key="hideInWizard" type="xboolean" value="false"/>
 <entry key="hideInDialog" type="xboolean" value="false"/>
