@@ -7,12 +7,12 @@
 </config>
 <config key="model">
 <config key="defaultValue">
-<entry key="string" type="xstring" value="A-B;A-C"/>
+<entry key="string" type="xstring" value="A/B;A/C"/>
 </config>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="parameterName" type="xstring" value="ratios"/>
 <entry key="label" type="xstring" value="Ratios"/>
-<entry key="description" type="xstring" value="Provide ratios in format &quot;numerator-denominator&quot;. If multiple ratios should be calculated, enter these ratios separated by a semicolon. Names of numerators and denominators should correspond to names provided in the &quot;Column names&quot; field"/>
+<entry key="description" type="xstring" value="Provide ratios in format &quot;numerator/denominator&quot;. If multiple ratios should be calculated, enter these ratios separated by a semicolon. Names of numerators and denominators should correspond to names provided in the &quot;Column names&quot; field"/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="flowVariableName" type="xstring" value="ratios"/>
 <entry key="regex" type="xstring" value=""/>
