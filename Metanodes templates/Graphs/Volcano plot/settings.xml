@@ -8,11 +8,11 @@
 <config key="model"/>
 <config key="variables"/>
 <config key="nodeAnnotation">
-<entry key="text" type="xstring" value=""/>
+<entry key="text" type="xstring" value="P value"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="1017"/>
-<entry key="y-coordinate" type="xint" value="919"/>
-<entry key="width" type="xint" value="126"/>
+<entry key="x-coordinate" type="xint" value="209"/>
+<entry key="y-coordinate" type="xint" value="619"/>
+<entry key="width" type="xint" value="142"/>
 <entry key="height" type="xint" value="17"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <entry key="borderSize" type="xint" value="0"/>
@@ -23,6 +23,10 @@
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="R View (Table) 0:1311:967:0:357: Errors overwriting node settings with flow variables: Unknown variable &quot;plot_width&quot;"/>
+</config>
 <entry key="virtual-in-ID" type="xint" value="217"/>
 <config key="inports">
 <config key="inport_0">
@@ -41,12 +45,30 @@
 </config>
 </config>
 </config>
+<config key="metadata">
+<entry key="description" type="xstring" value="Metanode to create Volcano plot (dependency of -log(p value) on log(fold change)) from selected columns of input table. It enables you to select limits on both axis to categorize all points based on significance/ratio value.%%00010%%00010Ratios should be provided in log transformed format (logFC) together with the logFC limit for values categorization, visualization and summary.%%00010%%00010P values are by default transformed using negative decadic logarithm (-log10), but it can be switched off in case you provide already -log10 transformed values.%%00010In case the p values are not -log10 transformed and they contain zero values, metanode will end up with error because -log(0) is not possible. Provide some reasonably small number for imputation or use 0 to exclude these points from the graph.%%00010%%00010Note: any data preprocessing (like transformation, normalization) should be done prior the metanode usage!%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3.6 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)%%00010R 3.6 (R consists of the following GNU GPL 2.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010%%00010The metanode was created in KNIME 4.1.3 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.1.3a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 0.2.0 from 2022-05-30%%00010Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes"/>
+<config key="inports">
+<config key="inport_0">
+<entry key="name" type="xstring" value="Input data"/>
+<entry key="description" type="xstring" value="Input table containing columns to be selected for visualization"/>
+<entry key="index" type="xint" value="0"/>
+</config>
+</config>
+<config key="outports">
+<config key="outport_0">
+<entry key="name" type="xstring" value="Volcano plot"/>
+<entry key="description" type="xstring" value=""/>
+<entry key="index" type="xint" value="0"/>
+</config>
+</config>
+</config>
 <config key="workflow_template_information">
 <entry key="role" type="xstring" value="Template"/>
-<entry key="timestamp" type="xstring" value="2018-10-30 22:57:08"/>
+<entry key="timestamp" type="xstring" value="2022-05-30 13:37:42"/>
 <entry key="sourceURI" type="xstring" isnull="true" value=""/>
 <entry key="templateType" type="xstring" value="SubNode"/>
 </config>
-<config key="layoutInfos"/>
 <entry key="layoutJSON" type="xstring" value="{&quot;rows&quot;:[{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;295&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;297&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;306&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;316&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;317&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;318&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;319&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;320&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;321&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;326&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;327&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;328&quot;}]}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;widthMD&quot;:12,&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;scrolling&quot;:false,&quot;autoResize&quot;:true,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;nodeID&quot;:&quot;329&quot;}]}]}]}"/>
+<entry key="hideInWizard" type="xboolean" value="false"/>
+<entry key="customCSS" type="xstring" value=""/>
 </config>

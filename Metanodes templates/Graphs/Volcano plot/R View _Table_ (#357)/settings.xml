@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="Image width" type="xint" value="640"/>
+<entry key="Image height" type="xint" value="640"/>
+<entry key="Image resolution" type="xstring" value="NA"/>
+<entry key="Image background color" type="xstring" value="#ffffff"/>
+<entry key="Text point size" type="xint" value="12"/>
+<config key="R settings">
+<entry key="script" type="xstring" value="# load required libraries%%00010library(ggplot2)%%00010library(dplyr)%%00010library(magrittr)%%00010library(ggrepel)%%00010%%00010# load table and perform -log10 transformation%%00010df &lt;- knime.in%%00010%%00010if(knime.flow.in[[&quot;zero_p_replacement&quot;]] != 0){%%00010%%00009na_index &lt;- which(is.na(df$p))%%00010%%00009df$p[na_index] &lt;- knime.flow.in[[&quot;zero_p_replacement&quot;]]%%00010}%%00010%%00010df &lt;- na.omit(df)%%00010%%00010if(knime.flow.in[[&quot;additional_p_value_log&quot;]] == 1) {%%00010%%00009df &lt;- df %&gt;%%%00010%%00009%%00009mutate(p = -log10(p))%%00010}%%00010%%00010p_threshold &lt;- -log10(knime.flow.in[[&quot;p_threshold&quot;]])%%00010logFC_threshold &lt;- knime.flow.in[[&quot;logFC_threshold&quot;]]%%00010%%00010# add column containing info about expression change%%00010df &lt;- df %&gt;%%%00010%%00009mutate(change = case_when(p &gt; p_threshold &amp; logFC &gt; logFC_threshold ~ &quot;Up &amp; Significant&quot;,%%00010%%00009%%00009%%00009%%00009%%00009%%00009 p &gt; p_threshold &amp; logFC &lt; -logFC_threshold ~ &quot;Down &amp; Significant&quot;,%%00010%%00009%%00009%%00009%%00009%%00009%%00009 p &gt; p_threshold &amp; logFC &lt; logFC_threshold &amp; logFC &gt; -logFC_threshold ~ &quot;Significant&quot;,%%00010%%00009%%00009%%00009%%00009%%00009%%00009 TRUE ~ &quot;Not significant&quot;))%%00010%%00010# get number of proteins in each category%%00010df_summary &lt;- df %&gt;%%%00010%%00009group_by(change) %&gt;%%%00010%%00009summarize(n = n()) %&gt;%%%00010%%00009as.data.frame()%%00010%%00010all_changes &lt;- c(&quot;Up &amp; Significant&quot;, &quot;Down &amp; Significant&quot;, &quot;Significant&quot;, &quot;Not significant&quot;)%%00010observed_changes &lt;- df_summary$change%%00010not_observed_changes &lt;- setdiff(all_changes, observed_changes)%%00010%%00010if(length(not_observed_changes) &gt; 0){%%00010%%00009df_summary_append &lt;- data.frame(change = not_observed_changes,%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009  n = rep(0, times = length(not_observed_changes)))%%00010%%00009df_summary &lt;- rbind(df_summary, df_summary_append)%%00010}%%00010%%00010# add number of observed values in each category to the dataframe%%00010df &lt;- df %&gt;%%%00010%%00009mutate(count = case_when(change == &quot;Up &amp; Significant&quot; ~ df_summary$n[which(df_summary$change == &quot;Up &amp; Significant&quot;)],%%00010%%00009%%00009%%00009%%00009%%00009%%00009change == &quot;Down &amp; Significant&quot; ~ df_summary$n[which(df_summary$change == &quot;Down &amp; Significant&quot;)],%%00010%%00009%%00009%%00009%%00009%%00009%%00009change == &quot;Significant&quot; ~ df_summary$n[which(df_summary$change == &quot;Significant&quot;)],%%00010%%00009%%00009%%00009%%00009%%00009%%00009TRUE ~ df_summary$n[which(df_summary$change == &quot;Not significant&quot;)])) %&gt;%%%00010%%00009mutate(full_change = paste0(change, &quot; (&quot;, count, &quot;)&quot;),%%00010%%00009%%00009  color = case_when(change == &quot;Up &amp; Significant&quot; ~ &quot;olivedrab2&quot;,%%00010%%00009%%00009                    change == &quot;Down &amp; Significant&quot; ~ &quot;firebrick2&quot;,%%00010%%00009%%00009                    change == &quot;Significant&quot; ~ &quot;goldenrod2&quot;,%%00010%%00009%%00009                    TRUE ~ &quot;grey40&quot;),%%00010%%00009%%00009  sorting = p*abs(logFC)) %&gt;%%%00010%%00009arrange(desc(sorting))%%00009   %%00010%%00010# create values for plot legend%%00010df$change &lt;- factor(df$change, levels = c(&quot;Up &amp; Significant&quot;, &quot;Down &amp; Significant&quot;, &quot;Significant&quot;, &quot;Not significant&quot;))%%00010df$color &lt;- factor(df$color, levels = c(&quot;olivedrab2&quot;, &quot;firebrick2&quot;, &quot;goldenrod2&quot;, &quot;grey40&quot;))%%00010%%00010df_summary &lt;- df_summary %&gt;%%%00010%%00009arrange(match(change, c(&quot;Up &amp; Significant&quot;, &quot;Down &amp; Significant&quot;, &quot;Significant&quot;, &quot;Not significant&quot;))) %&gt;%%%00010%%00009filter(n &gt; 0)%%00010%%00010# create a df for labelling%%00010m &lt;- matrix(0, ncol = ncol(df), nrow = 0)%%00010df_label &lt;- as.data.frame(m)%%00010colnames(df_label) &lt;- colnames(df)%%00010%%00010if(knime.flow.in[[&quot;labelling_bool&quot;]] == 1){%%00010%%00009if(knime.flow.in[[&quot;max_n&quot;]] &gt; 0){%%00010%%00009%%00009temp &lt;- df[1:knime.flow.in[[&quot;max_n&quot;]],]%%00010%%00009%%00009df_label &lt;- rbind(df_label, temp)%%00010%%00009}%%00010%%00010%%00009if(knime.flow.in[[&quot;label_proteins&quot;]] != &quot;&quot;){%%00010%%00009%%00009label_proteins &lt;- unlist(strsplit(knime.flow.in[[&quot;label_proteins&quot;]], &quot;;&quot;))%%00010%%00009%%00009i_proteins &lt;- which(df$ID %in% label_proteins)%%00010%%00009%%00009temp &lt;- df[i_proteins,]%%00010%%00009%%00009df_label &lt;- rbind(df_label, temp)%%00010%%00009}%%00010%%00010%%00009if(knime.flow.in[[&quot;max_n&quot;]] == 0 &amp; knime.flow.in[[&quot;label_proteins&quot;]] == &quot;&quot;){%%00010%%00009%%00009i_changed &lt;- which(df$change %in% c(&quot;Up &amp; Significant&quot;, &quot;Down &amp; Significant&quot;))%%00010%%00009%%00009%%00010%%00009%%00009if(length(i_changed) &gt; 0){%%00010%%00009%%00009%%00009temp &lt;- df[i_changed,]%%00010%%00009%%00009%%00009df_label &lt;- rbind(df_label, temp)%%00010%%00009%%00009}%%00010%%00009}%%00010}%%00010%%00010# modify y axis label%%00010if(knime.flow.in[[&quot;y_axis_label&quot;]] == &quot;&quot;){%%00010%%00009if(grepl(&quot;adj.P.Val&quot;, knime.flow.in[[&quot;p_value_column&quot;]], fixed = TRUE)){%%00010%%00009%%00009y_label = expression(&quot;-log&quot;[10]*&quot; adjusted p-values&quot;)%%00010%%00009} else {%%00010%%00009%%00009y_label = expression(&quot;-log&quot;[10]*&quot;p-values&quot;)%%00010%%00009}%%00009%%00010} else {%%00010%%00009y_label = knime.flow.in[[&quot;y_axis_label&quot;]]%%00010}%%00010%%00010# manual axis limits%%00010if(knime.flow.in[[&quot;manual_x_limits&quot;]] != &quot;&quot;){%%00010%%00009x_limits &lt;- unlist(strsplit(knime.flow.in[[&quot;manual_x_limits&quot;]], &quot;;&quot;))%%00010%%00009x_min &lt;- as.numeric(x_limits[1])%%00010%%00009x_max &lt;- as.numeric(x_limits[2])%%00010}%%00010%%00010if(knime.flow.in[[&quot;manual_y_limits&quot;]] != &quot;&quot;){%%00010%%00009y_limits &lt;- unlist(strsplit(knime.flow.in[[&quot;manual_y_limits&quot;]], &quot;;&quot;))%%00010%%00009y_min &lt;- as.numeric(y_limits[1])%%00010%%00009y_max &lt;- as.numeric(y_limits[2])%%00010}%%00010%%00010# plot the volcano plot%%00010p &lt;- ggplot() +%%00010%%00009geom_point(df, mapping = aes(x = logFC, y = p, color = color), size = 2) +%%00010%%00009scale_color_identity(guide = &quot;legend&quot;, labels = df_summary$change) +%%00010%%00009labs(title = knime.flow.in[[&quot;title&quot;]],%%00010%%00009%%00009subtitle = knime.flow.in[[&quot;full_subtitle&quot;]],%%00010%%00009%%00009y = y_label,%%00010%%00009%%00009x = knime.flow.in[[&quot;x_axis_label&quot;]]) +%%00010%%00009geom_hline(aes(yintercept = p_threshold), linetype = 'dashed', color = &quot;grey20&quot;) +%%00010%%00009geom_vline(aes(xintercept = logFC_threshold), linetype = 'dashed', color = &quot;grey20&quot;) +%%00010%%00009geom_vline(aes(xintercept = -logFC_threshold), linetype = 'dashed', color = &quot;grey20&quot;) +%%00010%%00009theme_bw(base_size = 14) +%%00010%%00009theme(plot.title = element_text(face = &quot;bold&quot;, hjust = 0.5),%%00010%%00009%%00009 legend.title = element_blank(),%%00010%%00009%%00009 legend.justification = c(1.05, -0.1), %%00010%%00009%%00009 legend.position = c(1, 0),%%00010%%00009%%00009 legend.box.background = element_rect(color = &quot;grey20&quot;, size = 1),%%00010%%00009%%00009 legend.margin=margin(c(0,10,5,5)))%%00010%%00010if(knime.flow.in[[&quot;labelling_bool&quot;]] == 1 &amp; nrow(df_label) &gt; 0){%%00010%%00009p &lt;- p +%%00010%%00009%%00009geom_text_repel(df_label, mapping = aes(x = logFC, y = p, label = ID), inherit.aes = FALSE)%%00010}%%00010%%00010if(knime.flow.in[[&quot;manual_x_limits&quot;]] != &quot;&quot;){%%00010%%00009p &lt;- p +%%00010%%00009%%00009xlim(x_min, x_max)%%00010}%%00010%%00010if(knime.flow.in[[&quot;manual_y_limits&quot;]] != &quot;&quot;){%%00010%%00009p &lt;- p +%%00010%%00009%%00009ylim(y_min, y_max)%%00010}%%00010%%00010p%%00010"/>
+<entry key="templateUUID" type="xstring" isnull="true" value=""/>
+<entry key="version" type="xstring" value="version 1.x"/>
+<entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+<entry key="sendRowNames" type="xboolean" value="true"/>
+<entry key="sendBatchSize" type="xint" value="10000"/>
+<entry key="knimeInType" type="xstring" value="data.frame"/>
+</config>
+<entry key="Image type" type="xstring" value="PNG"/>
+</config>
+<config key="variables">
+<entry key="version" type="xstring" value="V_2019_09_13"/>
+<config key="tree">
+<config key="Image width">
+<entry key="used_variable" type="xstring" value="plot_width"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
+<config key="Image height">
+<entry key="used_variable" type="xstring" value="plot_height"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Errors overwriting node settings with flow variables: Unknown variable &quot;plot_width&quot;"/>
+</config>
+<entry key="factory" type="xstring" value="org.knime.r.RViewNodeFactory"/>
+<entry key="node-name" type="xstring" value="R View (Table)"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.1.v202001312017"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.1.v202001312017"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="R View (Table)"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
