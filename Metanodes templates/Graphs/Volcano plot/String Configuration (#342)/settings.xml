@@ -12,7 +12,7 @@
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="parameterName" type="xstring" value="y_axis_label"/>
 <entry key="label" type="xstring" value="Y axis label"/>
-<entry key="description" type="xstring" value="Custom title for the y axis; if left blank, &quot;p-value&quot; or &quot;adjusted p-value&quot; will be used"/>
+<entry key="description" type="xstring" value="Custom title for the y axis; if left blank, &quot;-log10 p-value&quot; will be used. It is possible to use the R expression format by wrapping the text in &quot;expression()&quot;"/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="flowVariableName" type="xstring" value="y_axis_label"/>
 <entry key="regex" type="xstring" value=""/>

@@ -12,7 +12,7 @@
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="parameterName" type="xstring" value="x_axis_label"/>
 <entry key="label" type="xstring" value="X axis label"/>
-<entry key="description" type="xstring" value="Custom title for the x axis; if left blank, &quot;logFC&quot; will be used"/>
+<entry key="description" type="xstring" value="Custom title for the x axis; if left blank, &quot;logFC&quot; will be used. It is possible to use the R expression format by wrapping the text in &quot;expression()&quot;"/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="flowVariableName" type="xstring" value="x_axis_label"/>
 <entry key="regex" type="xstring" value=""/>
