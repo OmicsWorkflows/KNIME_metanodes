@@ -12,7 +12,7 @@
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="parameterName" type="xstring" value="specific_label"/>
 <entry key="label" type="xstring" value="Specify point labelling"/>
-<entry key="description" type="xstring" value="If left blank, all up- &amp; downregulated points will be labelled. If only a certain number of points should be labelled, enter a whole number. If you want to label specific points, enter their names separated by &quot;,&quot; (names must correspong to values in the ID column). Combination &quot;number, name1, name2&quot; is also possible"/>
+<entry key="description" type="xstring" value="If left blank, all up- &amp; downregulated points will be labelled. If only a certain number of points should be labelled, enter a whole number. If you want to label specific points, enter their names separated by a delimiter of choice (&quot;,&quot; by default, change possible in the form field below). Names must correspong to values in the ID column. Combination &quot;number, name1, name2&quot; is also possible"/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="flowVariableName" type="xstring" value="specific_label"/>
 <entry key="regex" type="xstring" value=""/>
@@ -36,7 +36,7 @@
 <config key="styles"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="CONFIGURED"/>
+<entry key="state" type="xstring" value="IDLE"/>
 <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.input.string.StringDialogNodeFactory"/>
 <entry key="node-name" type="xstring" value="String Configuration"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
