@@ -7,10 +7,10 @@
 </config>
 <config key="model">
 <config key="defaultValue">
-<entry key="string" type="xstring" value="400-1000"/>
+<entry key="string" type="xstring" value="0.9"/>
 </config>
-<entry key="label" type="xstring" value="m/z range"/>
-<entry key="description" type="xstring" value="m/z range to be covered by the DIA windows; please note that since observed m/z values are used for windows calculation, not covered range will not be covered optimally"/>
+<entry key="label" type="xstring" value="m/z range or percentile to cover"/>
+<entry key="description" type="xstring" value="m/z range to be covered by the DIA windows (e.g. 400-1000) or percentile based on the provided m/z values (e.g. 0.9); percentile value is used to leave out the same number of observations (5% of the values in case of percentile 0.9) from both ends to define the target m/z range"/>
 <entry key="hideInWizard" type="xboolean" value="false"/>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="required" type="xboolean" value="true"/>
