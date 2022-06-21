@@ -14,8 +14,8 @@
 </config>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="parameterName" type="xstring" value="filter_rows"/>
-<entry key="label" type="xstring" value="Use only cases which meet given criteria in at least specified number of replicates?"/>
-<entry key="description" type="xstring" value="If yes, only rows which contain at least a given number/percentage of 1s in at least one group will be kept. It is possible to group samples based only on sample names provided in the experimental design or also "/>
+<entry key="label" type="xstring" value="Split cases which meet given criteria in at least specified number of replicates in at least one sample?"/>
+<entry key="description" type="xstring" value="If yes, only rows which contain at least a given number/percentage of 1s in at least one group will be kept in the upper port. It is possible to group samples based only on sample names provided in the experimental design. If no experimental design is provided, it is only possible to split based on a single threshold."/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="flowVariableName" type="xstring" value="filter_rows"/>
 <config key="possible_choices">

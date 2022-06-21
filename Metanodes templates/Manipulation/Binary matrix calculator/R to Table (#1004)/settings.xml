@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="script" type="xstring" value="rownames &lt;- rownames(df)%%00010%%00010i &lt;- which(rownames %in% discard_rows)%%00010%%00010knime.out &lt;- df[i,]%%00010"/>
+<entry key="script" type="xstring" value="rownames &lt;- rownames(df)%%00010%%00010i &lt;- which(rownames %in% discard_rows)%%00010%%00010knime.out &lt;- df_final[i,]%%00010"/>
 <entry key="templateUUID" type="xstring" isnull="true" value=""/>
 <entry key="version" type="xstring" value="version 1.x"/>
 <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
