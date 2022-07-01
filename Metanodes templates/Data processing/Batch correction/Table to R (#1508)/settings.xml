@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="library(Biobase)%%00010library(sva)%%00010library(pvca)%%00010library(tidyverse)%%00010library(viridis)%%00010library(umap)%%00010library(ggrepel)%%00010library(gridExtra)%%00010%%00010df &lt;- knime.in%%00010%%00010# create vectors for design and batch variables%%00010design &lt;- trimws(unlist(strsplit(knime.flow.in[[&quot;design&quot;]], &quot;,&quot;)))%%00010batch &lt;- trimws(unlist(strsplit(knime.flow.in[[&quot;batch&quot;]], &quot;,&quot;)))%%00010%%00010# create variables for ExpressionSet%%00010metadata &lt;- data.frame(Sample = design,%%00010%%00009%%00009%%00009%%00009   Batch = batch)%%00010rownames(metadata) &lt;- colnames(df)%%00010df_matrix &lt;- as.matrix(df)%%00010%%00010df_set &lt;- ExpressionSet(df_matrix)%%00010pData(df_set) &lt;- metadata%%00010%%00010df_set_after &lt;- df_set%%00010%%00010# perform ComBat%%00010combat_matrix &lt;- model.matrix(~1, data = metadata)%%00010%%00010if (knime.flow.in[[&quot;estimate_method (index)&quot;]] == 0) {%%00010%%00009df_combat &lt;- ComBat(dat = df_matrix, batch = batch, mod = combat_matrix, par.prior = TRUE)%%00010} else {%%00010%%00009df_combat &lt;- ComBat(dat = df_matrix, batch = batch, mod = combat_matrix, par.prior = FALSE)%%00010}%%00010%%00010exprs(df_set_after) &lt;- df_combat%%00010df_combat &lt;- as.data.frame(df_combat)%%00010%%00010# run PVCA%%00010pvca_before &lt;- pvcaBatchAssess(df_set, batch.factors = c(&quot;Sample&quot;, &quot;Batch&quot;), 0.6)%%00010pvca_after &lt;- pvcaBatchAssess(df_set_after, batch.factors = c(&quot;Sample&quot;, &quot;Batch&quot;), 0.6)%%00010%%00010# modify PVCA df%%00010pvca_df &lt;- data.frame(Effect = pvca_before$label,%%00010%%00009%%00009%%00009%%00009  Before = as.numeric(pvca_before$dat),%%00010%%00009%%00009%%00009%%00009  After = as.numeric(pvca_after$dat)) %&gt;%%%00010%%00009%%00009 gather(-Effect, key = &quot;Correction&quot;, value = &quot;Contribution&quot;)%%00010%%00010pvca_df$Correction &lt;- factor(pvca_df$Correction, levels = c(&quot;Before&quot;, &quot;After&quot;))%%00010pvca_df$Effect &lt;- factor(pvca_df$Effect, levels = c(&quot;Batch&quot;, &quot;Sample&quot;, &quot;Sample:Batch&quot;, &quot;resid&quot;))"/>
+        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+        <entry key="version" type="xstring" value="version 1.x"/>
+        <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+        <entry key="sendRowNames" type="xboolean" value="true"/>
+        <entry key="sendBatchSize" type="xint" value="10000"/>
+        <entry key="knimeInType" type="xstring" value="data.frame"/>
+        <entry key="overwriteRHome" type="xboolean" value="true"/>
+        <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
+        <entry key="useRPathHome" type="xboolean" value="true"/>
+        <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="rHome">
+                <entry key="used_variable" type="xstring" value="Rcommand"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="perform%%00010batch correction"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="609"/>
+        <entry key="y-coordinate" type="xint" value="319"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="32"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles">
+            <config key="style_0">
+                <entry key="start" type="xint" value="0"/>
+                <entry key="length" type="xint" value="24"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="org.knime.r.TableToRNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Table to R"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.5.2.v202203171119"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203171119"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Table to R"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

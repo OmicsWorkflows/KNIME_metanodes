@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="Image width" type="xint" value="640"/>
+        <entry key="Image height" type="xint" value="500"/>
+        <entry key="Image resolution" type="xstring" value="150"/>
+        <entry key="Image background color" type="xstring" value="#ffffff"/>
+        <entry key="Text point size" type="xint" value="12"/>
+        <config key="R settings">
+            <entry key="script" type="xstring" value="library(ggplot2)%%00010library(reshape2)%%00010%%00010# function for split violins%%00010GeomSplitViolin &lt;- ggproto(&quot;GeomSplitViolin&quot;, GeomViolin, draw_group = function(self, data, ..., draw_quantiles = NULL){%%00010  data &lt;- transform(data, xminv = x - violinwidth * (x - xmin), xmaxv = x + violinwidth * (xmax - x))%%00010  grp &lt;- data[1,'group']%%00010  newdata &lt;- plyr::arrange(transform(data, x = if(grp%%00037%2==1) xminv else xmaxv), if(grp%%00037%2==1) y else -y)%%00010  newdata &lt;- rbind(newdata[1, ], newdata, newdata[nrow(newdata), ], newdata[1, ])%%00010  newdata[c(1,nrow(newdata)-1,nrow(newdata)), 'x'] &lt;- round(newdata[1, 'x']) %%00010  if (length(draw_quantiles) &gt; 0 &amp; !scales::zero_range(range(data$y))) {%%00010    stopifnot(all(draw_quantiles &gt;= 0), all(draw_quantiles &lt;= %%00010                                              1))%%00010    quantiles &lt;- create_quantile_segment_frame(data, draw_quantiles)%%00010    aesthetics &lt;- data[rep(1, nrow(quantiles)), setdiff(names(data), c(&quot;x&quot;, &quot;y&quot;)), drop = FALSE]%%00010    aesthetics$alpha &lt;- rep(1, nrow(quantiles))%%00010    both &lt;- cbind(quantiles, aesthetics)%%00010    quantile_grob &lt;- GeomPath$draw_panel(both, ...)%%00010    ggplot2:::ggname(&quot;geom_split_violin&quot;, grobTree(GeomPolygon$draw_panel(newdata, ...), quantile_grob))%%00010  }%%00010  else {%%00010    ggplot2:::ggname(&quot;geom_split_violin&quot;, GeomPolygon$draw_panel(newdata, ...))%%00010  }%%00010})%%00010%%00010geom_split_violin &lt;- function (mapping = NULL, data = NULL, stat = &quot;ydensity&quot;, position = &quot;identity&quot;, ..., draw_quantiles = NULL, trim = TRUE, scale = &quot;area&quot;, na.rm = FALSE, show.legend = NA, inherit.aes = TRUE) {%%00010  layer(data = data, mapping = mapping, stat = stat, geom = GeomSplitViolin, position = position, show.legend = show.legend, inherit.aes = inherit.aes, params = list(trim = trim, scale = scale, draw_quantiles = draw_quantiles, na.rm = na.rm, ...))%%00010}%%00010%%00010# load data%%00010data &lt;- knime.in%%00010%%00010# how many rows in total%%00010row_means &lt;- rowMeans(data, na.rm=TRUE)%%00010names(row_means) &lt;- rownames(data)%%00010before &lt;- length(row_means)%%00010%%00010# long df%%00010data$id &lt;- rownames(data)%%00010data_melt &lt;- melt(data)%%00010data_melt$variable &lt;- as.factor(data_melt$variable)%%00010%%00010# create new dataframe summarizing average intensity and presence of NA values rowwise%%00010intensity_NA &lt;- data.frame(intensity = data_melt$value,%%00010                           is_NA = ifelse(is.na(data_melt$value), &quot;Missing values&quot;, &quot;Valid values&quot;),%%00010                           column = data_melt$variable,%%00010                           id = data_melt$id)%%00010%%00010index_NA &lt;- which(is.na(intensity_NA$intensity))%%00010%%00010# replace NA values with row means%%00010for (index in index_NA){%%00010  row_NA &lt;- as.character(intensity_NA$id[index])%%00010  replacement &lt;- row_means[which(names(row_means) == row_NA)]%%00010  intensity_NA$intensity[index] &lt;- replacement%%00010}%%00010%%00010# how many rows contain at least 1 value%%00010row_means &lt;- na.exclude(row_means)%%00010after &lt;- length(row_means)%%00010%%00010# title and subtitle for plot%%00010title &lt;- &quot;Mean intensities of proteins with and without missing values&quot;%%00010subtitle &lt;- paste0(as.character(before-after), &quot; proteins omitted due to only containing missing values&quot;)%%00010%%00010# ggplot the intensity%%00010ggplot(intensity_NA, aes(x = column, y = intensity, fill = is_NA)) +%%00010  geom_split_violin(trim = FALSE) +%%00010  scale_fill_discrete(name = &quot;Contains missing values?&quot;) +%%00010  scale_fill_manual(values = c(&quot;brown1&quot;, &quot;darkturquoise&quot;)) +%%00010  labs(x = &quot;Average intensity&quot;, y = &quot;Density&quot;,%%00010  %%00009  title = title, %%00010  %%00009  subtitle = subtitle) +%%00010  theme_bw(base_size = 8) +%%00010  theme(plot.title = element_text(hjust = 0.5, face = &quot;bold&quot;),%%00010  %%00009   plot.subtitle = element_text(hjust = 0.5),%%00010  %%00009   legend.position = &quot;top&quot;,%%00010  %%00009   legend.title = element_blank(),%%00010  %%00009   legend.key.size = unit(0.5, &quot;cm&quot;))%%00010  %%00009   "/>
+            <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+            <entry key="version" type="xstring" value="version 1.x"/>
+            <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+            <entry key="sendRowNames" type="xboolean" value="true"/>
+            <entry key="sendBatchSize" type="xint" value="10000"/>
+            <entry key="knimeInType" type="xstring" value="data.frame"/>
+            <entry key="overwriteRHome" type="xboolean" value="true"/>
+            <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
+            <entry key="useRPathHome" type="xboolean" value="true"/>
+            <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
+        </config>
+        <entry key="Image type" type="xstring" value="PNG"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="Image width">
+                <entry key="used_variable" type="xstring" value="width_density"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+            <config key="Image height">
+                <entry key="used_variable" type="xstring" value="height_density"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="density"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="749"/>
+        <entry key="y-coordinate" type="xint" value="479"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="17"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.r.RViewNodeFactory"/>
+    <entry key="node-name" type="xstring" value="R View (Table)"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.5.2.v202203171119"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203171119"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="R View (Table)"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
