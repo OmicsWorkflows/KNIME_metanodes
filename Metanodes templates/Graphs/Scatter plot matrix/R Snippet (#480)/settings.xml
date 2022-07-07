@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="script" type="xstring" value="# load data%%00010data &lt;- data.matrix(knime.in)%%00010%%00010# replace NA values or omit NA values%%00010if(knime.flow.in[[&quot;imputation_value&quot;]] != &quot;None&quot;){%%00010%%00009imp_value &lt;- as.numeric(knime.flow.in[[&quot;imputation_value&quot;]])%%00010%%00009index_list &lt;- which(is.na(data))%%00010%%00009data[index_list] &lt;- imp_value%%00010} %%00010%%00010knime.out &lt;- as.data.frame(data)"/>
+<entry key="script" type="xstring" value="# load data%%00010data &lt;- data.matrix(knime.in)%%00010%%00010# replace NA values or omit NA values%%00010if(knime.flow.in[[&quot;imputation_value&quot;]] != &quot;None&quot;){%%00010%%00009imp_value &lt;- as.numeric(knime.flow.in[[&quot;imputation_value&quot;]])%%00010%%00009index_list &lt;- which(is.na(data))%%00010%%00009data[index_list] &lt;- imp_value%%00010} %%00010%%00010data &lt;- as.data.frame(data)%%00010%%00010# remove rows and columns which only contain NAs%%00010data &lt;- data[rowSums(is.na(data)) != ncol(data),]%%00010data &lt;- data[,colSums(is.na(data)) != nrow(data)]%%00010%%00010knime.out &lt;- data"/>
 <entry key="templateUUID" type="xstring" isnull="true" value=""/>
 <entry key="version" type="xstring" value="version 1.x"/>
 <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
