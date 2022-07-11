@@ -40,7 +40,7 @@
         <entry key="x-coordinate" type="xint" value="-31"/>
         <entry key="y-coordinate" type="xint" value="79"/>
         <entry key="width" type="xint" value="142"/>
-        <entry key="height" type="xint" value="34"/>
+        <entry key="height" type="xint" value="32"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
@@ -58,7 +58,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.selection.multiple.MultipleSelectionDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="Multiple Selection Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>

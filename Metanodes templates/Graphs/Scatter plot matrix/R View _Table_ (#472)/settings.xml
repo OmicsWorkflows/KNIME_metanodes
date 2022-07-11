@@ -19,8 +19,8 @@
             <entry key="sendRowNames" type="xboolean" value="true"/>
             <entry key="sendBatchSize" type="xint" value="10000"/>
             <entry key="knimeInType" type="xstring" value="data.frame"/>
-            <entry key="overwriteRHome" type="xboolean" value="false"/>
-            <entry key="rHome" type="xstring" value=""/>
+            <entry key="overwriteRHome" type="xboolean" value="true"/>
+            <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
             <entry key="useRPathHome" type="xboolean" value="true"/>
             <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
         </config>

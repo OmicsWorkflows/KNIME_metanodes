@@ -13,10 +13,19 @@
         <entry key="sendRowNames" type="xboolean" value="true"/>
         <entry key="sendBatchSize" type="xint" value="10000"/>
         <entry key="knimeInType" type="xstring" value="data.frame"/>
-        <entry key="overwriteRHome" type="xboolean" value="false"/>
-        <entry key="rHome" type="xstring" value=""/>
+        <entry key="overwriteRHome" type="xboolean" value="true"/>
+        <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
         <entry key="useRPathHome" type="xboolean" value="true"/>
         <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="rHome">
+                <entry key="used_variable" type="xstring" value="Rcommand"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="binary matrix computation%%00010non-imputed -&gt; 0%%00010imputed -&gt; 1"/>
@@ -33,7 +42,7 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.r.RSnippetNodeFactory"/>
     <entry key="node-name" type="xstring" value="R Snippet"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
