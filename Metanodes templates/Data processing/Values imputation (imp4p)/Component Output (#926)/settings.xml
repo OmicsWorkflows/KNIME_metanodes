@@ -41,8 +41,8 @@
 </config>
 <config key="port-descriptions">
 <entry key="array-size" type="xint" value="2"/>
-<entry key="0" type="xstring" value=""/>
-<entry key="1" type="xstring" value=""/>
+<entry key="0" type="xstring" value="Dataframe with imputed missing values"/>
+<entry key="1" type="xstring" value="Binary matrix of missing values"/>
 </config>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
