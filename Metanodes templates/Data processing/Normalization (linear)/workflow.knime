@@ -117,8 +117,8 @@
             <config key="ui_settings">
                 <config key="extrainfo.node.bounds">
                     <entry key="array-size" type="xint" value="4"/>
-                    <entry key="0" type="xint" value="384"/>
-                    <entry key="1" type="xint" value="177"/>
+                    <entry key="0" type="xint" value="864"/>
+                    <entry key="1" type="xint" value="57"/>
                     <entry key="2" type="xint" value="95"/>
                     <entry key="3" type="xint" value="97"/>
                 </config>
@@ -214,7 +214,7 @@
                 <config key="extrainfo.node.bounds">
                     <entry key="array-size" type="xint" value="4"/>
                     <entry key="0" type="xint" value="84"/>
-                    <entry key="1" type="xint" value="-103"/>
+                    <entry key="1" type="xint" value="57"/>
                     <entry key="2" type="xint" value="135"/>
                     <entry key="3" type="xint" value="97"/>
                 </config>
@@ -230,7 +230,7 @@
                 <config key="extrainfo.node.bounds">
                     <entry key="array-size" type="xint" value="4"/>
                     <entry key="0" type="xint" value="224"/>
-                    <entry key="1" type="xint" value="-103"/>
+                    <entry key="1" type="xint" value="57"/>
                     <entry key="2" type="xint" value="135"/>
                     <entry key="3" type="xint" value="97"/>
                 </config>
@@ -245,8 +245,8 @@
             <config key="ui_settings">
                 <config key="extrainfo.node.bounds">
                     <entry key="array-size" type="xint" value="4"/>
-                    <entry key="0" type="xint" value="84"/>
-                    <entry key="1" type="xint" value="37"/>
+                    <entry key="0" type="xint" value="384"/>
+                    <entry key="1" type="xint" value="57"/>
                     <entry key="2" type="xint" value="114"/>
                     <entry key="3" type="xint" value="80"/>
                 </config>
@@ -261,8 +261,8 @@
             <config key="ui_settings">
                 <config key="extrainfo.node.bounds">
                     <entry key="array-size" type="xint" value="4"/>
-                    <entry key="0" type="xint" value="224"/>
-                    <entry key="1" type="xint" value="37"/>
+                    <entry key="0" type="xint" value="524"/>
+                    <entry key="1" type="xint" value="57"/>
                     <entry key="2" type="xint" value="100"/>
                     <entry key="3" type="xint" value="80"/>
                 </config>
@@ -277,8 +277,8 @@
             <config key="ui_settings">
                 <config key="extrainfo.node.bounds">
                     <entry key="array-size" type="xint" value="4"/>
-                    <entry key="0" type="xint" value="83"/>
-                    <entry key="1" type="xint" value="177"/>
+                    <entry key="0" type="xint" value="684"/>
+                    <entry key="1" type="xint" value="57"/>
                     <entry key="2" type="xint" value="100"/>
                     <entry key="3" type="xint" value="80"/>
                 </config>

@@ -23,6 +23,10 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Component Input 4:0:266: No example input data stored with component"/>
+    </config>
     <entry key="workflow-file" type="xstring" value="workflow.knime"/>
     <entry key="virtual-in-ID" type="xint" value="266"/>
     <config key="inports">
@@ -72,7 +76,7 @@
     </config>
     <config key="workflow_template_information">
         <entry key="role" type="xstring" value="Template"/>
-        <entry key="timestamp" type="xstring" value="2022-07-13 13:30:54 +0200"/>
+        <entry key="timestamp" type="xstring" value="2022-07-13 13:50:16 +0200"/>
         <entry key="sourceURI" type="xstring" isnull="true" value=""/>
         <entry key="templateType" type="xstring" value="SubNode"/>
     </config>
