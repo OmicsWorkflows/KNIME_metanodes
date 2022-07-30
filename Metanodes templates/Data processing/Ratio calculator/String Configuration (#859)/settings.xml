@@ -7,12 +7,12 @@
 </config>
 <config key="model">
 <config key="defaultValue">
-<entry key="string" type="xstring" value="A;B;C"/>
+<entry key="string" type="xstring" value="A,B,C"/>
 </config>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="parameterName" type="xstring" value="column_names"/>
 <entry key="label" type="xstring" value="Column names"/>
-<entry key="description" type="xstring" value="Enter column names separated by a semicolon that will be used for providing the required ratios. Must match the number of selected columns"/>
+<entry key="description" type="xstring" value="Enter column names separated by a comma that will be used for providing the required ratios. Must match the number of selected columns"/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="flowVariableName" type="xstring" value="column_names"/>
 <entry key="regex" type="xstring" value=""/>
@@ -46,6 +46,10 @@
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Component does not have input data, execute upstream nodes first"/>
+</config>
 <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.input.string.StringDialogNodeFactory"/>
 <entry key="node-name" type="xstring" value="String Configuration"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
