@@ -10,7 +10,7 @@
 <entry key="double" type="xdouble" value="0.0"/>
 </config>
 <entry key="label" type="xstring" value="Manual clustermap center"/>
-<entry key="description" type="xstring" value="value that will be used as a center to color individual cluster data"/>
+<entry key="description" type="xstring" value="Value that will be used as a center to color individual cluster data"/>
 <entry key="hideInWizard" type="xboolean" value="false"/>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="required" type="xboolean" value="true"/>
