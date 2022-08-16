@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="script" type="xstring" value="library(tidyr)%%00010library(dplyr)%%00010df &lt;- knime.in%%00010%%00010# turn factors into characters%%00010df &lt;- data.frame(lapply(df, as.character), stringsAsFactors=FALSE)%%00010%%00010# creates a new flow variable for if switch depending on number of proteins being &gt; 400%%00010if(nrow(df) &gt; 400){%%00010%%00009switch_length &lt;- &quot;bottom&quot;%%00010} else {%%00010%%00009switch_length &lt;- &quot;top&quot;%%00010}%%00010%%00010# writes down the created flow variable%%00010knime.flow.out &lt;- list(switch_length = switch_length) %%00010%%00010# output datafrane%%00010knime.out &lt;- df"/>
+<entry key="script" type="xstring" value="library(tidyr)%%00010library(dplyr)%%00010df &lt;- knime.in%%00010%%00010# turn factors into characters%%00010df &lt;- data.frame(lapply(df, as.character), stringsAsFactors=FALSE)%%00010%%00010# creates a new flow variable for if switch depending on number of proteins being &gt; 400%%00010if(nrow(df) &gt; knime.flow.in[[&quot;accessions_limit&quot;]]){%%00010%%00009switch_length &lt;- &quot;bottom&quot;%%00010} else {%%00010%%00009switch_length &lt;- &quot;top&quot;%%00010}%%00010%%00010# writes down the created flow variable%%00010knime.flow.out &lt;- list(switch_length = switch_length) %%00010%%00010# output datafrane%%00010knime.out &lt;- df"/>
 <entry key="templateUUID" type="xstring" isnull="true" value=""/>
 <entry key="version" type="xstring" value="version 1.x"/>
 <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>

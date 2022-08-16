@@ -7,7 +7,7 @@
 </config>
 <config key="model">
 <config key="defaultValue">
-<entry key="string" type="xstring" value="id,entry name,reviewed,protein names,genes(PREFERRED),organism,go,go(biological process),go(molecular function),go(cellular component),go-id,comment(SUBCELLULAR LOCATION),families,interactor,sequence,database(InterPro),database(Pfam),database(IntAct)"/>
+<entry key="string" type="xstring" value="accession,id,reviewed,protein_name,mass,length,gene_primary,organism_name,go,go_p,go_f,go_c,go_id,cc_subcellular_location,protein_families,cc_interaction,sequence,xref_interpro,xref_pfam,xref_intact"/>
 </config>
 <entry key="label" type="xstring" value="Columns to retrieve"/>
 <entry key="description" type="xstring" value="list of columns to retrieve from uniprot via their API provided as a list separated by comma &quot;,&quot;.%%00010(you can use whitespaces, they are replaced by %20 later with string replacer node)"/>
