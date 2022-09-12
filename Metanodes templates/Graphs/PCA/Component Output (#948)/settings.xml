@@ -41,8 +41,8 @@
 </config>
 <config key="port-descriptions">
 <entry key="array-size" type="xint" value="2"/>
-<entry key="0" type="xstring" value="PCA plot - graph with first two dimensions"/>
-<entry key="1" type="xstring" value="Scree plot - graphs explaining variability of new dimensions after PCA"/>
+<entry key="0" type="xstring" value="PCA plot with first two PCs"/>
+<entry key="1" type="xstring" value="Scree plot explaining variability of new dimensions after PCA"/>
 </config>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
