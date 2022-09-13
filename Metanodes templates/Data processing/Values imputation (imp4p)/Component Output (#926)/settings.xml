@@ -42,8 +42,8 @@
         </config>
         <config key="port-descriptions">
             <entry key="array-size" type="xint" value="2"/>
-            <entry key="0" type="xstring" value=""/>
-            <entry key="1" type="xstring" value=""/>
+            <entry key="0" type="xstring" value="Data with NA values replaced"/>
+            <entry key="1" type="xstring" value="Binary matrix denoting the presence of imputed (1) and non-imputed (0) values"/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
