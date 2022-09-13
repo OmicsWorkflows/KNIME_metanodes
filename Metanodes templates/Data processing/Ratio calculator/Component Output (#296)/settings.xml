@@ -45,7 +45,7 @@
         </config>
         <config key="port-descriptions">
             <entry key="array-size" type="xint" value="2"/>
-            <entry key="0" type="xstring" value="Output table with calculated ratio columns; table can either contain only columns used for ratio calculation or whole input table based on the metanode setting"/>
+            <entry key="0" type="xstring" value="Output table with calulated ratio columns; table can either contain only columns used for ratio calculation or whole input table based on the metanode setting"/>
             <entry key="1" type="xstring" value="Boolean matrix containing information on the originally missing values. The matrix has the same dimensions as data columns. Missing values = 'True', not missing value = 'False'."/>
         </config>
     </config>
