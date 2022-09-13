@@ -29,6 +29,11 @@
                 <entry key="excludeMatching" type="xboolean" value="false"/>
             </config>
         </config>
+        <config key="suffix_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="suffix" type="xstring" value="_var"/>
         <config key="file_system_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_file_system"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -48,11 +53,6 @@
                 <entry key="file_system_type" type="xstring" value="LOCAL"/>
             </config>
         </config>
-        <config key="suffix_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="suffix" type="xstring" value="_var"/>
         <config key="fail_on_missing_file_folder_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -83,11 +83,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="No string variables selected."/>
-    </config>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.filehandling.utility.nodes.stringtopath.variable.StringToPathVariableNodeFactory"/>
     <entry key="node-name" type="xstring" value="String to Path (Variable)"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Filehandling Nodes"/>
