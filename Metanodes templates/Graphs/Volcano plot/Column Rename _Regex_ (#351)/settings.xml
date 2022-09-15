@@ -9,7 +9,7 @@
 <entry key="searchString" type="xstring" value="(.+)"/>
 <entry key="replaceString" type="xstring" value="logFC"/>
 <entry key="isCaseInsensitive" type="xboolean" value="false"/>
-<entry key="isLiteral" type="xboolean" value="false"/>
+<entry key="isLiteral" type="xboolean" value="true"/>
 </config>
 <config key="variables">
 <entry key="version" type="xstring" value="V_2019_09_13"/>
