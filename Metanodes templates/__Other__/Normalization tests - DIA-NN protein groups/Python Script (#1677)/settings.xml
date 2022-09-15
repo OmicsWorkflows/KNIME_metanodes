@@ -15,7 +15,16 @@
         <entry key="chunkSize" type="xint" value="500000"/>
         <entry key="pythonVersionOption" type="xstring" value="python3"/>
         <entry key="python2Command" type="xstring" value=""/>
-        <entry key="python3Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3Command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="further edits flow variables%%00010extracts sample names"/>
@@ -41,7 +50,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.python2.nodes.script2.Python2ScriptNodeFactory2"/>
     <entry key="node-name" type="xstring" value="Python Script"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>

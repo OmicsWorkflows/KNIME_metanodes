@@ -99,6 +99,11 @@
                 <entry key="excludeMatching" type="xboolean" value="false"/>
             </config>
         </config>
+        <config key="suffix_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="suffix" type="xstring" value="_location"/>
         <config key="file_system_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_file_system"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -119,11 +124,6 @@
                 <entry key="file_system_specifier" type="xstring" value="knime.workflow.data"/>
             </config>
         </config>
-        <config key="suffix_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="suffix" type="xstring" value="_location"/>
         <config key="fail_on_missing_file_folder_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
