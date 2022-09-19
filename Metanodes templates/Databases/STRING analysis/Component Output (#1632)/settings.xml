@@ -24,11 +24,11 @@
 <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
 <config key="port-names">
 <entry key="array-size" type="xint" value="1"/>
-<entry key="0" type="xstring" value="html link"/>
+<entry key="0" type="xstring" value="HTML link"/>
 </config>
 <config key="port-descriptions">
 <entry key="array-size" type="xint" value="1"/>
-<entry key="0" type="xstring" value="link to the String-db"/>
+<entry key="0" type="xstring" value="Link to the String-db"/>
 </config>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
