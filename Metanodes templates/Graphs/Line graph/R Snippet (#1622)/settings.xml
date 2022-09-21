@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="script" type="xstring" value="library(tidyr)%%00010library(dplyr)%%00010%%00010df &lt;- knime.in%%00010%%00010# create a design and sample list%%00010design &lt;- unlist(strsplit(knime.flow.in[[&quot;design_string&quot;]], &quot;,&quot;))%%00010sample_names &lt;- unlist(strsplit(knime.flow.in[[&quot;sample_names&quot;]], &quot;,&quot;))%%00010sample_no &lt;- length(sample_names)%%00010%%00010# create custom palette%%00010palette_cols &lt;- c(&quot;#3366CC&quot;, &quot;#DC3912&quot;, &quot;#FF9900&quot;, &quot;#109618&quot;, &quot;#990099&quot;,%%00010%%00009%%00009%%00009   &quot;#0099C6&quot;, &quot;#DD4477&quot;, &quot;#66AA00&quot;, &quot;#B82E2E&quot;, &quot;#316395&quot;,%%00010%%00009%%00009%%00009   &quot;#994499&quot;, &quot;#22AA99&quot;, &quot;#AAAA11&quot;, &quot;#6633CC&quot;, &quot;#E67300&quot;,%%00010%%00009%%00009%%00009   &quot;#8B0707&quot;, &quot;#651067&quot;, &quot;#329262&quot;, &quot;#5574A6&quot;, &quot;#3B3EAC&quot;)%%00010%%00010# create plot colors and linetypes variables%%00010%%00010if(knime.flow.in[[&quot;use_design&quot;]] == 1){ # if design is used to group samples, one linetype/different color for every group%%00010%%00009design_values_no &lt;- length(levels(as.factor(design)))%%00010%%00009plot_cols &lt;- palette_cols[1:design_values_no]%%00010%%00009plot_lines &lt;- rep(1, times = design_values_no)%%00010} else { # if no design or design not used for colors, one linetype/different color for every sample%%00010%%00009if(sample_no &gt; 20){%%00010%%00009%%00009palette &lt;- colorRampPalette(palette_cols)%%00010%%00009%%00009plot_cols &lt;- palette(sample_no)%%00010%%00009} else{%%00010%%00009%%00009plot_cols &lt;- palette_cols[1:sample_no]%%00010%%00009}%%00010%%00009plot_lines &lt;- rep(1, times = sample_no)%%00010}%%00010%%00010plot_cols_str &lt;- paste(plot_cols, collapse = &quot;,&quot;)%%00010plot_lines_str &lt;- paste(plot_lines, collapse = &quot;,&quot;)%%00010%%00010# create flow variables for plot colors and lines%%00010knime.flow.out &lt;- list(plot_cols = plot_cols_str,%%00010%%00009%%00009%%00009%%00009   plot_lines = plot_lines_str)%%00010%%00010knime.out &lt;- knime.in"/>
+<entry key="templateUUID" type="xstring" isnull="true" value=""/>
+<entry key="version" type="xstring" value="version 1.x"/>
+<entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+<entry key="sendRowNames" type="xboolean" value="true"/>
+<entry key="sendBatchSize" type="xint" value="10000"/>
+<entry key="knimeInType" type="xstring" value="data.frame"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="get colors and%%00010linetypes for plot"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="949"/>
+<entry key="y-coordinate" type="xint" value="479"/>
+<entry key="width" type="xint" value="142"/>
+<entry key="height" type="xint" value="34"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.r.RSnippetNodeFactory"/>
+<entry key="node-name" type="xstring" value="R Snippet"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.1.v202001312017"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.1.v202001312017"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="R Snippet"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
