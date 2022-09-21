@@ -7,7 +7,7 @@
 </config>
 <config key="model">
 <config key="defaultValue">
-<entry key="string" type="xstring" value="DeltaRT"/>
+<entry key="string" type="xstring" value=""/>
 </config>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="parameterName" type="xstring" value="y_label"/>
