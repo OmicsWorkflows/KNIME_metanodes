@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="sourceCode" type="xstring" value="# create flow variable for the list column of the top table IDs column%%00010flow_variables['top_input_ids_column_list'] = flow_variables['top_input_ids_column'] + &quot;_SplitResultList&quot;%%00010flow_variables['top_input_ids_column_list_list'] = [flow_variables['top_input_ids_column_list']]%%00010"/>
+        <entry key="sourceCode" type="xstring" value="# create flow variable for the list column of the top table IDs column%%00010flow_variables['top_input_ids_column_list'] = flow_variables['top_input_ids_column'] + &quot;_SplitResultList&quot;%%00010"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>
