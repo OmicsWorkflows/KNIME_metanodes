@@ -7,10 +7,10 @@
     </config>
     <config key="model">
         <config key="defaultValue">
-            <entry key="string" type="xstring" value="None"/>
+            <entry key="string" type="xstring" value="Auto"/>
         </config>
         <entry key="label" type="xstring" value="Manual x-axis limits"/>
-        <entry key="description" type="xstring" value="Enter manual x-axis limits in format &quot;min;max&quot;. Default value is &quot;None&quot; for automatic x-axis limits."/>
+        <entry key="description" type="xstring" value="Enter manual x-axis limits in format &quot;min;max&quot;. Default value is &quot;Auto&quot; for automatic x-axis limits."/>
         <entry key="hideInWizard" type="xboolean" value="false"/>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="required" type="xboolean" value="true"/>
