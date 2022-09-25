@@ -84,7 +84,7 @@
         <config key="tree">
             <config key="graph_subtitle-448">
                 <config key="string">
-                    <entry key="used_variable" type="xstring" value="graph_subtitle"/>
+                    <entry key="used_variable" type="xstring" value="graph_subtitle_subset"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
