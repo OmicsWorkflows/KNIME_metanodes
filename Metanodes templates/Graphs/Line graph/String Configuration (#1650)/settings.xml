@@ -11,8 +11,8 @@
 </config>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="parameterName" type="xstring" value="prefix"/>
-<entry key="label" type="xstring" value="Prefix to be removed from column names"/>
-<entry key="description" type="xstring" value="Enter Description"/>
+<entry key="label" type="xstring" value="Prefix to be removed from sample names"/>
+<entry key="description" type="xstring" value="Enter prefix to be removed from column names which will be used as names of samples (either X or Y variable columns). This action won't be performed, if experimental design is used."/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="flowVariableName" type="xstring" value="prefix"/>
 <entry key="regex" type="xstring" value=""/>
