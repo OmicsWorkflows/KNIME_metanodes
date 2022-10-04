@@ -144,6 +144,7 @@ The project is maintained by people from several laboratories (in alphabetical o
   - Michal Cupák
   - Karolina Kryštofová
   - David Potěšil
+- former collaborators
   - Anna Schneiderová
 
 # Licence
