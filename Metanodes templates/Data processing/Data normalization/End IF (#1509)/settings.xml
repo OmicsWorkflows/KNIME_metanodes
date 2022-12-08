@@ -6,9 +6,9 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="enable_hiliting" type="xboolean" value="false"/>
-        <entry key="suffix" type="xstring" value="_dup"/>
         <entry key="append_suffix" type="xboolean" value="true"/>
+        <entry key="suffix" type="xstring" value="_dup"/>
+        <entry key="enable_hiliting" type="xboolean" value="false"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value=""/>

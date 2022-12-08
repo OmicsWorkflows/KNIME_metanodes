@@ -6,25 +6,15 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="expression" type="xstring" value="2 ^ $$CURRENT_COLUMN$$"/>
         <entry key="replaced_column" type="xstring" value="_delog"/>
         <entry key="append_column" type="xboolean" value="false"/>
-        <entry key="expression" type="xstring" value="2 ^ $$CURRENT_COLUMN$$"/>
+        <entry key="convert_to_int" type="xboolean" value="false"/>
         <config key="column_selection">
-            <config key="datatype">
-                <config key="typelist">
-                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                </config>
-            </config>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value="*_log2*"/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
+            <entry key="filter-type" type="xstring" value="name_pattern"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="Number of proteins"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="15"/>
@@ -44,14 +34,24 @@
                 <entry key="13" type="xstring" value="PG.Quantity+3_4_log2_norm"/>
                 <entry key="14" type="xstring" value="PG.Quantity+3_5_log2_norm"/>
             </config>
-            <config key="included_names">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="Number of proteins"/>
-            </config>
             <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
-            <entry key="filter-type" type="xstring" value="name_pattern"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value="*_log2*"/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist">
+                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                </config>
+            </config>
         </config>
-        <entry key="convert_to_int" type="xboolean" value="false"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="log2 back transformation"/>
