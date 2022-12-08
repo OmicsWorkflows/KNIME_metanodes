@@ -8,13 +8,14 @@
     <config key="model">
         <config key="defaultValue">
             <config key="variable_value">
-                <entry key="array-size" type="xint" value="6"/>
+                <entry key="array-size" type="xint" value="7"/>
                 <entry key="0" type="xstring" value="no normalization"/>
                 <entry key="1" type="xstring" value="median (linear)"/>
                 <entry key="2" type="xstring" value="quantile (non-linear)"/>
                 <entry key="3" type="xstring" value="loessF (non-linear)"/>
-                <entry key="4" type="xstring" value="DIA-NN"/>
-                <entry key="5" type="xstring" value="DIA-NN with MaxLFQ"/>
+                <entry key="4" type="xstring" value="vsn (non-linear)"/>
+                <entry key="5" type="xstring" value="DIA-NN"/>
+                <entry key="6" type="xstring" value="DIA-NN with MaxLFQ"/>
             </config>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
@@ -24,13 +25,14 @@
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="methods"/>
         <config key="possible_choices">
-            <entry key="array-size" type="xint" value="6"/>
+            <entry key="array-size" type="xint" value="7"/>
             <entry key="0" type="xstring" value="no normalization"/>
             <entry key="1" type="xstring" value="median (linear)"/>
             <entry key="2" type="xstring" value="quantile (non-linear)"/>
             <entry key="3" type="xstring" value="loessF (non-linear)"/>
-            <entry key="4" type="xstring" value="DIA-NN"/>
-            <entry key="5" type="xstring" value="DIA-NN with MaxLFQ"/>
+            <entry key="4" type="xstring" value="vsn (non-linear)"/>
+            <entry key="5" type="xstring" value="DIA-NN"/>
+            <entry key="6" type="xstring" value="DIA-NN with MaxLFQ"/>
         </config>
         <entry key="type" type="xstring" value="Check boxes (vertical)"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
