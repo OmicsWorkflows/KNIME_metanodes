@@ -6,21 +6,21 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="flowvariablename" type="xstring" value="bw_adjust"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="max" type="xdouble" value="1.0"/>
         <config key="defaultValue">
             <entry key="double" type="xdouble" value="1.0"/>
         </config>
-        <entry key="use_min" type="xboolean" value="true"/>
-        <entry key="description" type="xstring" value="Factor that multiplicatively scales the value chosen using kernel bandwidth method (Scott). Increasing the number will make the curve smoother. Default value is 1. More information can be found here https://seaborn.pydata.org/tutorial/distributions.html#choosing-the-smoothing-bandwidth"/>
         <entry key="label" type="xstring" value="Smoothing bandwidth factor"/>
-        <entry key="parameterName" type="xstring" value="double-input"/>
-        <entry key="required" type="xboolean" value="true"/>
+        <entry key="description" type="xstring" value="Factor that multiplicatively scales the value chosen using kernel bandwidth method (Scott). Increasing the number will make the curve smoother. Default value is 1. More information can be found here https://seaborn.pydata.org/tutorial/distributions.html#choosing-the-smoothing-bandwidth"/>
         <entry key="hideInWizard" type="xboolean" value="false"/>
-        <entry key="min" type="xdouble" value="0.0"/>
-        <entry key="use_max" type="xboolean" value="false"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="required" type="xboolean" value="true"/>
+        <entry key="parameterName" type="xstring" value="double-input"/>
         <entry key="customCSS" type="xstring" value=""/>
+        <entry key="flowvariablename" type="xstring" value="bw_adjust"/>
+        <entry key="use_min" type="xboolean" value="true"/>
+        <entry key="use_max" type="xboolean" value="false"/>
+        <entry key="min" type="xdouble" value="0.0"/>
+        <entry key="max" type="xdouble" value="1.0"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="smoothing bandwith"/>

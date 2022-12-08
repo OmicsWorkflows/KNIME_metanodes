@@ -6,17 +6,17 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="overwriteRHome" type="xboolean" value="true"/>
-        <entry key="sendBatchSize" type="xint" value="10000"/>
-        <entry key="useRPathHome" type="xboolean" value="true"/>
-        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
-        <entry key="sendRowNames" type="xboolean" value="true"/>
-        <entry key="knimeInType" type="xstring" value="data.frame"/>
-        <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
-        <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
-        <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
-        <entry key="version" type="xstring" value="version 1.x"/>
         <entry key="script" type="xstring" value="knime.out &lt;- iris%%00010%%00010if (knime.flow.in[[&quot;plots_manual_y&quot;]] == &quot;Auto&quot;){%%00010%%00009switch &lt;- &quot;false&quot;%%00010} else {%%00010%%00009switch &lt;- &quot;true&quot;%%00010}%%00010%%00010knime.flow.out &lt;- list(plot_manual_switch = switch)"/>
+        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+        <entry key="version" type="xstring" value="version 1.x"/>
+        <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+        <entry key="sendRowNames" type="xboolean" value="true"/>
+        <entry key="sendBatchSize" type="xint" value="10000"/>
+        <entry key="knimeInType" type="xstring" value="data.frame"/>
+        <entry key="overwriteRHome" type="xboolean" value="true"/>
+        <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
+        <entry key="useRPathHome" type="xboolean" value="true"/>
+        <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
     </config>
     <config key="variables">
         <config key="tree">

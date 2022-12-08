@@ -6,20 +6,20 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="error_message" type="xstring" value=""/>
-        <entry key="flowVariableName" type="xstring" value="x_axis_label"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value=""/>
         </config>
-        <entry key="description" type="xstring" value="How the graph x axis should be titled"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="x_axis_label"/>
         <entry key="label" type="xstring" value="X axis label"/>
+        <entry key="description" type="xstring" value="How the graph x axis should be titled"/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="x_axis_label"/>
         <entry key="regex" type="xstring" value=""/>
+        <entry key="error_message" type="xstring" value=""/>
         <entry key="editorType" type="xstring" value="Single-line"/>
         <entry key="multilineEditorWidth" type="xint" value="40"/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="x axis title"/>
@@ -46,10 +46,6 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="Component does not have input data, execute upstream nodes first"/>
-    </config>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.input.string.StringDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="String Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>

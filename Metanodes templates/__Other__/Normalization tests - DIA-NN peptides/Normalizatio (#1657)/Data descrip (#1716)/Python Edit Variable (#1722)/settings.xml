@@ -7,15 +7,15 @@
     </config>
     <config key="model">
         <entry key="sourceCode" type="xstring" value="# create a flow variable for filename%%00010flow_variables['filename_clustermap'] = flow_variables['path'] + flow_variables['all_prefix'] + flow_variables['subset_filename'] + '_corr-clustermap-auto_' + flow_variables['normalization_filename'] + flow_variables['all_suffix'] + '.png'%%00010"/>
-        <entry key="python2Command" type="xstring" value=""/>
-        <entry key="python3Command" type="xstring" value=""/>
-        <entry key="chunkSize" type="xint" value="500000"/>
-        <entry key="sentinelValue" type="xint" value="0"/>
-        <entry key="pythonVersionOption" type="xstring" value="python3"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
-        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value=""/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="modify filename"/>

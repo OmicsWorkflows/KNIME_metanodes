@@ -7,15 +7,15 @@
     </config>
     <config key="model">
         <entry key="sourceCode" type="xstring" value="import pandas as pd%%00010%%00010# list of samples that should be included%%00010flow_variables['sample_list'] = flow_variables['column_selection'].split(',')%%00010%%00010# difference between selected samples and all samples%%00010flow_variables['exclude'] = list()%%00010%%00010# create a list of all samples%%00010flow_variables['all_samples_list'] = [x for x in flow_variables['all_samples'].split(',')]%%00010%%00010for sample in flow_variables['all_samples_list']:%%00010%%00009if sample not in flow_variables['sample_list']:%%00010%%00009%%00009flow_variables['exclude'].append(sample)%%00010%%00010# create a variable for if switch and counting loop%%00010flow_variables['exclude_number'] = len(flow_variables['exclude'])%%00010%%00010if flow_variables['exclude_number'] == 0:%%00010%%00009flow_variables['exclude_switch'] = 'bottom'%%00010else:%%00010%%00009flow_variables['exclude_switch'] = 'top'%%00010%%00010# create flow variable for file export path%%00010flow_variables['path'] = 'knime://knime.workflow/__outputs__/figures/normalization_tests/'"/>
-        <entry key="python2Command" type="xstring" value=""/>
-        <entry key="python3Command" type="xstring" value=""/>
-        <entry key="chunkSize" type="xint" value="500000"/>
-        <entry key="sentinelValue" type="xint" value="0"/>
-        <entry key="pythonVersionOption" type="xstring" value="python3"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
-        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value=""/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="further edits flow variables%%00010extracts sample names"/>

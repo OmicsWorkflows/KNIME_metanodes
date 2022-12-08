@@ -6,25 +6,25 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="flowvariablename" type="xstring" value="distance_metric"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="variable_value" type="xstring" value="cityblock"/>
         </config>
-        <entry key="description" type="xstring" value="Select the distance metric for cluster analysis"/>
         <entry key="label" type="xstring" value="Distance metric"/>
-        <entry key="parameterName" type="xstring" value="single-selection"/>
-        <entry key="type" type="xstring" value="Dropdown"/>
+        <entry key="description" type="xstring" value="Select the distance metric for cluster analysis"/>
+        <entry key="hideInWizard" type="xboolean" value="false"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="parameterName" type="xstring" value="single-selection"/>
+        <entry key="customCSS" type="xstring" value=""/>
+        <entry key="flowvariablename" type="xstring" value="distance_metric"/>
         <config key="possible_choices">
             <entry key="array-size" type="xint" value="2"/>
             <entry key="0" type="xstring" value="cityblock"/>
             <entry key="1" type="xstring" value="euclidean"/>
         </config>
-        <entry key="hideInWizard" type="xboolean" value="false"/>
+        <entry key="type" type="xstring" value="Dropdown"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
-        <entry key="customCSS" type="xstring" value=""/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="distance metric"/>
