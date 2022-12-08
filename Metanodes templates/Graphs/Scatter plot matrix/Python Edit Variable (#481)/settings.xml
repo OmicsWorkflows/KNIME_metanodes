@@ -7,24 +7,24 @@
     </config>
     <config key="model">
         <entry key="sourceCode" type="xstring" value="# modify empty variables%%00010if flow_variables['manual_x_axis_limits'].strip() == '':%%00010%%00009flow_variables['manual_x_axis_limits'] = 'Auto'%%00010%%00010if flow_variables['manual_y_axis_limits'].strip() == '':%%00010%%00009flow_variables['manual_y_axis_limits'] = 'Auto'%%00010%%00010if flow_variables['imputation_value'].strip() == '':%%00010%%00009flow_variables['imputation_value'] = 'None'%%00010%%00010# setting x and y axes limits%%00010if flow_variables['manual_x_axis_limits'] != 'Auto':%%00010%%00009flow_variables['manual_x_min'], flow_variables['manual_x_max'] = flow_variables['manual_x_axis_limits'].split(';')%%00010%%00009flow_variables['manual_x_min'] = flow_variables['manual_x_min'].strip()%%00010%%00009flow_variables['manual_x_max'] = flow_variables['manual_x_max'].strip()%%00010%%00010if flow_variables['manual_y_axis_limits'] != 'Auto':%%00010%%00009flow_variables['manual_y_min'], flow_variables['manual_y_max'] = flow_variables['manual_y_axis_limits'].split(';')%%00010%%00009flow_variables['manual_y_min'] = flow_variables['manual_y_min'].strip()%%00010%%00009flow_variables['manual_y_max'] = flow_variables['manual_y_max'].strip()"/>
-        <entry key="rowLimit" type="xint" value="1000"/>
-        <entry key="convertMissingToPython" type="xboolean" value="false"/>
-        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
-        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
-        <entry key="sentinelValue" type="xint" value="0"/>
-        <entry key="chunkSize" type="xint" value="500000"/>
-        <entry key="pythonVersionOption" type="xstring" value="python3"/>
         <entry key="python2Command" type="xstring" value=""/>
         <entry key="python3Command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
     </config>
     <config key="variables">
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
             <config key="python3Command">
                 <entry key="used_variable" type="xstring" value="python3command"/>
                 <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
             </config>
         </config>
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="edit manual%%00010limits"/>
@@ -41,7 +41,7 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.python2.nodes.variables.Python2VariablesNodeFactory"/>
     <entry key="node-name" type="xstring" value="Python Edit Variable"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>

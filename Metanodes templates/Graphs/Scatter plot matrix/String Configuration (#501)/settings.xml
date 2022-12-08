@@ -6,20 +6,20 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="error_message" type="xstring" value=""/>
+        <entry key="flowVariableName" type="xstring" value="manual_x_axis_limits"/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value="Auto"/>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Limits of x axis in the form of two numbers separated by semicolon; use point (.) as decimal separator; use &quot;Auto&quot; for automatic limits based on the data"/>
         <entry key="parameterName" type="xstring" value="manual_x_axis_limits"/>
         <entry key="label" type="xstring" value="X axis limits"/>
-        <entry key="description" type="xstring" value="Limits of x axis in the form of two numbers separated by semicolon; use point (.) as decimal separator; use &quot;Auto&quot; for automatic limits based on the data"/>
         <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="manual_x_axis_limits"/>
         <entry key="regex" type="xstring" value=""/>
-        <entry key="error_message" type="xstring" value=""/>
         <entry key="editorType" type="xstring" value="Single-line"/>
         <entry key="multilineEditorWidth" type="xint" value="40"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="x axis limits"/>
@@ -45,7 +45,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.input.string.StringDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="String Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>

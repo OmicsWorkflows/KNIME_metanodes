@@ -6,15 +6,15 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="flowVariableName" type="xstring" value="show_unity"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="boolean" type="xboolean" value="true"/>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Whether to show unity line (x=y)"/>
         <entry key="parameterName" type="xstring" value="show_unity"/>
         <entry key="label" type="xstring" value="Show unity line?"/>
-        <entry key="description" type="xstring" value="Whether to show unity line (x=y)"/>
         <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="show_unity"/>
         <entry key="pushIntVar" type="xboolean" value="true"/>
     </config>
     <config key="nodeAnnotation">
@@ -41,7 +41,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.input.bool.BooleanDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="Boolean Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
