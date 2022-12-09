@@ -8,19 +8,31 @@
     <config key="model">
         <config key="columns_to_process-446">
             <config key="columns">
-                <entry key="array-size" type="xint" value="3"/>
-                <entry key="0" type="xstring" value="Intensity 1-1_1_log2_norm"/>
-                <entry key="1" type="xstring" value="Intensity 1-1_2_log2_norm"/>
-                <entry key="2" type="xstring" value="Intensity 1-1_3_log2_norm"/>
+                <entry key="array-size" type="xint" value="9"/>
+                <entry key="0" type="xstring" value="Intensity 1-1_1_log2"/>
+                <entry key="1" type="xstring" value="Intensity 1-1_2_log2"/>
+                <entry key="2" type="xstring" value="Intensity 1-1_3_log2"/>
+                <entry key="3" type="xstring" value="Intensity 10-1_1_log2"/>
+                <entry key="4" type="xstring" value="Intensity 10-1_2_log2"/>
+                <entry key="5" type="xstring" value="Intensity 10-1_3_log2"/>
+                <entry key="6" type="xstring" value="Intensity 100-1_1_log2"/>
+                <entry key="7" type="xstring" value="Intensity 100-1_2_log2"/>
+                <entry key="8" type="xstring" value="Intensity 100-1_3_log2"/>
             </config>
             <config key="columnFilter">
                 <config key="columnFilter">
                     <entry key="filter-type" type="xstring" value="name_pattern"/>
                     <config key="included_names">
-                        <entry key="array-size" type="xint" value="3"/>
-                        <entry key="0" type="xstring" value="Intensity 1-1_1_log2_norm"/>
-                        <entry key="1" type="xstring" value="Intensity 1-1_2_log2_norm"/>
-                        <entry key="2" type="xstring" value="Intensity 1-1_3_log2_norm"/>
+                        <entry key="array-size" type="xint" value="9"/>
+                        <entry key="0" type="xstring" value="Intensity 1-1_1_log2"/>
+                        <entry key="1" type="xstring" value="Intensity 1-1_2_log2"/>
+                        <entry key="2" type="xstring" value="Intensity 1-1_3_log2"/>
+                        <entry key="3" type="xstring" value="Intensity 10-1_1_log2"/>
+                        <entry key="4" type="xstring" value="Intensity 10-1_2_log2"/>
+                        <entry key="5" type="xstring" value="Intensity 10-1_3_log2"/>
+                        <entry key="6" type="xstring" value="Intensity 100-1_1_log2"/>
+                        <entry key="7" type="xstring" value="Intensity 100-1_2_log2"/>
+                        <entry key="8" type="xstring" value="Intensity 100-1_3_log2"/>
                     </config>
                     <config key="excluded_names">
                         <entry key="array-size" type="xint" value="0"/>
@@ -60,13 +72,13 @@
         <config key="center_line-1534">
             <entry key="string" type="xstring" value="None"/>
         </config>
-        <config key="prefix_to_remove-1535">
+        <config key="prefix_to_remove-1548">
             <entry key="string" type="xstring" value=""/>
         </config>
-        <config key="suffix_to_remove-1536">
+        <config key="suffix_to_remove-1550">
             <entry key="string" type="xstring" value=""/>
         </config>
-        <config key="plot_size-1537">
+        <config key="plot_size-1551">
             <entry key="string" type="xstring" value="Auto"/>
         </config>
     </config>
@@ -91,21 +103,15 @@
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
-            <config key="prefix_to_remove-1535">
+            <config key="prefix_to_remove-1548">
                 <config key="string">
                     <entry key="used_variable" type="xstring" value="prefix"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
-            <config key="suffix_to_remove-1536">
+            <config key="suffix_to_remove-1550">
                 <config key="string">
                     <entry key="used_variable" type="xstring" value="suffix"/>
-                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
-                </config>
-            </config>
-            <config key="plot_size-1537">
-                <config key="string">
-                    <entry key="used_variable" type="xstring" value="kde_size"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>

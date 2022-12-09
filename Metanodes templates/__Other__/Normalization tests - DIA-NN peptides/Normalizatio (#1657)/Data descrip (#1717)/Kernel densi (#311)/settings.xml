@@ -32,18 +32,20 @@
                         <entry key="array-size" type="xint" value="0"/>
                     </config>
                     <config key="included_names">
-                        <entry key="array-size" type="xint" value="2"/>
-                        <entry key="0" type="xstring" value="Precursor.Normalised+control_log2"/>
-                        <entry key="1" type="xstring" value="Precursor.Normalised+pheno_log2"/>
+                        <entry key="array-size" type="xint" value="3"/>
+                        <entry key="0" type="xstring" value="PG.Quantity+M WT IS 1_log2"/>
+                        <entry key="1" type="xstring" value="PG.Quantity+M WT IS 2_log2"/>
+                        <entry key="2" type="xstring" value="PG.Quantity+M WT IS 3_log2"/>
                     </config>
                     <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
                     <entry key="filter-type" type="xstring" value="name_pattern"/>
                 </config>
             </config>
             <config key="columns">
-                <entry key="array-size" type="xint" value="2"/>
-                <entry key="0" type="xstring" value="Precursor.Normalised+control_log2"/>
-                <entry key="1" type="xstring" value="Precursor.Normalised+pheno_log2"/>
+                <entry key="array-size" type="xint" value="3"/>
+                <entry key="0" type="xstring" value="PG.Quantity+M WT IS 1_log2"/>
+                <entry key="1" type="xstring" value="PG.Quantity+M WT IS 2_log2"/>
+                <entry key="2" type="xstring" value="PG.Quantity+M WT IS 3_log2"/>
             </config>
         </config>
         <config key="x_axis_label-1530">

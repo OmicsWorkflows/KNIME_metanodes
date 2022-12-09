@@ -6,19 +6,19 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="useMin" type="xboolean" value="false"/>
+        <entry key="min" type="xdouble" value="0.0"/>
+        <entry key="flowVariableName" type="xstring" value="clustermap_center_value"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="max" type="xdouble" value="1.0"/>
         <config key="defaultValue">
             <entry key="double" type="xdouble" value="0.0"/>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="useMax" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Value that will be used as a center to color individual cluster data"/>
         <entry key="parameterName" type="xstring" value="clustermap_center_value"/>
         <entry key="label" type="xstring" value="Manual clustermap  center"/>
-        <entry key="description" type="xstring" value="Value that will be used as a center to color individual cluster data"/>
         <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="clustermap_center_value"/>
-        <entry key="useMin" type="xboolean" value="false"/>
-        <entry key="useMax" type="xboolean" value="false"/>
-        <entry key="min" type="xdouble" value="0.0"/>
-        <entry key="max" type="xdouble" value="1.0"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="manual clustermap %%00010center"/>

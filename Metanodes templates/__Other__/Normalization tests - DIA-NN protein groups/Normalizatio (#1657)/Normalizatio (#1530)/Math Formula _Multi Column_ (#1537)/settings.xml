@@ -6,9 +6,9 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="append_column" type="xboolean" value="false"/>
-        <entry key="replaced_column" type="xstring" value="_delog"/>
         <entry key="expression" type="xstring" value="2^$$CURRENT_COLUMN$$"/>
+        <entry key="replaced_column" type="xstring" value="_delog"/>
+        <entry key="append_column" type="xboolean" value="false"/>
         <entry key="convert_to_int" type="xboolean" value="false"/>
         <config key="column_selection">
             <entry key="filter-type" type="xstring" value="name_pattern"/>
@@ -107,7 +107,7 @@
         <entry key="x-coordinate" type="xint" value="510"/>
         <entry key="y-coordinate" type="xint" value="679"/>
         <entry key="width" type="xint" value="142"/>
-        <entry key="height" type="xint" value="34"/>
+        <entry key="height" type="xint" value="32"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
