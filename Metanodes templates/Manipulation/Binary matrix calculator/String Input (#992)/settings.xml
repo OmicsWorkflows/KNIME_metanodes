@@ -6,22 +6,22 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="error_message" type="xstring" value=""/>
+        <entry key="flowvariablename" type="xstring" value="suffix_to_append"/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value="_bin"/>
         </config>
-        <entry key="label" type="xstring" value="Suffix to append to binary matrix"/>
         <entry key="description" type="xstring" value="Common data columns suffix to be appended to the binary matrix columns"/>
-        <entry key="hideInWizard" type="xboolean" value="false"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="required" type="xboolean" value="true"/>
+        <entry key="label" type="xstring" value="Suffix to append to binary matrix"/>
         <entry key="parameterName" type="xstring" value="string-input"/>
-        <entry key="customCSS" type="xstring" value=""/>
-        <entry key="flowvariablename" type="xstring" value="suffix_to_append"/>
+        <entry key="required" type="xboolean" value="true"/>
         <entry key="regex" type="xstring" value=""/>
-        <entry key="error_message" type="xstring" value=""/>
+        <entry key="hideInWizard" type="xboolean" value="false"/>
         <entry key="editorType" type="xstring" value="Single-line"/>
         <entry key="multilineEditorWidth" type="xint" value="60"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
+        <entry key="customCSS" type="xstring" value=""/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="suffix to append %%00010to binary %%00010matrix columns"/>

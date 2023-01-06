@@ -6,20 +6,20 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="error_message" type="xstring" value=""/>
+        <entry key="flowVariableName" type="xstring" value="thresholds"/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value=""/>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Provide the threshold (as a single number) or separate thresholds for each sample specified in experimental design (in format &quot;sample1: threshold1, sample2: threshold2). Rows containing lower number of 1s than threshold(s) in all samples will be filtered into the bottom output port of the metanode. To use percentages as thresholds, use the &quot;%&quot; symbol."/>
         <entry key="parameterName" type="xstring" value="thresholds"/>
         <entry key="label" type="xstring" value="Threshold(s) for row splitting"/>
-        <entry key="description" type="xstring" value="Provide the threshold (as a single number) or separate thresholds for each sample specified in experimental design (in format &quot;sample1: threshold1, sample2: threshold2). Rows containing lower number of 1s than threshold(s) in all samples will be filtered into the bottom output port of the metanode. To use percentages as thresholds, use the &quot;%&quot; symbol."/>
         <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="thresholds"/>
         <entry key="regex" type="xstring" value=""/>
-        <entry key="error_message" type="xstring" value=""/>
         <entry key="editorType" type="xstring" value="Single-line"/>
         <entry key="multilineEditorWidth" type="xint" value="60"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="threshold for%%00010row splitting"/>

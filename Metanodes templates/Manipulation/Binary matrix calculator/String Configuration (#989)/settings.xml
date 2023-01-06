@@ -6,20 +6,20 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="error_message" type="xstring" value=""/>
+        <entry key="flowVariableName" type="xstring" value="biol_replicates"/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value="none"/>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Provide biological replicate numbers for the calculation of biological replicate summary"/>
         <entry key="parameterName" type="xstring" value="biol_replicates"/>
         <entry key="label" type="xstring" value="Biological replicates"/>
-        <entry key="description" type="xstring" value="Provide biological replicate numbers for the calculation of biological replicate summary"/>
         <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="biol_replicates"/>
         <entry key="regex" type="xstring" value=""/>
-        <entry key="error_message" type="xstring" value=""/>
         <entry key="editorType" type="xstring" value="Multi-line"/>
         <entry key="multilineEditorWidth" type="xint" value="60"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="biological%%00010replicates"/>

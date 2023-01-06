@@ -6,18 +6,6 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="defaultValue">
-            <config key="variable_value">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="&gt;"/>
-            </config>
-        </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="parameterName" type="xstring" value="operator"/>
-        <entry key="label" type="xstring" value="Logical operators for comparisons in binary matrix creation"/>
-        <entry key="description" type="xstring" value="Setting the logical operator for the comparison with values in the matrix"/>
-        <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="operator"/>
         <config key="possible_choices">
             <entry key="array-size" type="xint" value="6"/>
             <entry key="0" type="xstring" value="=="/>
@@ -27,9 +15,21 @@
             <entry key="4" type="xstring" value="&gt;="/>
             <entry key="5" type="xstring" value="&lt;="/>
         </config>
-        <entry key="type" type="xstring" value="Radio buttons (horizontal)"/>
+        <entry key="flowVariableName" type="xstring" value="operator"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <config key="defaultValue">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="&gt;"/>
+            </config>
+        </config>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Setting the logical operator for the comparison with values in the matrix"/>
+        <entry key="parameterName" type="xstring" value="operator"/>
+        <entry key="label" type="xstring" value="Logical operators for comparisons in binary matrix creation"/>
+        <entry key="type" type="xstring" value="Radio buttons (horizontal)"/>
         <entry key="number_visible_options" type="xint" value="10"/>
+        <entry key="required" type="xboolean" value="true"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="logical operators%%00010for bin.matrix"/>
