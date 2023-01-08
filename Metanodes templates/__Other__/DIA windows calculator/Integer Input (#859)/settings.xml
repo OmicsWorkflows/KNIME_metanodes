@@ -6,21 +6,21 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="flowvariablename" type="xstring" value="windows"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="max" type="xint" value="100"/>
         <config key="defaultValue">
             <entry key="integer" type="xint" value="30"/>
         </config>
-        <entry key="label" type="xstring" value="DIA windows"/>
-        <entry key="description" type="xstring" value="Number of DIA windows to make; please note that in case of overlapping DIA windows, the number of actually generated windows will be the specified number x2 +1"/>
-        <entry key="hideInWizard" type="xboolean" value="false"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="required" type="xboolean" value="true"/>
-        <entry key="parameterName" type="xstring" value="int-input"/>
-        <entry key="customCSS" type="xstring" value=""/>
-        <entry key="flowvariablename" type="xstring" value="windows"/>
         <entry key="use_min" type="xboolean" value="true"/>
-        <entry key="use_max" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Number of DIA windows to make; please note that in case of overlapping DIA windows, the number of actually generated windows will be the specified number x2 +1"/>
+        <entry key="label" type="xstring" value="DIA windows"/>
+        <entry key="parameterName" type="xstring" value="int-input"/>
+        <entry key="required" type="xboolean" value="true"/>
+        <entry key="hideInWizard" type="xboolean" value="false"/>
         <entry key="min" type="xint" value="1"/>
-        <entry key="max" type="xint" value="100"/>
+        <entry key="use_max" type="xboolean" value="false"/>
+        <entry key="customCSS" type="xstring" value=""/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="number of windows"/>
@@ -43,11 +43,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202112011347"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203171029"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Integer Input"/>
     <entry key="hasContent" type="xboolean" value="false"/>
