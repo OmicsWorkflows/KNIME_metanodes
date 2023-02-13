@@ -6,15 +6,15 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="flowVariableName" type="xstring" value="biol_repl_summary"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="boolean" type="xboolean" value="false"/>
         </config>
-        <entry key="description" type="xstring" value="Check if you want to calculate biological replicate summary; design and biological replicates have to be provided for the processing"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="biol_repl_summary"/>
         <entry key="label" type="xstring" value="Calculate biological replicate summary?"/>
+        <entry key="description" type="xstring" value="Check if you want to calculate biological replicate summary; design and biological replicates have to be provided for the processing"/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="biol_repl_summary"/>
         <entry key="pushIntVar" type="xboolean" value="true"/>
     </config>
     <config key="nodeAnnotation">

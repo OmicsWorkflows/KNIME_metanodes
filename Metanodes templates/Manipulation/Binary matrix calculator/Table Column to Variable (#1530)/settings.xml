@@ -6,16 +6,16 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="column_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
         <entry key="column" type="xstring" value="Concatenate"/>
         <config key="skip_missing_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="skip_missing" type="xboolean" value="true"/>
-        <config key="column_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="create a flow variable%%00010for binary colnames"/>

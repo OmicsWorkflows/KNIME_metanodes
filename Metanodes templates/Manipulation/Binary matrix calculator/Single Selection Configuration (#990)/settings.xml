@@ -6,27 +6,27 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="possible_choices">
-            <entry key="array-size" type="xint" value="3"/>
-            <entry key="0" type="xstring" value="no"/>
-            <entry key="1" type="xstring" value="yes, one threshold for all samples"/>
-            <entry key="2" type="xstring" value="yes, separate thresholds for samples"/>
-        </config>
-        <entry key="flowVariableName" type="xstring" value="filter_rows"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <config key="variable_value">
                 <entry key="array-size" type="xint" value="1"/>
                 <entry key="0" type="xstring" value="no"/>
             </config>
         </config>
-        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
-        <entry key="description" type="xstring" value="If yes, only rows which contain at least a given number/percentage of 1s in at least one group will be kept in the upper port. It is possible to group samples based only on sample names provided in the experimental design. If no experimental design is provided, it is only possible to split based on a single threshold."/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="filter_rows"/>
         <entry key="label" type="xstring" value="Split cases which meet given criteria in at least specified number of replicates in at least one sample?"/>
-        <entry key="type" type="xstring" value="Dropdown"/>
-        <entry key="number_visible_options" type="xint" value="10"/>
+        <entry key="description" type="xstring" value="If yes, only rows which contain at least a given number/percentage of 1s in at least one group will be kept in the upper port. It is possible to group samples based only on sample names provided in the experimental design. If no experimental design is provided, it is only possible to split based on a single threshold."/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="filter_rows"/>
+        <config key="possible_choices">
+            <entry key="array-size" type="xint" value="3"/>
+            <entry key="0" type="xstring" value="no"/>
+            <entry key="1" type="xstring" value="yes, one threshold for all samples"/>
+            <entry key="2" type="xstring" value="yes, separate thresholds for samples"/>
+        </config>
+        <entry key="type" type="xstring" value="Dropdown"/>
+        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
+        <entry key="number_visible_options" type="xint" value="10"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="split rows?"/>

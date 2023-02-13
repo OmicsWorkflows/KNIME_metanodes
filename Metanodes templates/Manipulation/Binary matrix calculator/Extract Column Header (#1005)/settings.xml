@@ -6,21 +6,21 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="coltype" type="xstring" value="All"/>
-        <entry key="unifyHeaderPrefix" type="xstring" value="Column "/>
         <config key="replaceColHeader_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
+        <entry key="replaceColHeader" type="xboolean" value="true"/>
         <config key="unifyHeaderPrefix_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="replaceColHeader" type="xboolean" value="true"/>
+        <entry key="unifyHeaderPrefix" type="xstring" value="Column "/>
         <config key="coltype_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
+        <entry key="coltype" type="xstring" value="All"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="extract names%%00010of binary columns"/>
