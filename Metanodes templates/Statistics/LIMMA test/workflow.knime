@@ -1232,8 +1232,8 @@
     <config key="connections">
         <config key="connection_0">
             <entry key="sourceID" type="xint" value="1"/>
-            <entry key="destID" type="xint" value="338"/>
-            <entry key="sourcePort" type="xint" value="0"/>
+            <entry key="destID" type="xint" value="1688"/>
+            <entry key="sourcePort" type="xint" value="1"/>
             <entry key="destPort" type="xint" value="1"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
             <config key="ui_settings">
@@ -1242,8 +1242,8 @@
         </config>
         <config key="connection_1">
             <entry key="sourceID" type="xint" value="1"/>
-            <entry key="destID" type="xint" value="1688"/>
-            <entry key="sourcePort" type="xint" value="1"/>
+            <entry key="destID" type="xint" value="338"/>
+            <entry key="sourcePort" type="xint" value="0"/>
             <entry key="destPort" type="xint" value="1"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
             <config key="ui_settings">
@@ -1897,8 +1897,8 @@
         </config>
         <config key="connection_67">
             <entry key="sourceID" type="xint" value="1677"/>
-            <entry key="destID" type="xint" value="919"/>
-            <entry key="sourcePort" type="xint" value="2"/>
+            <entry key="destID" type="xint" value="920"/>
+            <entry key="sourcePort" type="xint" value="3"/>
             <entry key="destPort" type="xint" value="1"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
             <config key="ui_settings">
@@ -1907,8 +1907,8 @@
         </config>
         <config key="connection_68">
             <entry key="sourceID" type="xint" value="1677"/>
-            <entry key="destID" type="xint" value="920"/>
-            <entry key="sourcePort" type="xint" value="3"/>
+            <entry key="destID" type="xint" value="919"/>
+            <entry key="sourcePort" type="xint" value="2"/>
             <entry key="destPort" type="xint" value="1"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
             <config key="ui_settings">
@@ -1927,7 +1927,7 @@
         </config>
         <config key="connection_70">
             <entry key="sourceID" type="xint" value="1679"/>
-            <entry key="destID" type="xint" value="981"/>
+            <entry key="destID" type="xint" value="989"/>
             <entry key="sourcePort" type="xint" value="1"/>
             <entry key="destPort" type="xint" value="1"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
@@ -1937,7 +1937,7 @@
         </config>
         <config key="connection_71">
             <entry key="sourceID" type="xint" value="1679"/>
-            <entry key="destID" type="xint" value="989"/>
+            <entry key="destID" type="xint" value="981"/>
             <entry key="sourcePort" type="xint" value="1"/>
             <entry key="destPort" type="xint" value="1"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
