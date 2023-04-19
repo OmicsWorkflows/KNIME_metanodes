@@ -6,26 +6,26 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="VariableName_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="VariableName" type="xstring" value="fasta_file_directory"/>
+        <entry key="FailOnInvalidLocation" type="xboolean" value="false"/>
         <config key="FailOnInvalidLocation_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="FailOnInvalidLocation" type="xboolean" value="false"/>
-        <config key="FailOnInvalidSyntax_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
         <entry key="FailOnInvalidSyntax" type="xboolean" value="false"/>
+        <entry key="AddPrefixToVariable" type="xboolean" value="false"/>
+        <entry key="VariableName" type="xstring" value="fasta_file_directory"/>
         <config key="AddPrefixToVariable_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="AddPrefixToVariable" type="xboolean" value="false"/>
+        <config key="FailOnInvalidSyntax_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="VariableName_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="gets absolute path"/>
@@ -48,7 +48,7 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME File Handling Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base.filehandling"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.1.v202201171148"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280841"/>
     <entry key="node-feature-name" type="xstring" isnull="true" value=""/>
     <entry key="node-feature-symbolic-name" type="xstring" isnull="true" value=""/>
     <entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
