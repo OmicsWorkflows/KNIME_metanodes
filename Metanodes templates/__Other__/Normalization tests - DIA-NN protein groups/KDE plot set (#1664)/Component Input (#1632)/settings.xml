@@ -6,8 +6,16 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="port-names">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value=""/>
+        </config>
+        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
+        <config key="port-descriptions">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value=""/>
+        </config>
         <config key="variable-filter">
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
                 <entry key="array-size" type="xint" value="56"/>
                 <entry key="0" type="xstring" value="AggregatedValues"/>
@@ -67,25 +75,17 @@
                 <entry key="54" type="xstring" value="boxplot_manual_y"/>
                 <entry key="55" type="xstring" value="boxplot_manual_switch"/>
             </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+            </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="0"/>
             </config>
-            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value=""/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-            </config>
-        </config>
-        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
-        <config key="port-names">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value=""/>
-        </config>
-        <config key="port-descriptions">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value=""/>
         </config>
         <entry key="sub-node-description" type="xstring" value=""/>
     </config>

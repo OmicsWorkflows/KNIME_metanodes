@@ -7,61 +7,43 @@
     </config>
     <config key="model">
         <config key="columns_to_process-442">
-            <config key="columns">
-                <entry key="array-size" type="xint" value="3"/>
-                <entry key="0" type="xstring" value="PG.Quantity+1_1_log2"/>
-                <entry key="1" type="xstring" value="PG.Quantity+1_2_log2"/>
-                <entry key="2" type="xstring" value="PG.Quantity+1_3_log2"/>
-            </config>
             <config key="columnFilter">
                 <config key="columnFilter">
-                    <entry key="filter-type" type="xstring" value="name_pattern"/>
+                    <config key="datatype">
+                        <config key="typelist">
+                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                        </config>
+                    </config>
+                    <config key="name_pattern">
+                        <entry key="pattern" type="xstring" value="*"/>
+                        <entry key="excludeMatching" type="xboolean" value="false"/>
+                        <entry key="type" type="xstring" value="Wildcard"/>
+                        <entry key="caseSensitive" type="xboolean" value="true"/>
+                    </config>
+                    <config key="excluded_names">
+                        <entry key="array-size" type="xint" value="0"/>
+                    </config>
                     <config key="included_names">
                         <entry key="array-size" type="xint" value="3"/>
                         <entry key="0" type="xstring" value="PG.Quantity+1_1_log2"/>
                         <entry key="1" type="xstring" value="PG.Quantity+1_2_log2"/>
                         <entry key="2" type="xstring" value="PG.Quantity+1_3_log2"/>
                     </config>
-                    <config key="excluded_names">
-                        <entry key="array-size" type="xint" value="0"/>
-                    </config>
                     <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-                    <config key="name_pattern">
-                        <entry key="pattern" type="xstring" value="*"/>
-                        <entry key="type" type="xstring" value="Wildcard"/>
-                        <entry key="caseSensitive" type="xboolean" value="true"/>
-                        <entry key="excludeMatching" type="xboolean" value="false"/>
-                    </config>
-                    <config key="datatype">
-                        <config key="typelist">
-                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                        </config>
-                    </config>
+                    <entry key="filter-type" type="xstring" value="name_pattern"/>
                 </config>
             </config>
-        </config>
-        <config key="graph_subtitle-443">
-            <entry key="string" type="xstring" value=""/>
-        </config>
-        <config key="single-selection-444">
-            <entry key="variable_value" type="xstring" value="pearson"/>
-        </config>
-        <config key="clustermap_colormap-445">
-            <config key="variable_value">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="plasma"/>
+            <config key="columns">
+                <entry key="array-size" type="xint" value="3"/>
+                <entry key="0" type="xstring" value="PG.Quantity+1_1_log2"/>
+                <entry key="1" type="xstring" value="PG.Quantity+1_2_log2"/>
+                <entry key="2" type="xstring" value="PG.Quantity+1_3_log2"/>
             </config>
-        </config>
-        <config key="manual_clustermap_center-446">
-            <entry key="boolean" type="xboolean" value="false"/>
-        </config>
-        <config key="clustermap_center_value-447">
-            <entry key="double" type="xdouble" value="0.0"/>
         </config>
         <config key="show_raw_data-448">
             <entry key="boolean" type="xboolean" value="false"/>
@@ -69,8 +51,14 @@
         <config key="single-selection-449">
             <entry key="variable_value" type="xstring" value="cityblock"/>
         </config>
-        <config key="single-selection-450">
-            <entry key="variable_value" type="xstring" value="average"/>
+        <config key="clustermap_colormap-445">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="plasma"/>
+            </config>
+        </config>
+        <config key="graph_subtitle-443">
+            <entry key="string" type="xstring" value=""/>
         </config>
         <config key="prefix_to_remove-451">
             <entry key="string" type="xstring" value=""/>
@@ -78,22 +66,39 @@
         <config key="suffix_to_remove-452">
             <entry key="string" type="xstring" value=""/>
         </config>
+        <config key="clustermap_center_value-447">
+            <entry key="double" type="xdouble" value="0.0"/>
+        </config>
+        <config key="manual_clustermap_center-446">
+            <entry key="boolean" type="xboolean" value="false"/>
+        </config>
         <config key="figsize-453">
             <entry key="string" type="xstring" value="Auto"/>
         </config>
+        <config key="single-selection-444">
+            <entry key="variable_value" type="xstring" value="pearson"/>
+        </config>
+        <config key="single-selection-450">
+            <entry key="variable_value" type="xstring" value="average"/>
+        </config>
     </config>
     <config key="variables">
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
-            <config key="graph_subtitle-443">
-                <config key="string">
-                    <entry key="used_variable" type="xstring" value="graph_subtitle_subset"/>
+            <config key="show_raw_data-448">
+                <config key="boolean">
+                    <entry key="used_variable" type="xstring" value="show_raw_data"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
-            <config key="single-selection-444">
+            <config key="single-selection-449">
                 <config key="variable_value">
-                    <entry key="used_variable" type="xstring" value="correlation_method"/>
+                    <entry key="used_variable" type="xstring" value="distance_metric_correlation"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="suffix_to_remove-452">
+                <config key="string">
+                    <entry key="used_variable" type="xstring" value="suffix"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
@@ -109,15 +114,21 @@
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
-            <config key="show_raw_data-448">
-                <config key="boolean">
-                    <entry key="used_variable" type="xstring" value="show_raw_data"/>
+            <config key="figsize-453">
+                <config key="string">
+                    <entry key="used_variable" type="xstring" value="correlation_size"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
-            <config key="single-selection-449">
+            <config key="graph_subtitle-443">
+                <config key="string">
+                    <entry key="used_variable" type="xstring" value="graph_subtitle_subset"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="single-selection-444">
                 <config key="variable_value">
-                    <entry key="used_variable" type="xstring" value="distance_metric_correlation"/>
+                    <entry key="used_variable" type="xstring" value="correlation_method"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
@@ -133,19 +144,8 @@
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
-            <config key="suffix_to_remove-452">
-                <config key="string">
-                    <entry key="used_variable" type="xstring" value="suffix"/>
-                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
-                </config>
-            </config>
-            <config key="figsize-453">
-                <config key="string">
-                    <entry key="used_variable" type="xstring" value="correlation_size"/>
-                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
-                </config>
-            </config>
         </config>
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="automatic center"/>

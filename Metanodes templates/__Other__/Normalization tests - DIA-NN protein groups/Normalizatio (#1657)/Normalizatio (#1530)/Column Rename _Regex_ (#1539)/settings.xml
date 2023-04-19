@@ -7,9 +7,9 @@
     </config>
     <config key="model">
         <entry key="searchString" type="xstring" value="_delog_norm"/>
-        <entry key="replaceString" type="xstring" value="_norm"/>
         <entry key="isCaseInsensitive" type="xboolean" value="false"/>
         <entry key="isLiteral" type="xboolean" value="true"/>
+        <entry key="replaceString" type="xstring" value="_norm"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="remove _delog%%00010from column names"/>

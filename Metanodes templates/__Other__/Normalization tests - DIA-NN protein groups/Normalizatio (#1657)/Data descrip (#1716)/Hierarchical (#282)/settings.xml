@@ -6,50 +6,53 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="y_axis_label-444">
+            <entry key="string" type="xstring" value=""/>
+        </config>
+        <config key="single-selection-447">
+            <entry key="variable_value" type="xstring" value="average"/>
+        </config>
+        <config key="suffix_to_remove-450">
+            <entry key="string" type="xstring" value=""/>
+        </config>
         <config key="columns_to_process-442">
-            <config key="columns">
-                <entry key="array-size" type="xint" value="3"/>
-                <entry key="0" type="xstring" value="Intensity 1-1_1_log2_norm"/>
-                <entry key="1" type="xstring" value="Intensity 1-1_2_log2_norm"/>
-                <entry key="2" type="xstring" value="Intensity 1-1_3_log2_norm"/>
-            </config>
             <config key="columnFilter">
                 <config key="columnFilter">
-                    <entry key="filter-type" type="xstring" value="name_pattern"/>
+                    <config key="datatype">
+                        <config key="typelist">
+                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                        </config>
+                    </config>
+                    <config key="name_pattern">
+                        <entry key="pattern" type="xstring" value="*"/>
+                        <entry key="excludeMatching" type="xboolean" value="false"/>
+                        <entry key="type" type="xstring" value="Wildcard"/>
+                        <entry key="caseSensitive" type="xboolean" value="true"/>
+                    </config>
+                    <config key="excluded_names">
+                        <entry key="array-size" type="xint" value="0"/>
+                    </config>
                     <config key="included_names">
                         <entry key="array-size" type="xint" value="3"/>
                         <entry key="0" type="xstring" value="Intensity 1-1_1_log2_norm"/>
                         <entry key="1" type="xstring" value="Intensity 1-1_2_log2_norm"/>
                         <entry key="2" type="xstring" value="Intensity 1-1_3_log2_norm"/>
                     </config>
-                    <config key="excluded_names">
-                        <entry key="array-size" type="xint" value="0"/>
-                    </config>
                     <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-                    <config key="name_pattern">
-                        <entry key="pattern" type="xstring" value="*"/>
-                        <entry key="type" type="xstring" value="Wildcard"/>
-                        <entry key="caseSensitive" type="xboolean" value="true"/>
-                        <entry key="excludeMatching" type="xboolean" value="false"/>
-                    </config>
-                    <config key="datatype">
-                        <config key="typelist">
-                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                        </config>
-                    </config>
+                    <entry key="filter-type" type="xstring" value="name_pattern"/>
                 </config>
             </config>
-        </config>
-        <config key="x_axis_label-443">
-            <entry key="string" type="xstring" value=""/>
-        </config>
-        <config key="y_axis_label-444">
-            <entry key="string" type="xstring" value=""/>
+            <config key="columns">
+                <entry key="array-size" type="xint" value="3"/>
+                <entry key="0" type="xstring" value="Intensity 1-1_1_log2_norm"/>
+                <entry key="1" type="xstring" value="Intensity 1-1_2_log2_norm"/>
+                <entry key="2" type="xstring" value="Intensity 1-1_3_log2_norm"/>
+            </config>
         </config>
         <config key="graph_subtitle-445">
             <entry key="string" type="xstring" value=""/>
@@ -57,22 +60,30 @@
         <config key="single-selection-446">
             <entry key="variable_value" type="xstring" value="cityblock"/>
         </config>
-        <config key="single-selection-447">
-            <entry key="variable_value" type="xstring" value="average"/>
-        </config>
         <config key="prefix_to_remove-449">
-            <entry key="string" type="xstring" value=""/>
-        </config>
-        <config key="suffix_to_remove-450">
             <entry key="string" type="xstring" value=""/>
         </config>
         <config key="figsize-451">
             <entry key="string" type="xstring" value="Auto"/>
         </config>
+        <config key="x_axis_label-443">
+            <entry key="string" type="xstring" value=""/>
+        </config>
     </config>
     <config key="variables">
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
+            <config key="single-selection-447">
+                <config key="variable_value">
+                    <entry key="used_variable" type="xstring" value="cluster_method_hierarchy"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="suffix_to_remove-450">
+                <config key="string">
+                    <entry key="used_variable" type="xstring" value="suffix"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
             <config key="graph_subtitle-445">
                 <config key="string">
                     <entry key="used_variable" type="xstring" value="graph_subtitle"/>
@@ -85,21 +96,9 @@
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
-            <config key="single-selection-447">
-                <config key="variable_value">
-                    <entry key="used_variable" type="xstring" value="cluster_method_hierarchy"/>
-                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
-                </config>
-            </config>
             <config key="prefix_to_remove-449">
                 <config key="string">
                     <entry key="used_variable" type="xstring" value="prefix"/>
-                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
-                </config>
-            </config>
-            <config key="suffix_to_remove-450">
-                <config key="string">
-                    <entry key="used_variable" type="xstring" value="suffix"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
@@ -110,6 +109,7 @@
                 </config>
             </config>
         </config>
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="cluster analysis"/>

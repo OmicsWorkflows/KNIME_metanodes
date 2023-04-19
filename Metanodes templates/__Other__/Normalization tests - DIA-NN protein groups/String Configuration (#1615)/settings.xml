@@ -6,20 +6,20 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="error_message" type="xstring" value=""/>
+        <entry key="flowVariableName" type="xstring" value="subset_list"/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value=""/>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Enter subsets separated by comma, e. g. &quot;A, B, C&quot;. If you want to plot two subset together enter their names separated by a plus sign. e. g. &quot;A+B&quot;. Subset names need to correspond to &quot;Experimental design&quot;."/>
         <entry key="parameterName" type="xstring" value="subset_list"/>
         <entry key="label" type="xstring" value="Subsets"/>
-        <entry key="description" type="xstring" value="Enter subsets separated by comma, e. g. &quot;A, B, C&quot;. If you want to plot two subset together enter their names separated by a plus sign. e. g. &quot;A+B&quot;. Subset names need to correspond to &quot;Experimental design&quot;."/>
         <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="subset_list"/>
         <entry key="regex" type="xstring" value=""/>
-        <entry key="error_message" type="xstring" value=""/>
         <entry key="editorType" type="xstring" value="Multi-line"/>
         <entry key="multilineEditorWidth" type="xint" value="60"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="subset"/>
@@ -45,7 +45,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.input.string.StringDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="String Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>

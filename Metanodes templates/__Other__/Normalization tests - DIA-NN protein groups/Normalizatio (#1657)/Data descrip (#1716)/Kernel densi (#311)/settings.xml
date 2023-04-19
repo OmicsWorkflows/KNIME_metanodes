@@ -6,18 +6,31 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="prefix_to_remove-1548">
+            <entry key="string" type="xstring" value=""/>
+        </config>
         <config key="columns_to_process-446">
-            <config key="columns">
-                <entry key="array-size" type="xint" value="5"/>
-                <entry key="0" type="xstring" value="PG.Quantity+M WT IS 1_log2"/>
-                <entry key="1" type="xstring" value="PG.Quantity+M WT IS 2_log2"/>
-                <entry key="2" type="xstring" value="PG.Quantity+M WT IS 3_log2"/>
-                <entry key="3" type="xstring" value="PG.Quantity+M KO IS 1_log2"/>
-                <entry key="4" type="xstring" value="PG.Quantity+M KO IS 2_log2"/>
-            </config>
             <config key="columnFilter">
                 <config key="columnFilter">
-                    <entry key="filter-type" type="xstring" value="name_pattern"/>
+                    <config key="datatype">
+                        <config key="typelist">
+                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                        </config>
+                    </config>
+                    <config key="name_pattern">
+                        <entry key="pattern" type="xstring" value="*"/>
+                        <entry key="excludeMatching" type="xboolean" value="false"/>
+                        <entry key="type" type="xstring" value="Wildcard"/>
+                        <entry key="caseSensitive" type="xboolean" value="true"/>
+                    </config>
+                    <config key="excluded_names">
+                        <entry key="array-size" type="xint" value="0"/>
+                    </config>
                     <config key="included_names">
                         <entry key="array-size" type="xint" value="5"/>
                         <entry key="0" type="xstring" value="PG.Quantity+M WT IS 1_log2"/>
@@ -26,46 +39,27 @@
                         <entry key="3" type="xstring" value="PG.Quantity+M KO IS 1_log2"/>
                         <entry key="4" type="xstring" value="PG.Quantity+M KO IS 2_log2"/>
                     </config>
-                    <config key="excluded_names">
-                        <entry key="array-size" type="xint" value="0"/>
-                    </config>
                     <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-                    <config key="name_pattern">
-                        <entry key="pattern" type="xstring" value="*"/>
-                        <entry key="type" type="xstring" value="Wildcard"/>
-                        <entry key="caseSensitive" type="xboolean" value="true"/>
-                        <entry key="excludeMatching" type="xboolean" value="false"/>
-                    </config>
-                    <config key="datatype">
-                        <config key="typelist">
-                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                        </config>
-                    </config>
+                    <entry key="filter-type" type="xstring" value="name_pattern"/>
                 </config>
+            </config>
+            <config key="columns">
+                <entry key="array-size" type="xint" value="5"/>
+                <entry key="0" type="xstring" value="PG.Quantity+M WT IS 1_log2"/>
+                <entry key="1" type="xstring" value="PG.Quantity+M WT IS 2_log2"/>
+                <entry key="2" type="xstring" value="PG.Quantity+M WT IS 3_log2"/>
+                <entry key="3" type="xstring" value="PG.Quantity+M KO IS 1_log2"/>
+                <entry key="4" type="xstring" value="PG.Quantity+M KO IS 2_log2"/>
             </config>
         </config>
         <config key="x_axis_label-1530">
             <entry key="string" type="xstring" value=""/>
         </config>
-        <config key="y_axis_label-1531">
-            <entry key="string" type="xstring" value=""/>
-        </config>
-        <config key="graph_subtitle-1532">
-            <entry key="string" type="xstring" value=""/>
-        </config>
-        <config key="x_axis_limits-1533">
-            <entry key="string" type="xstring" value="Auto"/>
-        </config>
         <config key="center_line-1534">
             <entry key="string" type="xstring" value="None"/>
         </config>
-        <config key="prefix_to_remove-1548">
-            <entry key="string" type="xstring" value=""/>
+        <config key="x_axis_limits-1533">
+            <entry key="string" type="xstring" value="Auto"/>
         </config>
         <config key="suffix_to_remove-1550">
             <entry key="string" type="xstring" value=""/>
@@ -73,10 +67,27 @@
         <config key="plot_size-1551">
             <entry key="string" type="xstring" value="Auto"/>
         </config>
+        <config key="y_axis_label-1531">
+            <entry key="string" type="xstring" value=""/>
+        </config>
+        <config key="graph_subtitle-1532">
+            <entry key="string" type="xstring" value=""/>
+        </config>
     </config>
     <config key="variables">
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
+            <config key="prefix_to_remove-1548">
+                <config key="string">
+                    <entry key="used_variable" type="xstring" value="prefix"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="center_line-1534">
+                <config key="string">
+                    <entry key="used_variable" type="xstring" value="kde_line"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
             <config key="graph_subtitle-1532">
                 <config key="string">
                     <entry key="used_variable" type="xstring" value="graph_subtitle"/>
@@ -89,18 +100,6 @@
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
-            <config key="center_line-1534">
-                <config key="string">
-                    <entry key="used_variable" type="xstring" value="kde_line"/>
-                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
-                </config>
-            </config>
-            <config key="prefix_to_remove-1548">
-                <config key="string">
-                    <entry key="used_variable" type="xstring" value="prefix"/>
-                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
-                </config>
-            </config>
             <config key="suffix_to_remove-1550">
                 <config key="string">
                     <entry key="used_variable" type="xstring" value="suffix"/>
@@ -108,6 +107,7 @@
                 </config>
             </config>
         </config>
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="KDE plot"/>
