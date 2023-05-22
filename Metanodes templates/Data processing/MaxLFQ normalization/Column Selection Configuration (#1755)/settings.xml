@@ -6,24 +6,15 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="flowVariableName" type="xstring" value="peptide_id_column"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="column" type="xstring" value="File.Name"/>
         </config>
-        <config key="input_filter">
-            <config key="type_filter">
-                <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.time.localdatetime.LocalDateTimeValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-            </config>
-            <entry key="allow_all_types" type="xboolean" value="true"/>
-            <entry key="filter_columns_without_domain" type="xboolean" value="false"/>
-        </config>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="parameterName" type="xstring" value="peptide_id_column"/>
+        <entry key="label" type="xstring" value="Peptide ID column (peptide table)"/>
         <entry key="description" type="xstring" value="Select column containing unique peptide IDs. If this column is not present (e. g. in MaxQuant output table), it needs to be created prior to running this metanode"/>
+        <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="peptide_id_column"/>
         <config key="possibleColumns">
             <entry key="array-size" type="xint" value="55"/>
             <entry key="0" type="xstring" value="File.Name"/>
@@ -82,12 +73,21 @@
             <entry key="53" type="xstring" value="Predicted.IM"/>
             <entry key="54" type="xstring" value="Predicted.iIM"/>
         </config>
-        <entry key="parameterName" type="xstring" value="peptide_id_column"/>
-        <entry key="label" type="xstring" value="Peptide ID column (peptide table)"/>
         <entry key="type" type="xstring" value="Dropdown"/>
-        <entry key="required" type="xboolean" value="true"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
+        <config key="input_filter">
+            <config key="type_filter">
+                <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.time.localdatetime.LocalDateTimeValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+            </config>
+            <entry key="allow_all_types" type="xboolean" value="true"/>
+            <entry key="filter_columns_without_domain" type="xboolean" value="false"/>
+        </config>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="peptide ID%%00010 column"/>
