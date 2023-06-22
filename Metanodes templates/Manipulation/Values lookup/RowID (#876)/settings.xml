@@ -6,11 +6,25 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="newColumnName4RowKeyValues_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="false"/>
+        </config>
+        <entry key="newColumnName4RowKeyValues" type="xstring" value=""/>
+        <entry key="replaceRowKey" type="xboolean" value="true"/>
+        <config key="ensureUniqueness_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
         <config key="replaceRowKey_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="replaceRowKey" type="xboolean" value="true"/>
+        <config key="replaceMissingValues_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="replaceMissingValues" type="xboolean" value="false"/>
         <config key="newRowKeyColumnName_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -21,31 +35,17 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="removeRowKeyCol" type="xboolean" value="true"/>
-        <config key="ensureUniqueness_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="ensureUniqueness" type="xboolean" value="true"/>
-        <config key="replaceMissingValues_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="replaceMissingValues" type="xboolean" value="false"/>
-        <config key="appendRowKeyCol_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="appendRowKeyCol" type="xboolean" value="false"/>
-        <config key="newColumnName4RowKeyValues_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="false"/>
-        </config>
-        <entry key="newColumnName4RowKeyValues" type="xstring" value=""/>
         <config key="enableHilite_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
+        <entry key="ensureUniqueness" type="xboolean" value="true"/>
+        <entry key="appendRowKeyCol" type="xboolean" value="false"/>
         <entry key="enableHilite" type="xboolean" value="false"/>
+        <config key="appendRowKeyCol_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="changes the rowID%%00010to the original one"/>
@@ -68,11 +68,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.1.v202201171147"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.2.v202209150849"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203141441"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.2.v202209150849"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="RowID"/>
     <entry key="hasContent" type="xboolean" value="false"/>

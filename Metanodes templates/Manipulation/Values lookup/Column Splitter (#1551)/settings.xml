@@ -7,7 +7,27 @@
     </config>
     <config key="model">
         <config key="Filter Column Settings">
-            <entry key="filter-type" type="xstring" value="name_pattern"/>
+            <config key="datatype">
+                <config key="typelist">
+                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                </config>
+            </config>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value="abc"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="2"/>
+                <entry key="0" type="xstring" value="rowIndex_original"/>
+                <entry key="1" type="xstring" value="rowIndex_ungroupped"/>
+            </config>
             <config key="included_names">
                 <entry key="array-size" type="xint" value="19"/>
                 <entry key="0" type="xstring" value="Protein ID"/>
@@ -30,32 +50,11 @@
                 <entry key="17" type="xstring" value="UniProt_Cross-reference (Pfam)"/>
                 <entry key="18" type="xstring" value="UniProt_Cross-reference (IntAct)"/>
             </config>
-            <config key="excluded_names">
-                <entry key="array-size" type="xint" value="2"/>
-                <entry key="0" type="xstring" value="rowIndex_original"/>
-                <entry key="1" type="xstring" value="rowIndex_ungroupped"/>
-            </config>
             <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value="abc"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-            </config>
-            <config key="datatype">
-                <config key="typelist">
-                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                </config>
-            </config>
+            <entry key="filter-type" type="xstring" value="name_pattern"/>
         </config>
     </config>
     <config key="variables">
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
             <config key="Filter Column Settings">
                 <config key="name_pattern">
@@ -66,6 +65,7 @@
                 </config>
             </config>
         </config>
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="removes bottom table %%00010joining column"/>
@@ -97,11 +97,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.1.v202201171147"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.2.v202209150849"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203141441"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.2.v202209150849"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Column Splitter"/>
     <entry key="hasContent" type="xboolean" value="false"/>

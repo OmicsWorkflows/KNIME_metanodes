@@ -7,21 +7,21 @@
     </config>
     <config key="model">
         <entry key="colName" type="xstring" value="rowID_original"/>
-        <entry key="delimiter" type="xstring" value=";"/>
-        <entry key="guessNumOfCols" type="xboolean" value="true"/>
-        <entry key="numberOfCols" type="xint" value="6"/>
-        <entry key="quotePattern" type="xstring" isnull="true" value=""/>
-        <entry key="removeQuotes" type="xboolean" value="false"/>
-        <entry key="useEmptyString" type="xboolean" value="false"/>
-        <entry key="useEscapeCharacter" type="xboolean" value="false"/>
-        <entry key="outputAsList" type="xboolean" value="true"/>
-        <entry key="outputAsSet" type="xboolean" value="false"/>
-        <entry key="outputAsColumns" type="xboolean" value="false"/>
-        <entry key="removeWhitespaces" type="xboolean" value="true"/>
-        <entry key="splitColumnNames" type="xboolean" value="false"/>
         <entry key="hasScanLimit" type="xboolean" value="false"/>
-        <entry key="scanLimit" type="xint" value="50"/>
+        <entry key="removeWhitespaces" type="xboolean" value="true"/>
         <entry key="removeInputColumn" type="xboolean" value="true"/>
+        <entry key="quotePattern" type="xstring" isnull="true" value=""/>
+        <entry key="numberOfCols" type="xint" value="6"/>
+        <entry key="useEmptyString" type="xboolean" value="false"/>
+        <entry key="outputAsList" type="xboolean" value="true"/>
+        <entry key="outputAsColumns" type="xboolean" value="false"/>
+        <entry key="delimiter" type="xstring" value=";"/>
+        <entry key="scanLimit" type="xint" value="50"/>
+        <entry key="outputAsSet" type="xboolean" value="false"/>
+        <entry key="splitColumnNames" type="xboolean" value="false"/>
+        <entry key="guessNumOfCols" type="xboolean" value="true"/>
+        <entry key="useEscapeCharacter" type="xboolean" value="false"/>
+        <entry key="removeQuotes" type="xboolean" value="false"/>
     </config>
     <config key="variables">
         <config key="colName">
@@ -50,11 +50,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.1.v202201171147"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.2.v202209150849"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203141441"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.2.v202209150849"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Cell Splitter"/>
     <entry key="hasContent" type="xboolean" value="false"/>
