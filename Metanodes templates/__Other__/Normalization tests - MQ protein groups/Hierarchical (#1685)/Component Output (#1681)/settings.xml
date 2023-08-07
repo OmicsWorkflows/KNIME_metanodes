@@ -6,16 +6,8 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="port-names">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value="Port 1"/>
-        </config>
-        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
-        <config key="port-descriptions">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value=""/>
-        </config>
         <config key="variable-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
                 <entry key="array-size" type="xint" value="22"/>
                 <entry key="0" type="xstring" value="hierarchy_size"/>
@@ -40,14 +32,6 @@
                 <entry key="19" type="xstring" value="distance_metric_correlation"/>
                 <entry key="20" type="xstring" value="cluster_method_correlation"/>
                 <entry key="21" type="xstring" value="show_raw_data"/>
-            </config>
-            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value=""/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="49"/>
@@ -101,6 +85,22 @@
                 <entry key="47" type="xstring" value="exclude_switch"/>
                 <entry key="48" type="xstring" value="path"/>
             </config>
+            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+        </config>
+        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
+        <config key="port-names">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="Port 1"/>
+        </config>
+        <config key="port-descriptions">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value=""/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>

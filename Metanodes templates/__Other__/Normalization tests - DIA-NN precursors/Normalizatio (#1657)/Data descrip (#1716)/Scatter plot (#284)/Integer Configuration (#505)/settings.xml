@@ -6,19 +6,19 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="useMin" type="xboolean" value="true"/>
-        <entry key="min" type="xint" value="0"/>
-        <entry key="flowVariableName" type="xstring" value="height"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="max" type="xint" value="100"/>
         <config key="defaultValue">
             <entry key="integer" type="xint" value="250"/>
         </config>
-        <entry key="useMax" type="xboolean" value="false"/>
-        <entry key="description" type="xstring" value="Set height of individual plot in pixels (aspect ratio is set to 1); default value is 250"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="height"/>
         <entry key="label" type="xstring" value="Height of a single plot"/>
+        <entry key="description" type="xstring" value="Set height of individual plot in pixels (aspect ratio is set to 1); default value is 250"/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="height"/>
+        <entry key="useMin" type="xboolean" value="true"/>
+        <entry key="useMax" type="xboolean" value="false"/>
+        <entry key="min" type="xint" value="0"/>
+        <entry key="max" type="xint" value="100"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="height"/>

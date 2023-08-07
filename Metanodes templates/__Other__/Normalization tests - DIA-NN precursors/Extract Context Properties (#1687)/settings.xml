@@ -5,26 +5,21 @@
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
-    <config key="model">
-        <entry key="target" type="xstring" value="knime://knime.workflow/__outputs__/figures"/>
-        <entry key="name" type="xstring" value="normalization_tests"/>
-        <entry key="abortifexists" type="xboolean" value="false"/>
-        <entry key="variablename" type="xstring" value="directory"/>
-    </config>
+    <config key="model"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
-    <entry key="factory" type="xstring" value="org.knime.base.filehandling.createdirectory.CreateDirectoryNodeFactory"/>
-    <entry key="node-name" type="xstring" value="Create Directory (legacy)"/>
-    <entry key="node-bundle-name" type="xstring" value="KNIME File Handling Nodes"/>
-    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base.filehandling"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.io.extractcontextprop.ReadContextProperty2NodeFactory"/>
+    <entry key="node-name" type="xstring" value="Extract Context Properties"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280841"/>
-    <entry key="node-feature-name" type="xstring" isnull="true" value=""/>
-    <entry key="node-feature-symbolic-name" type="xstring" isnull="true" value=""/>
-    <entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
-    <entry key="node-feature-version" type="xstring" value="0.0.0"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.2.v202209150849"/>
     <config key="factory_settings"/>
-    <entry key="name" type="xstring" value="Create Directory (legacy)"/>
+    <entry key="name" type="xstring" value="Extract Context Properties"/>
     <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">

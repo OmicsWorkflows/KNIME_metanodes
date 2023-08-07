@@ -6,22 +6,22 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="error_message" type="xstring" value=""/>
-        <entry key="flowvariablename" type="xstring" value="ma_imp"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value="None"/>
         </config>
-        <entry key="description" type="xstring" value="Enter a value for imputation of missing values. If left blank, missing values will be omitted from the plot"/>
         <entry key="label" type="xstring" value="Value to impute missing values"/>
-        <entry key="parameterName" type="xstring" value="string-input"/>
-        <entry key="required" type="xboolean" value="true"/>
-        <entry key="regex" type="xstring" value=""/>
+        <entry key="description" type="xstring" value="Enter a value for imputation of missing values. If left blank, missing values will be omitted from the plot"/>
         <entry key="hideInWizard" type="xboolean" value="false"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="required" type="xboolean" value="true"/>
+        <entry key="parameterName" type="xstring" value="string-input"/>
+        <entry key="customCSS" type="xstring" value=""/>
+        <entry key="flowvariablename" type="xstring" value="ma_imp"/>
+        <entry key="regex" type="xstring" value=""/>
+        <entry key="error_message" type="xstring" value=""/>
         <entry key="editorType" type="xstring" value="Single-line"/>
         <entry key="multilineEditorWidth" type="xint" value="60"/>
-        <entry key="customCSS" type="xstring" value=""/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="imputation%%00010MA plot"/>

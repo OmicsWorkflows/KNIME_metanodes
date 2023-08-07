@@ -6,6 +6,18 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="defaultValue">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="plasma"/>
+            </config>
+        </config>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="parameterName" type="xstring" value="clustermap_colormap"/>
+        <entry key="label" type="xstring" value="Clustermap colormap"/>
+        <entry key="description" type="xstring" value="What colormap (palette) should be used for clustermap"/>
+        <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="clustermap_colormap"/>
         <config key="possible_choices">
             <entry key="array-size" type="xint" value="5"/>
             <entry key="0" type="xstring" value="plasma"/>
@@ -14,21 +26,9 @@
             <entry key="3" type="xstring" value="jet"/>
             <entry key="4" type="xstring" value="rainbow"/>
         </config>
-        <entry key="flowVariableName" type="xstring" value="clustermap_colormap"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <config key="defaultValue">
-            <config key="variable_value">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="plasma"/>
-            </config>
-        </config>
-        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
-        <entry key="description" type="xstring" value="What colormap (palette) should be used for clustermap"/>
-        <entry key="parameterName" type="xstring" value="clustermap_colormap"/>
-        <entry key="label" type="xstring" value="Clustermap colormap"/>
         <entry key="type" type="xstring" value="Radio buttons (horizontal)"/>
+        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
-        <entry key="required" type="xboolean" value="true"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="colormap"/>

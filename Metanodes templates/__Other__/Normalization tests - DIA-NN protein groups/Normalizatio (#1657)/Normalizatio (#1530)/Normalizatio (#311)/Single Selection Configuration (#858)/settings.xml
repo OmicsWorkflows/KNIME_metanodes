@@ -6,6 +6,18 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="defaultValue">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="quantile"/>
+            </config>
+        </config>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="parameterName" type="xstring" value="normalization_method"/>
+        <entry key="label" type="xstring" value="Normalization method"/>
+        <entry key="description" type="xstring" value="Normalization method that should be used"/>
+        <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="normalization_method"/>
         <config key="possible_choices">
             <entry key="array-size" type="xint" value="5"/>
             <entry key="0" type="xstring" value="quantile"/>
@@ -14,21 +26,9 @@
             <entry key="3" type="xstring" value="loess (pairs)"/>
             <entry key="4" type="xstring" value="loess (affy)"/>
         </config>
-        <entry key="flowVariableName" type="xstring" value="normalization_method"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <config key="defaultValue">
-            <config key="variable_value">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="quantile"/>
-            </config>
-        </config>
-        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
-        <entry key="description" type="xstring" value="Normalization method that should be used"/>
-        <entry key="parameterName" type="xstring" value="normalization_method"/>
-        <entry key="label" type="xstring" value="Normalization method"/>
         <entry key="type" type="xstring" value="Radio buttons (horizontal)"/>
+        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
-        <entry key="required" type="xboolean" value="true"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="Normalization method"/>

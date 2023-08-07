@@ -6,20 +6,20 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="error_message" type="xstring" value=""/>
-        <entry key="flowVariableName" type="xstring" value="plot_size"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value="Auto"/>
         </config>
-        <entry key="description" type="xstring" value="Set figure size in inches (format: &quot;width;height&quot;) or leave at Auto for automatic size"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="plot_size"/>
         <entry key="label" type="xstring" value="Figure size"/>
+        <entry key="description" type="xstring" value="Set figure size in inches (format: &quot;width;height&quot;) or leave at Auto for automatic size"/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="plot_size"/>
         <entry key="regex" type="xstring" value=""/>
+        <entry key="error_message" type="xstring" value=""/>
         <entry key="editorType" type="xstring" value="Single-line"/>
         <entry key="multilineEditorWidth" type="xint" value="40"/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="figure size"/>

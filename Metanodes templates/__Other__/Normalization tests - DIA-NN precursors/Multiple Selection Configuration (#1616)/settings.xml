@@ -6,17 +6,6 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="possible_choices">
-            <entry key="array-size" type="xint" value="6"/>
-            <entry key="0" type="xstring" value="no normalization"/>
-            <entry key="1" type="xstring" value="median (linear)"/>
-            <entry key="2" type="xstring" value="quantile (non-linear)"/>
-            <entry key="3" type="xstring" value="loessF (non-linear)"/>
-            <entry key="4" type="xstring" value="vsn (non-linear)"/>
-            <entry key="5" type="xstring" value="DIA-NN"/>
-        </config>
-        <entry key="flowVariableName" type="xstring" value="methods"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <config key="variable_value">
                 <entry key="array-size" type="xint" value="6"/>
@@ -28,13 +17,24 @@
                 <entry key="5" type="xstring" value="DIA-NN"/>
             </config>
         </config>
-        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
-        <entry key="description" type="xstring" value="Select which normalization methods do you want to compare"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="methods"/>
         <entry key="label" type="xstring" value="Normalization methods"/>
-        <entry key="type" type="xstring" value="Check boxes (vertical)"/>
-        <entry key="number_visible_options" type="xint" value="10"/>
+        <entry key="description" type="xstring" value="Select which normalization methods do you want to compare"/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="methods"/>
+        <config key="possible_choices">
+            <entry key="array-size" type="xint" value="6"/>
+            <entry key="0" type="xstring" value="no normalization"/>
+            <entry key="1" type="xstring" value="median (linear)"/>
+            <entry key="2" type="xstring" value="quantile (non-linear)"/>
+            <entry key="3" type="xstring" value="loessF (non-linear)"/>
+            <entry key="4" type="xstring" value="vsn (non-linear)"/>
+            <entry key="5" type="xstring" value="DIA-NN"/>
+        </config>
+        <entry key="type" type="xstring" value="Check boxes (vertical)"/>
+        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
+        <entry key="number_visible_options" type="xint" value="10"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="select normalization%%00010methods"/>

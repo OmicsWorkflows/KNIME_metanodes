@@ -7,15 +7,15 @@
     </config>
     <config key="model">
         <entry key="sourceCode" type="xstring" value="# changes the flowvariable holding the normalized columns suffix to be compatible with regex columns renaming%%00010flow_variables['columns_suffix'] = &quot;$1&quot; + flow_variables['columns_suffix'] %%00010%%00010# creates variable for not used columns removal IF switch%%00010if flow_variables['remove_not_used'] == 1:%%00010    flow_variables['if_switch'] = 'top'%%00010elif flow_variables['remove_not_used'] == 0:%%00010    flow_variables['if_switch'] = 'bottom'%%00010"/>
-        <entry key="python2Command" type="xstring" value=""/>
-        <entry key="python3Command" type="xstring" value="unknown_flow_variable_selected"/>
-        <entry key="chunkSize" type="xint" value="500000"/>
-        <entry key="sentinelValue" type="xint" value="0"/>
-        <entry key="pythonVersionOption" type="xstring" value="python3"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
-        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value="unknown_flow_variable_selected"/>
     </config>
     <config key="variables">
         <config key="tree">
