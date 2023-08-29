@@ -11,14 +11,14 @@
             <entry key="ColumnName" type="xstring" value="BinaryMatrixRowSum"/>
             <entry key="include" type="xboolean" value="true"/>
             <entry key="deepFiltering" type="xboolean" value="false"/>
-            <config key="upperBound">
-                <entry key="datacell" type="xstring" isnull="true" value=""/>
-            </config>
             <config key="lowerBound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                 <config key="org.knime.core.data.def.DoubleCell">
                     <entry key="DoubleCell" type="xdouble" value="50.0"/>
                 </config>
+            </config>
+            <config key="upperBound">
+                <entry key="datacell" type="xstring" isnull="true" value=""/>
             </config>
         </config>
     </config>

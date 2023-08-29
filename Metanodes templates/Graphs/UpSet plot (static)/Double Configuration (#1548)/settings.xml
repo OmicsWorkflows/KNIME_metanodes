@@ -6,19 +6,19 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="useMin" type="xboolean" value="false"/>
-        <entry key="min" type="xdouble" value="0.0"/>
-        <entry key="flowVariableName" type="xstring" value="binary_threshold"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="max" type="xdouble" value="1.0"/>
         <config key="defaultValue">
             <entry key="double" type="xdouble" value="1.0"/>
         </config>
-        <entry key="useMax" type="xboolean" value="false"/>
-        <entry key="description" type="xstring" value="Set the default value (cut-off/threshold) which will all values of matrix be compared to"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="binary_threshold"/>
         <entry key="label" type="xstring" value="Threshold for binary matrix creation"/>
+        <entry key="description" type="xstring" value="Set the default value (cut-off/threshold) which will all values of matrix be compared to"/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="binary_threshold"/>
+        <entry key="useMin" type="xboolean" value="false"/>
+        <entry key="useMax" type="xboolean" value="false"/>
+        <entry key="min" type="xdouble" value="0.0"/>
+        <entry key="max" type="xdouble" value="1.0"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="threshold for bin.matrix"/>
@@ -44,7 +44,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.input.dbl.DoubleDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="Double Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>

@@ -6,22 +6,31 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="maxNoneNumericalVals_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+        <config key="aggregationColumns_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_columnfilter"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="valueDelimiter" type="xstring" value=", "/>
-        <config key="nodeVersion_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <config key="removeRetainedColumns_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="nodeVersion" type="xint" value="1"/>
-        <entry key="removeRetainedColumns" type="xboolean" value="false"/>
         <config key="aggregationColumns">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="6"/>
+                <entry key="0" type="xstring" value="10000-1_1"/>
+                <entry key="1" type="xstring" value="10000-1_2"/>
+                <entry key="2" type="xstring" value="10000-1_3"/>
+                <entry key="3" type="xstring" value="1000-1_1"/>
+                <entry key="4" type="xstring" value="1000-1_2"/>
+                <entry key="5" type="xstring" value="1000-1_3"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
             <config key="datatype">
                 <config key="typelist">
                     <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
@@ -32,27 +41,12 @@
                     <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                 </config>
             </config>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value=""/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
-            </config>
-            <config key="excluded_names">
-                <entry key="array-size" type="xint" value="0"/>
-            </config>
-            <config key="included_names">
-                <entry key="array-size" type="xint" value="6"/>
-                <entry key="0" type="xstring" value="10000-1_1"/>
-                <entry key="1" type="xstring" value="10000-1_2"/>
-                <entry key="2" type="xstring" value="10000-1_3"/>
-                <entry key="3" type="xstring" value="1000-1_1"/>
-                <entry key="4" type="xstring" value="1000-1_2"/>
-                <entry key="5" type="xstring" value="1000-1_3"/>
-            </config>
-            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
         </config>
+        <config key="removeRetainedColumns_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="removeRetainedColumns" type="xboolean" value="false"/>
         <config key="removeAggregationColumns_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -62,6 +56,12 @@
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
+        <entry key="valueDelimiter" type="xstring" value=", "/>
+        <config key="maxNoneNumericalVals_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="maxNoneNumericalVals" type="xint" value="10000"/>
         <config key="aggregationMethods">
             <config key="resultColName">
                 <entry key="array-size" type="xint" value="1"/>
@@ -76,11 +76,11 @@
                 <entry key="0" type="xboolean" value="false"/>
             </config>
         </config>
-        <entry key="maxNoneNumericalVals" type="xint" value="10000"/>
-        <config key="aggregationColumns_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_columnfilter"/>
+        <config key="nodeVersion_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
+        <entry key="nodeVersion" type="xint" value="1"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="computes the binary %%00010matrix row sum for %%00010filtering"/>

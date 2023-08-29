@@ -7,6 +7,27 @@
     </config>
     <config key="model">
         <config key="column-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="6"/>
+                <entry key="0" type="xstring" value="10000-1_1"/>
+                <entry key="1" type="xstring" value="10000-1_2"/>
+                <entry key="2" type="xstring" value="10000-1_3"/>
+                <entry key="3" type="xstring" value="1000-1_1"/>
+                <entry key="4" type="xstring" value="1000-1_2"/>
+                <entry key="5" type="xstring" value="1000-1_3"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="BinaryMatrixRowSum"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
             <config key="datatype">
                 <config key="typelist">
                     <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
@@ -17,27 +38,6 @@
                     <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                 </config>
             </config>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value=""/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
-            </config>
-            <config key="excluded_names">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="BinaryMatrixRowSum"/>
-            </config>
-            <config key="included_names">
-                <entry key="array-size" type="xint" value="6"/>
-                <entry key="0" type="xstring" value="10000-1_1"/>
-                <entry key="1" type="xstring" value="10000-1_2"/>
-                <entry key="2" type="xstring" value="10000-1_3"/>
-                <entry key="3" type="xstring" value="1000-1_1"/>
-                <entry key="4" type="xstring" value="1000-1_2"/>
-                <entry key="5" type="xstring" value="1000-1_3"/>
-            </config>
-            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
         </config>
     </config>
     <config key="nodeAnnotation">

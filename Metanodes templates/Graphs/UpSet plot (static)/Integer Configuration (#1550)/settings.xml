@@ -6,19 +6,19 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="useMin" type="xboolean" value="true"/>
-        <entry key="min" type="xint" value="0"/>
-        <entry key="flowVariableName" type="xstring" value="upset_nsets"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="max" type="xint" value="18"/>
         <config key="defaultValue">
             <entry key="integer" type="xint" value="0"/>
         </config>
-        <entry key="useMax" type="xboolean" value="true"/>
-        <entry key="description" type="xstring" value="Number of sets to look at. If set to 0, all sets will be considered. Maximal value is 18"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="upset_nsets"/>
         <entry key="label" type="xstring" value="Number of sets"/>
+        <entry key="description" type="xstring" value="Number of sets to look at. If set to 0, all sets will be considered. Maximal value is 18"/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="upset_nsets"/>
+        <entry key="useMin" type="xboolean" value="true"/>
+        <entry key="useMax" type="xboolean" value="true"/>
+        <entry key="min" type="xint" value="0"/>
+        <entry key="max" type="xint" value="18"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="number of sets"/>
@@ -44,7 +44,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.input.integer.IntegerDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="Integer Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>

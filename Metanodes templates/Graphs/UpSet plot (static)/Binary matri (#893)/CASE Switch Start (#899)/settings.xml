@@ -6,14 +6,14 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="activate_all_outputs_during_configure_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="PortIndex" type="xstring" value="0"/>
         <config key="PortIndex_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="false"/>
+        </config>
+        <entry key="PortIndex" type="xstring" value="0"/>
+        <config key="activate_all_outputs_during_configure_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="activate_all_outputs_during_configure" type="xboolean" value="true"/>
     </config>
@@ -51,10 +51,6 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="Errors overwriting node settings with flow variables: Unknown variable &quot;caseport&quot;"/>
-    </config>
     <entry key="factory" type="xstring" value="org.knime.base.node.switches.caseswitch.any.CaseStartAnyNodeFactory"/>
     <entry key="node-name" type="xstring" value="CASE Switch Start"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
