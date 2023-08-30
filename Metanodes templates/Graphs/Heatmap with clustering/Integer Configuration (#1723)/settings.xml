@@ -11,8 +11,8 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="col_dendrogram_height"/>
-        <entry key="label" type="xstring" value="Columns dendrogram height (mm)"/>
-        <entry key="description" type="xstring" value="height of the columns dendrogram in mm"/>
+        <entry key="label" type="xstring" value="Columns dendrogram height (px)"/>
+        <entry key="description" type="xstring" value="height of the columns dendrogram in pixels"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="col_dendrogram_height"/>
         <entry key="useMin" type="xboolean" value="true"/>

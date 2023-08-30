@@ -521,9 +521,21 @@
             </config>
             <config key="columnFilter">
                 <config key="columnFilter">
-                    <entry key="filter-type" type="xstring" value="STANDARD"/>
-                    <config key="included_names">
-                        <entry key="array-size" type="xint" value="0"/>
+                    <config key="datatype">
+                        <config key="typelist">
+                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                        </config>
+                    </config>
+                    <config key="name_pattern">
+                        <entry key="pattern" type="xstring" value=""/>
+                        <entry key="excludeMatching" type="xboolean" value="false"/>
+                        <entry key="type" type="xstring" value="Wildcard"/>
+                        <entry key="caseSensitive" type="xboolean" value="true"/>
                     </config>
                     <config key="excluded_names">
                         <entry key="array-size" type="xint" value="509"/>
@@ -1037,23 +1049,11 @@
                         <entry key="507" type="xstring" value="PG.Quantity+F KO IS 7_log2"/>
                         <entry key="508" type="xstring" value="samples_max"/>
                     </config>
+                    <config key="included_names">
+                        <entry key="array-size" type="xint" value="0"/>
+                    </config>
                     <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
-                    <config key="name_pattern">
-                        <entry key="pattern" type="xstring" value=""/>
-                        <entry key="type" type="xstring" value="Wildcard"/>
-                        <entry key="caseSensitive" type="xboolean" value="true"/>
-                        <entry key="excludeMatching" type="xboolean" value="false"/>
-                    </config>
-                    <config key="datatype">
-                        <config key="typelist">
-                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                        </config>
-                    </config>
+                    <entry key="filter-type" type="xstring" value="STANDARD"/>
                 </config>
             </config>
         </config>
@@ -1586,12 +1586,12 @@
         </config>
         <config key="input_filter">
             <config key="type_filter">
-                <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                 <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
                 <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
                 <entry key="org.knime.core.data.time.localdatetime.LocalDateTimeValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
             </config>
             <entry key="allow_all_types" type="xboolean" value="true"/>
             <entry key="filter_columns_without_domain" type="xboolean" value="false"/>

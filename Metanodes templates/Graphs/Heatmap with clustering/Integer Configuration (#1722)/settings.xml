@@ -11,8 +11,8 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="row_dendrogram_width"/>
-        <entry key="label" type="xstring" value="Rows dendrogram width (mm)"/>
-        <entry key="description" type="xstring" value="width of the rows dendrogram in mm"/>
+        <entry key="label" type="xstring" value="Rows dendrogram width (px)"/>
+        <entry key="description" type="xstring" value="Width of the rows dendrogram in pixels"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="row_dendrogram_width"/>
         <entry key="useMin" type="xboolean" value="true"/>
