@@ -7,9 +7,9 @@
     </config>
     <config key="model">
         <entry key="searchString" type="xstring" value="(.+)"/>
-        <entry key="replaceString" type="xstring" value="PG"/>
         <entry key="isCaseInsensitive" type="xboolean" value="false"/>
         <entry key="isLiteral" type="xboolean" value="false"/>
+        <entry key="replaceString" type="xstring" value="PG"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="rename to:%%00010PG"/>

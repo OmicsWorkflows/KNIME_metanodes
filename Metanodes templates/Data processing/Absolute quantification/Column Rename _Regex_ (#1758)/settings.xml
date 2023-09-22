@@ -7,9 +7,9 @@
     </config>
     <config key="model">
         <entry key="searchString" type="xstring" value="(.+)"/>
-        <entry key="replaceString" type="xstring" value="full_sequence"/>
         <entry key="isCaseInsensitive" type="xboolean" value="false"/>
         <entry key="isLiteral" type="xboolean" value="false"/>
+        <entry key="replaceString" type="xstring" value="full_sequence"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="rename to:%%00010full_sequence"/>

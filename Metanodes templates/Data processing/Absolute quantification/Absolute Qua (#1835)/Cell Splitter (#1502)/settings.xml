@@ -7,21 +7,21 @@
     </config>
     <config key="model">
         <entry key="colName" type="xstring" value="PG"/>
-        <entry key="delimiter" type="xstring" value=";"/>
-        <entry key="guessNumOfCols" type="xboolean" value="true"/>
-        <entry key="numberOfCols" type="xint" value="6"/>
-        <entry key="quotePattern" type="xstring" isnull="true" value=""/>
-        <entry key="removeQuotes" type="xboolean" value="false"/>
-        <entry key="useEmptyString" type="xboolean" value="false"/>
-        <entry key="useEscapeCharacter" type="xboolean" value="false"/>
-        <entry key="outputAsList" type="xboolean" value="true"/>
-        <entry key="outputAsSet" type="xboolean" value="false"/>
-        <entry key="outputAsColumns" type="xboolean" value="false"/>
-        <entry key="removeWhitespaces" type="xboolean" value="true"/>
-        <entry key="splitColumnNames" type="xboolean" value="false"/>
         <entry key="hasScanLimit" type="xboolean" value="false"/>
-        <entry key="scanLimit" type="xint" value="50"/>
+        <entry key="removeWhitespaces" type="xboolean" value="true"/>
         <entry key="removeInputColumn" type="xboolean" value="false"/>
+        <entry key="quotePattern" type="xstring" isnull="true" value=""/>
+        <entry key="numberOfCols" type="xint" value="6"/>
+        <entry key="useEmptyString" type="xboolean" value="false"/>
+        <entry key="outputAsList" type="xboolean" value="true"/>
+        <entry key="outputAsColumns" type="xboolean" value="false"/>
+        <entry key="delimiter" type="xstring" value=";"/>
+        <entry key="scanLimit" type="xint" value="50"/>
+        <entry key="outputAsSet" type="xboolean" value="false"/>
+        <entry key="splitColumnNames" type="xboolean" value="false"/>
+        <entry key="guessNumOfCols" type="xboolean" value="true"/>
+        <entry key="useEscapeCharacter" type="xboolean" value="false"/>
+        <entry key="removeQuotes" type="xboolean" value="false"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="split Protein.Group%%00010string into a list"/>

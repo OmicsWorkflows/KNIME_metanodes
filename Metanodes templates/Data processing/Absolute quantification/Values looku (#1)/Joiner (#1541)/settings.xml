@@ -6,111 +6,20 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="includeMatchesInOutput_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="includeMatchesInOutput" type="xboolean" value="true"/>
-        <config key="includeLeftUnmatchedInOutput_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="includeLeftUnmatchedInOutput" type="xboolean" value="true"/>
-        <config key="includeRightUnmatchedInOutput_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="includeRightUnmatchedInOutput" type="xboolean" value="false"/>
-        <config key="leftTableJoinPredicate_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_stringarray"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <config key="leftTableJoinPredicate">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value="$RowID$"/>
-        </config>
         <config key="rightTableJoinPredicate_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_stringarray"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <config key="rightTableJoinPredicate">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value="$RowID$"/>
-        </config>
-        <config key="compositionMode_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="compositionMode" type="xstring" value="MATCH_ALL"/>
-        <config key="mergeJoinColumns_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="mergeJoinColumns" type="xboolean" value="false"/>
-        <config key="dataCellComparisonMode_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="dataCellComparisonMode" type="xstring" value="STRICT"/>
         <config key="outputUnmatchedRowsToSeparatePorts_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="outputUnmatchedRowsToSeparatePorts" type="xboolean" value="false"/>
-        <config key="rowKeyFactory_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="rowKeyFactory" type="xstring" value="CONCATENATE"/>
-        <config key="rowKeySeparator_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="rowKeySeparator" type="xstring" value="_"/>
-        <config key="duplicateHandling_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="duplicateHandling" type="xstring" value="APPEND_SUFFIX"/>
-        <config key="suffix_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="suffix" type="xstring" value=" (right)"/>
-        <config key="outputRowOrder_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
         <entry key="outputRowOrder" type="xstring" value="LEFT_RIGHT"/>
-        <config key="maxOpenFiles_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="maxOpenFiles" type="xint" value="200"/>
-        <config key="enableHiliting_Internals">
+        <config key="includeMatchesInOutput_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="enableHiliting" type="xboolean" value="false"/>
-        <config key="leftColumnSelectionConfig">
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
-            <config key="included_names">
-                <entry key="array-size" type="xint" value="4"/>
-                <entry key="0" type="xstring" value="rowID_original"/>
-                <entry key="1" type="xstring" value="rowIndex_original"/>
-                <entry key="2" type="xstring" value="Majority Protein IDs_SplitResultList"/>
-                <entry key="3" type="xstring" value="rowIndex_ungroupped"/>
-            </config>
-            <config key="excluded_names">
-                <entry key="array-size" type="xint" value="0"/>
-            </config>
-            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value="*"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-            </config>
+        <config key="rightColumnSelectionConfig">
             <config key="datatype">
                 <config key="typelist">
                     <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
@@ -121,9 +30,15 @@
                     <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                 </config>
             </config>
-        </config>
-        <config key="rightColumnSelectionConfig">
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value="*"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
             <config key="included_names">
                 <entry key="array-size" type="xint" value="20"/>
                 <entry key="0" type="xstring" value="Protein ID"/>
@@ -147,16 +62,64 @@
                 <entry key="18" type="xstring" value="UniProt_Cross-reference (Pfam)"/>
                 <entry key="19" type="xstring" value="UniProt_Cross-reference (IntAct)"/>
             </config>
-            <config key="excluded_names">
-                <entry key="array-size" type="xint" value="0"/>
-            </config>
             <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value="*"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-            </config>
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+        </config>
+        <config key="dataCellComparisonMode_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="suffix" type="xstring" value=" (right)"/>
+        <config key="leftTableJoinPredicate">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="$RowID$"/>
+        </config>
+        <config key="suffix_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="outputRowOrder_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="includeRightUnmatchedInOutput_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="leftTableJoinPredicate_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_stringarray"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="rightTableJoinPredicate">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="$RowID$"/>
+        </config>
+        <config key="maxOpenFiles_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="outputUnmatchedRowsToSeparatePorts" type="xboolean" value="false"/>
+        <config key="rowKeyFactory_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="includeMatchesInOutput" type="xboolean" value="true"/>
+        <entry key="rowKeyFactory" type="xstring" value="CONCATENATE"/>
+        <entry key="mergeJoinColumns" type="xboolean" value="false"/>
+        <config key="compositionMode_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="includeLeftUnmatchedInOutput" type="xboolean" value="true"/>
+        <config key="enableHiliting_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="includeLeftUnmatchedInOutput_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="leftColumnSelectionConfig">
             <config key="datatype">
                 <config key="typelist">
                     <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
@@ -167,7 +130,44 @@
                     <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                 </config>
             </config>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value="*"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="4"/>
+                <entry key="0" type="xstring" value="rowID_original"/>
+                <entry key="1" type="xstring" value="rowIndex_original"/>
+                <entry key="2" type="xstring" value="Majority Protein IDs_SplitResultList"/>
+                <entry key="3" type="xstring" value="rowIndex_ungroupped"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
         </config>
+        <entry key="includeRightUnmatchedInOutput" type="xboolean" value="false"/>
+        <config key="mergeJoinColumns_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="duplicateHandling_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="maxOpenFiles" type="xint" value="200"/>
+        <entry key="dataCellComparisonMode" type="xstring" value="STRICT"/>
+        <config key="rowKeySeparator_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="duplicateHandling" type="xstring" value="APPEND_SUFFIX"/>
+        <entry key="enableHiliting" type="xboolean" value="false"/>
+        <entry key="compositionMode" type="xstring" value="MATCH_ALL"/>
+        <entry key="rowKeySeparator" type="xstring" value="_"/>
     </config>
     <config key="variables">
         <config key="tree">

@@ -6,15 +6,24 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="flowVariableName" type="xstring" value="bottom_input_id_column"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="column" type="xstring" isnull="true" value=""/>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="parameterName" type="xstring" value="bottom_input_id_column"/>
-        <entry key="label" type="xstring" value="Bottom table ID column"/>
+        <config key="input_filter">
+            <config key="type_filter">
+                <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.time.localdatetime.LocalDateTimeValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+            </config>
+            <entry key="allow_all_types" type="xboolean" value="true"/>
+            <entry key="filter_columns_without_domain" type="xboolean" value="false"/>
+        </config>
         <entry key="description" type="xstring" value="Bottom input table column containing IDs you want to look up values for (one ID per row necessary!)"/>
-        <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="bottom_input_id_column"/>
         <config key="possibleColumns">
             <entry key="array-size" type="xint" value="15"/>
             <entry key="0" type="xstring" value="Protein ID"/>
@@ -33,21 +42,12 @@
             <entry key="13" type="xstring" value="Protein families"/>
             <entry key="14" type="xstring" value="Interacts with"/>
         </config>
+        <entry key="parameterName" type="xstring" value="bottom_input_id_column"/>
+        <entry key="label" type="xstring" value="Bottom table ID column"/>
         <entry key="type" type="xstring" value="Dropdown"/>
+        <entry key="required" type="xboolean" value="true"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
-        <config key="input_filter">
-            <config key="type_filter">
-                <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.time.localdatetime.LocalDateTimeValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-            </config>
-            <entry key="allow_all_types" type="xboolean" value="true"/>
-            <entry key="filter_columns_without_domain" type="xboolean" value="false"/>
-        </config>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="bottom input table %%00010identifiers column %%00010selection"/>

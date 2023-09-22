@@ -7,20 +7,6 @@
     </config>
     <config key="model">
         <config key="column-filter">
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
-            <config key="included_names">
-                <entry key="array-size" type="xint" value="0"/>
-            </config>
-            <config key="excluded_names">
-                <entry key="array-size" type="xint" value="0"/>
-            </config>
-            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value=""/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-            </config>
             <config key="datatype">
                 <config key="typelist">
                     <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
@@ -31,12 +17,26 @@
                     <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                 </config>
             </config>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
         </config>
+        <entry key="no_columns_policy" type="xboolean" value="true"/>
         <config key="no_columns_policy_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="no_columns_policy" type="xboolean" value="true"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>

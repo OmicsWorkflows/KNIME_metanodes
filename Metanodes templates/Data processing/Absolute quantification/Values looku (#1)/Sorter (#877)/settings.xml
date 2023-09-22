@@ -10,12 +10,12 @@
             <entry key="array-size" type="xint" value="1"/>
             <entry key="0" type="xstring" value="rowIndex_original"/>
         </config>
+        <entry key="missingToEnd" type="xboolean" value="false"/>
+        <entry key="sortinmemory" type="xboolean" value="false"/>
         <config key="sortOrder">
             <entry key="array-size" type="xint" value="1"/>
             <entry key="0" type="xboolean" value="true"/>
         </config>
-        <entry key="sortinmemory" type="xboolean" value="false"/>
-        <entry key="missingToEnd" type="xboolean" value="false"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="resorts the table %%00010to be sorted like in the %%00010beginning"/>

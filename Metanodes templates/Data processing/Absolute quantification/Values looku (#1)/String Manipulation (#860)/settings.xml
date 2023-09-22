@@ -6,12 +6,12 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="return_type" type="xstring" value="java.lang.String"/>
         <entry key="expression" type="xstring" value="string($$ROWID$$)"/>
         <entry key="replaced_column" type="xstring" value="rowID_original"/>
         <entry key="append_column" type="xboolean" value="false"/>
-        <entry key="test_compilation_on_dialog_close" type="xboolean" value="true"/>
         <entry key="insert_missing_as_null" type="xboolean" value="false"/>
-        <entry key="return_type" type="xstring" value="java.lang.String"/>
+        <entry key="test_compilation_on_dialog_close" type="xboolean" value="true"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="adds rowID_original%%00010column"/>

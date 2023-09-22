@@ -8,8 +8,8 @@
     <config key="model">
         <config key="all_columns">
             <config key="0">
-                <entry key="old_column_name" type="xstring" value="PG_SplitResultList"/>
                 <entry key="new_column_name" type="xstring" value="Protein.Group.Set"/>
+                <entry key="old_column_name" type="xstring" value="PG_SplitResultList"/>
                 <entry key="new_column_type" type="xint" value="0"/>
             </config>
         </config>

@@ -6,26 +6,26 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="script" type="xstring" value="library(dplyr)%%00010library(magrittr)%%00010%%00010df &lt;- knime.in%%00010%%00010## which PGs only show up solitarily%%00010one_PGs &lt;- df %&gt;%%%00010%%00009filter(No.Proteins == 1) %&gt;%%%00010%%00009select(PG) %&gt;%%%00010%%00009lapply(as.character) %&gt;%%%00010%%00009unlist() %&gt;%%%00010%%00009unique()%%00010%%00010## which PGs only show up in groups with other PGs%%00010multiple_PGs_df &lt;- df %&gt;%%%00010%%00009filter(No.Proteins &gt; 1)%%00010%%00009%%00010multiple_PGs &lt;- multiple_PGs_df %&gt;%%%00010%%00009select(Protein.Group.Set) %&gt;%%%00010%%00009unlist() %&gt;%%%00010%%00009unname() %&gt;%%%00010%%00009unique()%%00010%%00010## which PGs have both unique and shared precursors%%00010both_PGs &lt;- intersect(one_PGs, multiple_PGs)%%00010%%00010## which PGs have only unique precursors%%00010onlyunique_PGs &lt;- setdiff(one_PGs, both_PGs)%%00010%%00010## dataframes which contain shared and single precursors%%00010df_single &lt;- df[df$No.Protein == 1,]%%00010df_shared &lt;- df[df$No.Protein &gt; 1,] ## this df is further processed in the bottom branch%%00010%%00010## splitting dataframe which contains single precursors based on type of PGs%%00010df_unique &lt;- df_single[df_single$Protein.Group %in% onlyunique_PGs,] ## this df is further processed in the top branch%%00010df_both &lt;- df_single[df_single$Protein.Group %in% both_PGs,] ## this df is further processed in the bottom branch%%00010%%00010rframe &lt;- knime.in"/>
-        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
-        <entry key="version" type="xstring" value="version 1.x"/>
-        <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
-        <entry key="sendRowNames" type="xboolean" value="true"/>
-        <entry key="sendBatchSize" type="xint" value="10000"/>
-        <entry key="knimeInType" type="xstring" value="data.frame"/>
         <entry key="overwriteRHome" type="xboolean" value="false"/>
-        <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
+        <entry key="sendBatchSize" type="xint" value="10000"/>
         <entry key="useRPathHome" type="xboolean" value="true"/>
+        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+        <entry key="sendRowNames" type="xboolean" value="true"/>
+        <entry key="knimeInType" type="xstring" value="data.frame"/>
+        <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
         <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
+        <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+        <entry key="version" type="xstring" value="version 1.x"/>
+        <entry key="script" type="xstring" value="library(dplyr)%%00010library(magrittr)%%00010%%00010df &lt;- knime.in%%00010%%00010## which PGs only show up solitarily%%00010one_PGs &lt;- df %&gt;%%%00010%%00009filter(No.Proteins == 1) %&gt;%%%00010%%00009select(PG) %&gt;%%%00010%%00009lapply(as.character) %&gt;%%%00010%%00009unlist() %&gt;%%%00010%%00009unique()%%00010%%00010## which PGs only show up in groups with other PGs%%00010multiple_PGs_df &lt;- df %&gt;%%%00010%%00009filter(No.Proteins &gt; 1)%%00010%%00009%%00010multiple_PGs &lt;- multiple_PGs_df %&gt;%%%00010%%00009select(Protein.Group.Set) %&gt;%%%00010%%00009unlist() %&gt;%%%00010%%00009unname() %&gt;%%%00010%%00009unique()%%00010%%00010## which PGs have both unique and shared precursors%%00010both_PGs &lt;- intersect(one_PGs, multiple_PGs)%%00010%%00010## which PGs have only unique precursors%%00010onlyunique_PGs &lt;- setdiff(one_PGs, both_PGs)%%00010%%00010## dataframes which contain shared and single precursors%%00010df_single &lt;- df[df$No.Protein == 1,]%%00010df_shared &lt;- df[df$No.Protein &gt; 1,] ## this df is further processed in the bottom branch%%00010%%00010## splitting dataframe which contains single precursors based on type of PGs%%00010df_unique &lt;- df_single[df_single$Protein.Group %in% onlyunique_PGs,] ## this df is further processed in the top branch%%00010df_both &lt;- df_single[df_single$Protein.Group %in% both_PGs,] ## this df is further processed in the bottom branch%%00010%%00010rframe &lt;- knime.in"/>
     </config>
     <config key="variables">
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
             <config key="rHome">
                 <entry key="used_variable" type="xstring" value="Rcommand"/>
                 <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
             </config>
         </config>
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="split df "/>

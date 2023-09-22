@@ -11,13 +11,13 @@
             <entry key="0" type="xstring" value="rowIndex_original"/>
             <entry key="1" type="xstring" value="rowIndex_ungroupped"/>
         </config>
+        <entry key="missingToEnd" type="xboolean" value="false"/>
+        <entry key="sortinmemory" type="xboolean" value="false"/>
         <config key="sortOrder">
             <entry key="array-size" type="xint" value="2"/>
             <entry key="0" type="xboolean" value="true"/>
             <entry key="1" type="xboolean" value="true"/>
         </config>
-        <entry key="sortinmemory" type="xboolean" value="false"/>
-        <entry key="missingToEnd" type="xboolean" value="false"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="resorts to the order %%00010before the join step"/>

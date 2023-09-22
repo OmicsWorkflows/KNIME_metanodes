@@ -6,22 +6,22 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="error_message" type="xstring" value=""/>
+        <entry key="flowvariablename" type="xstring" value="looked_up_values_delimiter"/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value=";"/>
         </config>
-        <entry key="label" type="xstring" value="Looked up values delimiter"/>
         <entry key="description" type="xstring" value="Delimiter to be used to divide individual looked up values"/>
-        <entry key="hideInWizard" type="xboolean" value="false"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="required" type="xboolean" value="true"/>
+        <entry key="label" type="xstring" value="Looked up values delimiter"/>
         <entry key="parameterName" type="xstring" value="string-input"/>
-        <entry key="customCSS" type="xstring" value=""/>
-        <entry key="flowvariablename" type="xstring" value="looked_up_values_delimiter"/>
+        <entry key="required" type="xboolean" value="true"/>
         <entry key="regex" type="xstring" value=""/>
-        <entry key="error_message" type="xstring" value=""/>
+        <entry key="hideInWizard" type="xboolean" value="false"/>
         <entry key="editorType" type="xstring" value="Single-line"/>
         <entry key="multilineEditorWidth" type="xint" value="60"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
+        <entry key="customCSS" type="xstring" value=""/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="looked up values %%00013%%00010delimiter"/>

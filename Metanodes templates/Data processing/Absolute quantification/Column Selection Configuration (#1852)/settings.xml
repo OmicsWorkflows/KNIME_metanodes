@@ -6,15 +6,24 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="flowVariableName" type="xstring" value="pg_column_bottom"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="column" type="xstring" value="Q.Value (Min*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="parameterName" type="xstring" value="pg_column_bottom"/>
-        <entry key="label" type="xstring" value="Protein names column (bottom table)"/>
+        <config key="input_filter">
+            <config key="type_filter">
+                <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.time.localdatetime.LocalDateTimeValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+            </config>
+            <entry key="allow_all_types" type="xboolean" value="true"/>
+            <entry key="filter_columns_without_domain" type="xboolean" value="false"/>
+        </config>
         <entry key="description" type="xstring" value="Select column containing protein group names from the bottom table"/>
-        <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="pg_column_bottom"/>
         <config key="possibleColumns">
             <entry key="array-size" type="xint" value="89"/>
             <entry key="0" type="xstring" value="peptide.ID"/>
@@ -107,21 +116,12 @@
             <entry key="87" type="xstring" value="Q.Value (Min*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti"/>
             <entry key="88" type="xstring" value="Q.Value (Min*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
         </config>
+        <entry key="parameterName" type="xstring" value="pg_column_bottom"/>
+        <entry key="label" type="xstring" value="Protein names column (bottom table)"/>
         <entry key="type" type="xstring" value="Dropdown"/>
+        <entry key="required" type="xboolean" value="true"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
-        <config key="input_filter">
-            <config key="type_filter">
-                <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.time.localdatetime.LocalDateTimeValue" type="xboolean" value="false"/>
-            </config>
-            <entry key="allow_all_types" type="xboolean" value="true"/>
-            <entry key="filter_columns_without_domain" type="xboolean" value="false"/>
-        </config>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="PG column%%00010(bottom)"/>

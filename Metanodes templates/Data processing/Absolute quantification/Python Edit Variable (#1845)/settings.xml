@@ -7,24 +7,24 @@
     </config>
     <config key="model">
         <entry key="sourceCode" type="xstring" value="# if switch variable%%00010if flow_variables['remove-unused'] == 1:%%00010%%00009flow_variables['switch'] = 'top'%%00010else:%%00010%%00009flow_variables['switch'] = 'bottom'%%00010%%00010# adjust prefix variable%%00010if flow_variables['new_prefix'] != '':%%00010%%00009flow_variables['prefix_replacement'] = str(flow_variables['new_prefix']) + '$1'%%00010else:%%00010%%00009flow_variables['prefix_replacement'] = '$1'%%00010%%00010# adjust protease digestion pattern%%00010digestion = [x.strip() for x in flow_variables['protease_digestion'].split(',')]%%00010cut_after = []%%00010cut_before = []%%00010skip_after = []%%00010skip_before = []%%00010%%00010for x in digestion:%%00010%%00009if x[0] == '^':%%00010%%00009%%00009cut_before.append(x[1])%%00010%%00009elif x[1] == '^':%%00010%%00009%%00009cut_after.append(x[0])%%00010%%00009elif x[0] == '-':%%00010%%00009%%00009skip_before.append(x[1])%%00010%%00009elif x[1] == '-':%%00010%%00009%%00009skip_after.append(x[0])%%00010%%00010flow_variables['cut_before'] = ''.join(cut_before)%%00010flow_variables['cut_after'] = ''.join(cut_after)%%00010flow_variables['skip_before'] = ''.join(skip_before)%%00010flow_variables['skip_after'] = ''.join(skip_after)"/>
-        <entry key="rowLimit" type="xint" value="1000"/>
-        <entry key="convertMissingToPython" type="xboolean" value="false"/>
-        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
-        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
-        <entry key="sentinelValue" type="xint" value="0"/>
-        <entry key="chunkSize" type="xint" value="500000"/>
-        <entry key="pythonVersionOption" type="xstring" value="python3"/>
         <entry key="python2Command" type="xstring" value=""/>
         <entry key="python3Command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
     </config>
     <config key="variables">
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
             <config key="python3Command">
                 <entry key="used_variable" type="xstring" value="python3command"/>
                 <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
             </config>
         </config>
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="edit if switch%%00010variable"/>
