@@ -6,26 +6,26 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="possible_choices">
+            <entry key="array-size" type="xint" value="2"/>
+            <entry key="0" type="xstring" value="MaxLFQ"/>
+            <entry key="1" type="xstring" value="Top3"/>
+        </config>
+        <entry key="flowVariableName" type="xstring" value="algorithm"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <config key="variable_value">
                 <entry key="array-size" type="xint" value="1"/>
                 <entry key="0" type="xstring" value="MaxLFQ"/>
             </config>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Select which algorithm should be used for protein quantification. In case of MaxLFQ, all peptides are taken into consideration, top3 only takes the 3 most intense peptides"/>
         <entry key="parameterName" type="xstring" value="algorithm"/>
         <entry key="label" type="xstring" value="Algorithm"/>
-        <entry key="description" type="xstring" value="Select which algorithm should be used for protein quantification. In case of MaxLFQ, all peptides are taken into consideration, top3 only takes the 3 most intense peptides"/>
-        <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="algorithm"/>
-        <config key="possible_choices">
-            <entry key="array-size" type="xint" value="2"/>
-            <entry key="0" type="xstring" value="MaxLFQ"/>
-            <entry key="1" type="xstring" value="Top3"/>
-        </config>
         <entry key="type" type="xstring" value="Radio buttons (horizontal)"/>
-        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
+        <entry key="required" type="xboolean" value="true"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="algorithm"/>
@@ -51,7 +51,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <config key="nodecontainer_message">
         <entry key="type" type="xstring" value="WARNING"/>
         <entry key="message" type="xstring" value="Component does not have input data, execute upstream nodes first"/>

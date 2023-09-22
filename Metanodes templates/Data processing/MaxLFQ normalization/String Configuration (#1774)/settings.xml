@@ -15,7 +15,7 @@
         </config>
         <entry key="description" type="xstring" value="Enter common prefix for peptide intensity columns to be removed in order to extract experiment names"/>
         <entry key="parameterName" type="xstring" value="prefix_to_remove"/>
-        <entry key="label" type="xstring" value="Common prefix for peptide intensity columns"/>
+        <entry key="label" type="xstring" value="Peptide intensity columns prefix to remove"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="regex" type="xstring" value=""/>
         <entry key="editorType" type="xstring" value="Single-line"/>
@@ -45,7 +45,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.input.string.StringDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="String Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
