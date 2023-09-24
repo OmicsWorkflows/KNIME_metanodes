@@ -6,30 +6,30 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="port-names">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value="MaxLFQ results"/>
-        </config>
-        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
-        <config key="port-descriptions">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value="Output table with appended MaxLFQ results"/>
-        </config>
         <config key="variable-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
                 <entry key="array-size" type="xint" value="0"/>
-            </config>
-            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value=""/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="0"/>
             </config>
+            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+        </config>
+        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
+        <config key="port-names">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="Results"/>
+        </config>
+        <config key="port-descriptions">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="Output table with appended results"/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>

@@ -6,25 +6,11 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="newColumnName4RowKeyValues_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="false"/>
-        </config>
-        <entry key="newColumnName4RowKeyValues" type="xstring" value=""/>
-        <entry key="replaceRowKey" type="xboolean" value="true"/>
-        <config key="ensureUniqueness_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
         <config key="replaceRowKey_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <config key="replaceMissingValues_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="replaceMissingValues" type="xboolean" value="false"/>
+        <entry key="replaceRowKey" type="xboolean" value="true"/>
         <config key="newRowKeyColumnName_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -35,17 +21,31 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="removeRowKeyCol" type="xboolean" value="true"/>
-        <config key="enableHilite_Internals">
+        <config key="ensureUniqueness_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="ensureUniqueness" type="xboolean" value="false"/>
-        <entry key="enableHilite" type="xboolean" value="false"/>
-        <entry key="appendRowKeyCol" type="xboolean" value="false"/>
+        <config key="replaceMissingValues_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="replaceMissingValues" type="xboolean" value="false"/>
         <config key="appendRowKeyCol_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
+        <entry key="appendRowKeyCol" type="xboolean" value="false"/>
+        <config key="newColumnName4RowKeyValues_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="false"/>
+        </config>
+        <entry key="newColumnName4RowKeyValues" type="xstring" value=""/>
+        <config key="enableHilite_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="enableHilite" type="xboolean" value="false"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="assigns the row indexes %%00010present in the upper table %%00010prior the joiner node"/>
