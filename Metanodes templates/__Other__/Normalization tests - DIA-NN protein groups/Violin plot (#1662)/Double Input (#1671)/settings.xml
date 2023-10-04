@@ -6,21 +6,21 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="flowvariablename" type="xstring" value="violin_float"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="max" type="xdouble" value="1.0"/>
         <config key="defaultValue">
             <entry key="double" type="xdouble" value="0.5"/>
         </config>
-        <entry key="label" type="xstring" value="Float bandwidth"/>
-        <entry key="description" type="xstring" value="Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)"/>
-        <entry key="hideInWizard" type="xboolean" value="false"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="required" type="xboolean" value="true"/>
-        <entry key="parameterName" type="xstring" value="double-input"/>
-        <entry key="customCSS" type="xstring" value=""/>
-        <entry key="flowvariablename" type="xstring" value="violin_float"/>
         <entry key="use_min" type="xboolean" value="true"/>
-        <entry key="use_max" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)"/>
+        <entry key="label" type="xstring" value="Float bandwidth"/>
+        <entry key="parameterName" type="xstring" value="double-input"/>
+        <entry key="required" type="xboolean" value="true"/>
+        <entry key="hideInWizard" type="xboolean" value="false"/>
         <entry key="min" type="xdouble" value="0.0"/>
-        <entry key="max" type="xdouble" value="1.0"/>
+        <entry key="use_max" type="xboolean" value="false"/>
+        <entry key="customCSS" type="xstring" value=""/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="violin float"/>

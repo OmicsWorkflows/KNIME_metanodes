@@ -6,15 +6,15 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="flowVariableName" type="xstring" value="show_raw_data"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="boolean" type="xboolean" value="false"/>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Whether to show the raw values in each heatmap cell"/>
         <entry key="parameterName" type="xstring" value="show_raw_data"/>
         <entry key="label" type="xstring" value="Show raw data?"/>
-        <entry key="description" type="xstring" value="Whether to show the raw values in each heatmap cell"/>
         <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="show_raw_data"/>
         <entry key="pushIntVar" type="xboolean" value="true"/>
     </config>
     <config key="nodeAnnotation">

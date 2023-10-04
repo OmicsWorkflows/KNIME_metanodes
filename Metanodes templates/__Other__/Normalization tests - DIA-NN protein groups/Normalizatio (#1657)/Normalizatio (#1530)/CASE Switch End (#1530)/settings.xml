@@ -6,10 +6,10 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="append_suffix" type="xboolean" value="true"/>
-        <entry key="suffix" type="xstring" value="_dup"/>
         <entry key="enable_hiliting" type="xboolean" value="false"/>
         <entry key="multipleActiveHandling" type="xstring" value="Merge"/>
+        <entry key="suffix" type="xstring" value="_dup"/>
+        <entry key="append_suffix" type="xboolean" value="true"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
@@ -33,8 +33,8 @@
         <config key="Input">
             <entry key="boundTo" type="xstring" value="Output"/>
             <entry key="fixedPortNumber" type="xint" value="1"/>
-            <entry key="lastConfiguredPortNumber" type="xint" value="7"/>
-            <entry key="configuredPortNumber" type="xint" value="7"/>
+            <entry key="lastConfiguredPortNumber" type="xint" value="8"/>
+            <entry key="configuredPortNumber" type="xint" value="8"/>
             <config key="portType">
                 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
             </config>

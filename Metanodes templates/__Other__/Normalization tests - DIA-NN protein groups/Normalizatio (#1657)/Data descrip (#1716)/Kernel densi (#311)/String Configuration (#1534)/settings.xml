@@ -6,20 +6,20 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="error_message" type="xstring" value=""/>
+        <entry key="flowVariableName" type="xstring" value="center_line"/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value="None"/>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="X axis value at which the center (control) line should be drawn; 'None' not to draw any extra line next to the KDE plots"/>
         <entry key="parameterName" type="xstring" value="center_line"/>
         <entry key="label" type="xstring" value="Center (control) line position"/>
-        <entry key="description" type="xstring" value="X axis value at which the center (control) line should be drawn; 'None' not to draw any extra line next to the KDE plots"/>
         <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="center_line"/>
         <entry key="regex" type="xstring" value=""/>
-        <entry key="error_message" type="xstring" value=""/>
         <entry key="editorType" type="xstring" value="Single-line"/>
         <entry key="multilineEditorWidth" type="xint" value="40"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="center line"/>

@@ -6,17 +6,17 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="script" type="xstring" value="library(limma)%%00010library(preprocessCore)%%00010%%00010data &lt;- data.matrix(knime.in)%%00010%%00010data_norm &lt;- normalizeCyclicLoess (data, method=&quot;pairs&quot;)%%00010%%00010knime.out &lt;- as.data.frame(data_norm)"/>
-        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
-        <entry key="version" type="xstring" value="version 1.x"/>
-        <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
-        <entry key="sendRowNames" type="xboolean" value="true"/>
-        <entry key="sendBatchSize" type="xint" value="10000"/>
-        <entry key="knimeInType" type="xstring" value="data.frame"/>
         <entry key="overwriteRHome" type="xboolean" value="false"/>
-        <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
+        <entry key="sendBatchSize" type="xint" value="10000"/>
         <entry key="useRPathHome" type="xboolean" value="true"/>
+        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+        <entry key="sendRowNames" type="xboolean" value="true"/>
+        <entry key="knimeInType" type="xstring" value="data.frame"/>
+        <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
         <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
+        <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+        <entry key="version" type="xstring" value="version 1.x"/>
+        <entry key="script" type="xstring" value="library(limma)%%00010library(preprocessCore)%%00010%%00010data &lt;- data.matrix(knime.in)%%00010%%00010data_norm &lt;- normalizeCyclicLoess (data, method=&quot;pairs&quot;)%%00010%%00010knime.out &lt;- as.data.frame(data_norm)"/>
     </config>
     <config key="variables">
         <config key="tree">

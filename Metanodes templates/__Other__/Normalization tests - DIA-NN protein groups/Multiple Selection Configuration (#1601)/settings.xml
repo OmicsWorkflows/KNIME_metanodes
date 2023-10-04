@@ -6,23 +6,23 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="possible_choices">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <entry key="flowVariableName" type="xstring" value="column_selection"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <config key="variable_value">
                 <entry key="array-size" type="xint" value="0"/>
             </config>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Select names of the samples which should be normalized in the following steps. By default, all samples are selected"/>
         <entry key="parameterName" type="xstring" value="column_selection"/>
         <entry key="label" type="xstring" value="Select samples to be processed"/>
-        <entry key="description" type="xstring" value="Select names of the samples which should be normalized in the following steps. By default, all samples are selected"/>
-        <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="column_selection"/>
-        <config key="possible_choices">
-            <entry key="array-size" type="xint" value="0"/>
-        </config>
         <entry key="type" type="xstring" value="Twinlist"/>
-        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
+        <entry key="required" type="xboolean" value="true"/>
     </config>
     <config key="variables">
         <config key="tree">

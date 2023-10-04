@@ -6,17 +6,16 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="flowvariablename" type="xstring" value="cluster_method_correlation"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="variable_value" type="xstring" value="average"/>
         </config>
-        <entry key="label" type="xstring" value="Clusterring method"/>
         <entry key="description" type="xstring" value="select the clustering method used during cluster analysis"/>
-        <entry key="hideInWizard" type="xboolean" value="false"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="required" type="xboolean" value="true"/>
+        <entry key="label" type="xstring" value="Clusterring method"/>
         <entry key="parameterName" type="xstring" value="single-selection"/>
-        <entry key="customCSS" type="xstring" value=""/>
-        <entry key="flowvariablename" type="xstring" value="cluster_method_correlation"/>
+        <entry key="type" type="xstring" value="Dropdown"/>
+        <entry key="required" type="xboolean" value="true"/>
         <config key="possible_choices">
             <entry key="array-size" type="xint" value="7"/>
             <entry key="0" type="xstring" value="complete"/>
@@ -27,9 +26,10 @@
             <entry key="5" type="xstring" value="median"/>
             <entry key="6" type="xstring" value="ward"/>
         </config>
-        <entry key="type" type="xstring" value="Dropdown"/>
+        <entry key="hideInWizard" type="xboolean" value="false"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
+        <entry key="customCSS" type="xstring" value=""/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="cluster method"/>
