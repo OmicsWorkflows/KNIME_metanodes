@@ -8,11 +8,10 @@
     <config key="model">
         <config key="defaultValue">
             <config key="variable_value">
-                <entry key="array-size" type="xint" value="4"/>
+                <entry key="array-size" type="xint" value="3"/>
                 <entry key="0" type="xstring" value="absolute values"/>
-                <entry key="1" type="xstring" value="log2"/>
-                <entry key="2" type="xstring" value="ppm"/>
-                <entry key="3" type="xstring" value="percentages"/>
+                <entry key="1" type="xstring" value="ppm"/>
+                <entry key="2" type="xstring" value="percentages"/>
             </config>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
@@ -24,7 +23,7 @@
         <config key="possible_choices">
             <entry key="array-size" type="xint" value="4"/>
             <entry key="0" type="xstring" value="absolute values"/>
-            <entry key="1" type="xstring" value="log2"/>
+            <entry key="1" type="xstring" value="log2 of absolute values"/>
             <entry key="2" type="xstring" value="ppm"/>
             <entry key="3" type="xstring" value="percentages"/>
         </config>
@@ -56,7 +55,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.selection.multiple.MultipleSelectionDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="Multiple Selection Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
