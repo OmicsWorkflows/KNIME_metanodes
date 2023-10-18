@@ -38,7 +38,7 @@
 <entry key="sub-node-description" type="xstring" value="Custom plot settings for the box plots."/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="CONFIGURED"/>
+<entry key="state" type="xstring" value="IDLE"/>
 <config key="nodecontainer_message">
 <entry key="type" type="xstring" value="WARNING"/>
 <entry key="message" type="xstring" value="Component does not have input data, execute upstream nodes first"/>
