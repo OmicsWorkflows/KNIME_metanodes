@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="workflow.knime">
-<entry key="created_by" type="xstring" value="3.7.2.v201904170949"/>
+<entry key="created_by" type="xstring" value="4.1.3.v202005121100"/>
 <entry key="created_by_nightly" type="xboolean" value="false"/>
-<entry key="version" type="xstring" value="3.7.0"/>
+<entry key="version" type="xstring" value="4.1.0"/>
 <entry key="name" type="xstring" value="Median normalized data description"/>
 <config key="authorInformation">
 <entry key="authored-by" type="xstring" value="&lt;unknown&gt;"/>
@@ -46,7 +46,7 @@
 </config>
 <config key="node_263">
 <entry key="id" type="xint" value="263"/>
-<entry key="node_settings_file" type="xstring" value="Image Port Writer (#263)/settings.xml"/>
+<entry key="node_settings_file" type="xstring" value="Image Writer _Port_ (#263)/settings.xml"/>
 <entry key="node_is_meta" type="xboolean" value="false"/>
 <entry key="node_type" type="xstring" value="NativeNode"/>
 <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -55,14 +55,14 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="270"/>
 <entry key="1" type="xint" value="80"/>
-<entry key="2" type="xint" value="151"/>
+<entry key="2" type="xint" value="165"/>
 <entry key="3" type="xint" value="80"/>
 </config>
 </config>
 </config>
 <config key="node_264">
 <entry key="id" type="xint" value="264"/>
-<entry key="node_settings_file" type="xstring" value="Image Port Writer (#264)/settings.xml"/>
+<entry key="node_settings_file" type="xstring" value="Image Writer _Port_ (#264)/settings.xml"/>
 <entry key="node_is_meta" type="xboolean" value="false"/>
 <entry key="node_type" type="xstring" value="NativeNode"/>
 <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -71,14 +71,14 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="410"/>
 <entry key="1" type="xint" value="80"/>
-<entry key="2" type="xint" value="151"/>
+<entry key="2" type="xint" value="165"/>
 <entry key="3" type="xint" value="80"/>
 </config>
 </config>
 </config>
 <config key="node_267">
 <entry key="id" type="xint" value="267"/>
-<entry key="node_settings_file" type="xstring" value="Image Port Writer (#267)/settings.xml"/>
+<entry key="node_settings_file" type="xstring" value="Image Writer _Port_ (#267)/settings.xml"/>
 <entry key="node_is_meta" type="xboolean" value="false"/>
 <entry key="node_type" type="xstring" value="NativeNode"/>
 <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -87,14 +87,14 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="570"/>
 <entry key="1" type="xint" value="80"/>
-<entry key="2" type="xint" value="151"/>
+<entry key="2" type="xint" value="165"/>
 <entry key="3" type="xint" value="80"/>
 </config>
 </config>
 </config>
 <config key="node_272">
 <entry key="id" type="xint" value="272"/>
-<entry key="node_settings_file" type="xstring" value="Image Port Writer (#272)/settings.xml"/>
+<entry key="node_settings_file" type="xstring" value="Image Writer _Port_ (#272)/settings.xml"/>
 <entry key="node_is_meta" type="xboolean" value="false"/>
 <entry key="node_type" type="xstring" value="NativeNode"/>
 <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -103,14 +103,14 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="750"/>
 <entry key="1" type="xint" value="80"/>
-<entry key="2" type="xint" value="151"/>
+<entry key="2" type="xint" value="165"/>
 <entry key="3" type="xint" value="80"/>
 </config>
 </config>
 </config>
 <config key="node_279">
 <entry key="id" type="xint" value="279"/>
-<entry key="node_settings_file" type="xstring" value="Image Port Writer (#279)/settings.xml"/>
+<entry key="node_settings_file" type="xstring" value="Image Writer _Port_ (#279)/settings.xml"/>
 <entry key="node_is_meta" type="xboolean" value="false"/>
 <entry key="node_type" type="xstring" value="NativeNode"/>
 <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -119,23 +119,23 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="950"/>
 <entry key="1" type="xint" value="80"/>
-<entry key="2" type="xint" value="151"/>
+<entry key="2" type="xint" value="165"/>
 <entry key="3" type="xint" value="80"/>
 </config>
 </config>
 </config>
 <config key="node_281">
 <entry key="id" type="xint" value="281"/>
-<entry key="node_settings_file" type="xstring" value="Image Port Writer (#281)/settings.xml"/>
+<entry key="node_settings_file" type="xstring" value="Image Writer _Port_ (#281)/settings.xml"/>
 <entry key="node_is_meta" type="xboolean" value="false"/>
 <entry key="node_type" type="xstring" value="NativeNode"/>
 <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
 <config key="ui_settings">
 <config key="extrainfo.node.bounds">
 <entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="1170"/>
+<entry key="0" type="xint" value="1210"/>
 <entry key="1" type="xint" value="80"/>
-<entry key="2" type="xint" value="151"/>
+<entry key="2" type="xint" value="165"/>
 <entry key="3" type="xint" value="80"/>
 </config>
 </config>
@@ -197,7 +197,7 @@
 <config key="ui_settings">
 <config key="extrainfo.node.bounds">
 <entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="1064"/>
+<entry key="0" type="xint" value="1104"/>
 <entry key="1" type="xint" value="237"/>
 <entry key="2" type="xint" value="159"/>
 <entry key="3" type="xint" value="80"/>
