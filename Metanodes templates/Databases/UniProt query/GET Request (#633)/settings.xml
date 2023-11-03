@@ -92,6 +92,7 @@
         <config key="Kerberos"/>
         <entry key="Kerberos_enabled" type="xboolean" value="false"/>
         <entry key="follow redirects" type="xboolean" value="true"/>
+        <entry key="use async client" type="xboolean" value="false"/>
         <entry key="timeout" type="xint" value="30"/>
         <entry key="failOnServerError" type="xboolean" value="false"/>
         <entry key="failOnClientError" type="xboolean" value="false"/>
@@ -117,11 +118,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME REST Client Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.rest"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.1.v202201171150"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202210211111"/>
     <entry key="node-feature-name" type="xstring" value="KNIME REST Client Extension"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.rest.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.1.v202201171150"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.0.v202210211111"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="GET Request"/>
     <entry key="hasContent" type="xboolean" value="false"/>

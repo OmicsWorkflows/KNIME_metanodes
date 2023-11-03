@@ -12,7 +12,7 @@
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="prefix_to_remove"/>
         <entry key="label" type="xstring" value="Accessions prefix to remove"/>
-        <entry key="description" type="xstring" value="Common prefix to be removed from all accessions, letters size matters. Leave empty for no removal"/>
+        <entry key="description" type="xstring" value="Common prefix (or multiple prefixes) to be removed from all accessions, letters size matters; white spaces are not ignored or removed prior removal. Leave empty for no removal"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="prefix_to_remove"/>
         <entry key="regex" type="xstring" value=""/>
@@ -51,11 +51,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202112011347"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202302071224"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203171029"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.4.v202306091222"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="String Configuration"/>
     <entry key="hasContent" type="xboolean" value="false"/>
