@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="script" type="xstring" value="library(tidyr)%%00010library(dplyr)%%00010%%00010df &lt;- knime.in%%00010%%00010df$PG &lt;- gsub('+', knime.flow.in[[&quot;separator&quot;]], df$PG, fixed = TRUE)%%00010df$sample &lt;- sub(knime.flow.in[[&quot;old_prefix&quot;]], 'DIA-TPA+', df$sample, fixed = TRUE)%%00010%%00010knime.out &lt;- df"/>
+        <entry key="script" type="xstring" value="library(tidyr)%%00010library(dplyr)%%00010%%00010df &lt;- knime.in%%00010%%00010df$PG &lt;- gsub('+', knime.flow.in[[&quot;separator&quot;]], df$PG, fixed = TRUE)%%00010df$sample &lt;- sub(knime.flow.in[[&quot;old_suffix&quot;]], '', df$sample, fixed = TRUE)%%00010df$sample &lt;- sub(knime.flow.in[[&quot;old_prefix&quot;]], knime.flow.in[[&quot;prefix_tpa&quot;]], df$sample, fixed = TRUE)%%00010%%00010knime.out &lt;- df"/>
         <entry key="templateUUID" type="xstring" isnull="true" value=""/>
         <entry key="version" type="xstring" value="version 1.x"/>
         <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
