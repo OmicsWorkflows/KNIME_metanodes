@@ -8,11 +8,12 @@
     <config key="model">
         <config key="defaultValue">
             <config key="variable_value">
-                <entry key="array-size" type="xint" value="4"/>
+                <entry key="array-size" type="xint" value="5"/>
                 <entry key="0" type="xstring" value="absolute values"/>
                 <entry key="1" type="xstring" value="log2 of absolute values"/>
                 <entry key="2" type="xstring" value="ppm"/>
-                <entry key="3" type="xstring" value="percentages"/>
+                <entry key="3" type="xstring" value="log2 of ppm"/>
+                <entry key="4" type="xstring" value="percentages"/>
             </config>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
@@ -22,13 +23,14 @@
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="columns_to_return"/>
         <config key="possible_choices">
-            <entry key="array-size" type="xint" value="4"/>
+            <entry key="array-size" type="xint" value="5"/>
             <entry key="0" type="xstring" value="absolute values"/>
             <entry key="1" type="xstring" value="log2 of absolute values"/>
             <entry key="2" type="xstring" value="ppm"/>
-            <entry key="3" type="xstring" value="percentages"/>
+            <entry key="3" type="xstring" value="log2 of ppm"/>
+            <entry key="4" type="xstring" value="percentages"/>
         </config>
-        <entry key="type" type="xstring" value="Check boxes (horizontal)"/>
+        <entry key="type" type="xstring" value="Check boxes (vertical)"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
     </config>
