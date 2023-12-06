@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="workflow.knime">
-    <entry key="created_by" type="xstring" value="4.6.3.v202209271016"/>
+    <entry key="created_by" type="xstring" value="4.7.7.v202308161346"/>
     <entry key="created_by_nightly" type="xboolean" value="false"/>
     <entry key="version" type="xstring" value="4.1.0"/>
     <entry key="name" type="xstring" value="Correlation clustermap settings"/>
@@ -25,12 +25,12 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <config key="workflow_credentials"/>
     <config key="nodes">
         <config key="node_1665">
             <entry key="id" type="xint" value="1665"/>
-            <entry key="node_settings_file" type="xstring" value="String Input (#1665)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="String Input _legacy_ (#1665)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -46,7 +46,7 @@
         </config>
         <config key="node_1671">
             <entry key="id" type="xint" value="1671"/>
-            <entry key="node_settings_file" type="xstring" value="Single Selection (#1671)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Single Selection _legacy_ (#1671)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -62,7 +62,7 @@
         </config>
         <config key="node_1672">
             <entry key="id" type="xint" value="1672"/>
-            <entry key="node_settings_file" type="xstring" value="Single Selection (#1672)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Single Selection _legacy_ (#1672)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -78,7 +78,7 @@
         </config>
         <config key="node_1674">
             <entry key="id" type="xint" value="1674"/>
-            <entry key="node_settings_file" type="xstring" value="Double Input (#1674)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Double Input _legacy_ (#1674)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -94,7 +94,7 @@
         </config>
         <config key="node_1677">
             <entry key="id" type="xint" value="1677"/>
-            <entry key="node_settings_file" type="xstring" value="Boolean Input (#1677)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Boolean Input _legacy_ (#1677)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -110,7 +110,7 @@
         </config>
         <config key="node_1679">
             <entry key="id" type="xint" value="1679"/>
-            <entry key="node_settings_file" type="xstring" value="Single Selection (#1679)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Single Selection _legacy_ (#1679)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -126,7 +126,7 @@
         </config>
         <config key="node_1680">
             <entry key="id" type="xint" value="1680"/>
-            <entry key="node_settings_file" type="xstring" value="Single Selection (#1680)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Single Selection _legacy_ (#1680)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -142,7 +142,7 @@
         </config>
         <config key="node_1683">
             <entry key="id" type="xint" value="1683"/>
-            <entry key="node_settings_file" type="xstring" value="Python Edit Variable (#1683)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Edit Variable _legacy_ (#1683)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
