@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="workflow.knime">
-    <entry key="created_by" type="xstring" value="4.6.3.v202209271016"/>
+    <entry key="created_by" type="xstring" value="4.7.7.v202308161346"/>
     <entry key="created_by_nightly" type="xboolean" value="false"/>
     <entry key="version" type="xstring" value="4.1.0"/>
     <entry key="name" type="xstring" value="Data description"/>
@@ -592,7 +592,7 @@
         </config>
         <config key="node_346">
             <entry key="id" type="xint" value="346"/>
-            <entry key="node_settings_file" type="xstring" value="Python Edit Variable (#346)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Edit Variable _legacy_ (#346)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -608,7 +608,7 @@
         </config>
         <config key="node_347">
             <entry key="id" type="xint" value="347"/>
-            <entry key="node_settings_file" type="xstring" value="Python Edit Variable (#347)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Edit Variable _legacy_ (#347)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -624,7 +624,7 @@
         </config>
         <config key="node_348">
             <entry key="id" type="xint" value="348"/>
-            <entry key="node_settings_file" type="xstring" value="Python Edit Variable (#348)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Edit Variable _legacy_ (#348)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -640,7 +640,7 @@
         </config>
         <config key="node_349">
             <entry key="id" type="xint" value="349"/>
-            <entry key="node_settings_file" type="xstring" value="Python Edit Variable (#349)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Edit Variable _legacy_ (#349)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -656,7 +656,7 @@
         </config>
         <config key="node_350">
             <entry key="id" type="xint" value="350"/>
-            <entry key="node_settings_file" type="xstring" value="Python Edit Variable (#350)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Edit Variable _legacy_ (#350)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -672,7 +672,7 @@
         </config>
         <config key="node_351">
             <entry key="id" type="xint" value="351"/>
-            <entry key="node_settings_file" type="xstring" value="Python Edit Variable (#351)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Edit Variable _legacy_ (#351)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -688,7 +688,7 @@
         </config>
         <config key="node_352">
             <entry key="id" type="xint" value="352"/>
-            <entry key="node_settings_file" type="xstring" value="Python Edit Variable (#352)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Edit Variable _legacy_ (#352)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -704,7 +704,7 @@
         </config>
         <config key="node_353">
             <entry key="id" type="xint" value="353"/>
-            <entry key="node_settings_file" type="xstring" value="Python Edit Variable (#353)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Edit Variable _legacy_ (#353)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -720,7 +720,7 @@
         </config>
         <config key="node_354">
             <entry key="id" type="xint" value="354"/>
-            <entry key="node_settings_file" type="xstring" value="Python Edit Variable (#354)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Edit Variable _legacy_ (#354)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>

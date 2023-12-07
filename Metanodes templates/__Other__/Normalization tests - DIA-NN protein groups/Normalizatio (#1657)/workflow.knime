@@ -26,10 +26,6 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="ERROR"/>
-        <entry key="message" type="xstring" value="R Snippet 4:1:0:1657:1548: Error in R code: %%00010Error: Experimental design doesn't match number of samples%%00010Error: Subset list contains samples not included in the experimental design"/>
-    </config>
     <config key="workflow_credentials"/>
     <config key="nodes">
         <config key="node_1526">
