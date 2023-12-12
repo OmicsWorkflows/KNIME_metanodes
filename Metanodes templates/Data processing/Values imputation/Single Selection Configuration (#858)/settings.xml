@@ -21,9 +21,9 @@
         <config key="possible_choices">
             <entry key="array-size" type="xint" value="6"/>
             <entry key="0" type="xstring" value="constant"/>
-            <entry key="1" type="xstring" value="local minimum"/>
+            <entry key="1" type="xstring" value="column minimum"/>
             <entry key="2" type="xstring" value="global minimum"/>
-            <entry key="3" type="xstring" value="local quantile"/>
+            <entry key="3" type="xstring" value="column quantile"/>
             <entry key="4" type="xstring" value="global quantile"/>
             <entry key="5" type="xstring" value="global minimum per group"/>
         </config>
