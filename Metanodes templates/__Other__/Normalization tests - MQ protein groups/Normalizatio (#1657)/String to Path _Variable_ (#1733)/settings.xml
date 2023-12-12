@@ -111,6 +111,8 @@
                 <entry key="convenience_fs_category" type="xstring" value="LOCAL"/>
                 <entry key="relative_to" type="xstring" value="knime.mountpoint"/>
                 <entry key="mountpoint" type="xstring" value="LOCAL"/>
+                <entry key="spaceId" type="xstring" value=""/>
+                <entry key="spaceName" type="xstring" value=""/>
                 <entry key="custom_url_timeout" type="xint" value="1000"/>
                 <entry key="connected_fs" type="xboolean" value="true"/>
             </config>
@@ -132,11 +134,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Filehandling Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.filehandling.utility.nodes"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.1.v202301311311"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
     <config key="factory_settings"/>
     <config key="node_creation_config">
         <config key="File System Connection"/>

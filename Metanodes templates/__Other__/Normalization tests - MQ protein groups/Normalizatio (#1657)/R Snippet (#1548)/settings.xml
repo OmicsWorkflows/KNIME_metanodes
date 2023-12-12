@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="script" type="xstring" value="# split list of samples by delimiter%%00010samples &lt;- knime.flow.in[[&quot;sample_list&quot;]]%%00010sample_split &lt;- strsplit(samples, split = &quot;,&quot;)%%00010sample_split &lt;- sample_split[[1]]%%00010%%00010# split experimental design by delimiter%%00010design &lt;- knime.flow.in[[&quot;design&quot;]]%%00010design_split &lt;- strsplit(design, split = &quot;,&quot;)%%00010design_split &lt;- lapply(design_split, trimws)%%00010design_split &lt;- design_split[[1]]%%00010%%00010# create a datatable matching sample design to samples%%00010df &lt;- data.frame(samples = sample_split,%%00010%%00009%%00009%%00009  design = design_split)%%00010%%00010knime.out &lt;- df"/>
+        <entry key="script" type="xstring" value="# split list of samples by delimiter%%00010samples &lt;- knime.flow.in[[&quot;sample_list&quot;]]%%00010sample_split &lt;- strsplit(samples, split = &quot;,&quot;)%%00010sample_split &lt;- sample_split[[1]]%%00010%%00010# split experimental design by delimiter%%00010design &lt;- knime.flow.in[[&quot;design&quot;]]%%00010design_split &lt;- strsplit(design, split = &quot;,&quot;)%%00010design_split &lt;- lapply(design_split, trimws)%%00010design_split &lt;- design_split[[1]]%%00010%%00010# raise error if experimental design doesn't match list of samples%%00010if(length(sample_split) != length(design_split)) stop(&quot;Experimental design doesn't match number of samples&quot;)%%00010%%00010# get subsets contained in subset design%%00010subsets &lt;- knime.flow.in[[&quot;subset_list&quot;]]%%00010subsets_split &lt;- unlist(strsplit(subsets, split = &quot;,&quot;))%%00010subsets_split &lt;- strsplit(subsets_split, split = &quot;+&quot;, fixed = TRUE)%%00010subsets_unique &lt;- unique(unlist(lapply(subsets_split, trimws)))%%00010%%00010for (x in subsets_unique) {%%00010%%00009if (!x %in% design_split) stop(&quot;Subset list contains samples not included in the experimental design&quot;)%%00010}%%00010%%00010# create a datatable matching sample design to samples%%00010df &lt;- data.frame(samples = sample_split,%%00010%%00009%%00009%%00009  design = design_split)%%00010%%00010knime.out &lt;- df"/>
         <entry key="templateUUID" type="xstring" isnull="true" value=""/>
         <entry key="version" type="xstring" value="version 1.x"/>
         <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
@@ -48,11 +48,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202205161326"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202206271529"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.0.v202205161326"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.0.v202211090002"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="R Snippet"/>
     <entry key="hasContent" type="xboolean" value="false"/>
