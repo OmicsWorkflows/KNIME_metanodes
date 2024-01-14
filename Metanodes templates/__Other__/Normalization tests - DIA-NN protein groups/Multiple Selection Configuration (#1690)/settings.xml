@@ -6,19 +6,6 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="possible_choices">
-            <entry key="array-size" type="xint" value="8"/>
-            <entry key="0" type="xstring" value="selected data + median normalization"/>
-            <entry key="1" type="xstring" value="selected data + quantile normalization"/>
-            <entry key="2" type="xstring" value="selected data + loessF normalization"/>
-            <entry key="3" type="xstring" value="selected data + vsn normalization"/>
-            <entry key="4" type="xstring" value="DIA-NN - not norm. data (PG.Quantity columns)"/>
-            <entry key="5" type="xstring" value="DIA-NN - norm. data (PG.Normalised columns)"/>
-            <entry key="6" type="xstring" value="DIA-NN - norm. prec. sum data (PG.Prec.Norm.Sum columns)"/>
-            <entry key="7" type="xstring" value="DIA-NN - MaxLFQ norm. data (PG.MaxLFQ columns)"/>
-        </config>
-        <entry key="flowVariableName" type="xstring" value="methods"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <config key="variable_value">
                 <entry key="array-size" type="xint" value="8"/>
@@ -32,13 +19,26 @@
                 <entry key="7" type="xstring" value="DIA-NN - MaxLFQ norm. data (PG.MaxLFQ columns)"/>
             </config>
         </config>
-        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
-        <entry key="description" type="xstring" value="Select data sets you want to compare"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="methods"/>
         <entry key="label" type="xstring" value="Data sets to compare"/>
-        <entry key="type" type="xstring" value="Check boxes (vertical)"/>
-        <entry key="number_visible_options" type="xint" value="10"/>
+        <entry key="description" type="xstring" value="Select data sets you want to compare"/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="methods"/>
+        <config key="possible_choices">
+            <entry key="array-size" type="xint" value="8"/>
+            <entry key="0" type="xstring" value="selected data + median normalization"/>
+            <entry key="1" type="xstring" value="selected data + quantile normalization"/>
+            <entry key="2" type="xstring" value="selected data + loessF normalization"/>
+            <entry key="3" type="xstring" value="selected data + vsn normalization"/>
+            <entry key="4" type="xstring" value="DIA-NN - not norm. data (PG.Quantity columns)"/>
+            <entry key="5" type="xstring" value="DIA-NN - norm. data (PG.Normalised columns)"/>
+            <entry key="6" type="xstring" value="DIA-NN - norm. prec. sum data (PG.Prec.Norm.Sum columns)"/>
+            <entry key="7" type="xstring" value="DIA-NN - MaxLFQ norm. data (PG.MaxLFQ columns)"/>
+        </config>
+        <entry key="type" type="xstring" value="Check boxes (vertical)"/>
+        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
+        <entry key="number_visible_options" type="xint" value="10"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="select normalization%%00010methods"/>
@@ -70,11 +70,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202302071224"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.4.v202306091222"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Multiple Selection Configuration"/>
     <entry key="hasContent" type="xboolean" value="false"/>

@@ -6,17 +6,17 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="tolerateColumnTypes">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xboolean" value="false"/>
-        </config>
-        <entry key="rowKeyPolicy" type="xstring" value="APPEND_SUFFIX"/>
         <entry key="addIterationColumn" type="xboolean" value="false"/>
+        <entry key="rowKeyPolicy" type="xstring" value="APPEND_SUFFIX"/>
+        <entry key="propagateLoopVariables" type="xboolean" value="false"/>
         <config key="ignoreEmptyTables">
             <entry key="array-size" type="xint" value="1"/>
             <entry key="0" type="xboolean" value="true"/>
         </config>
-        <entry key="propagateLoopVariables" type="xboolean" value="false"/>
+        <config key="tolerateColumnTypes">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xboolean" value="false"/>
+        </config>
         <config key="tolerateChangingSpecs">
             <entry key="array-size" type="xint" value="1"/>
             <entry key="0" type="xboolean" value="true"/>
@@ -43,11 +43,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.7.v202308021457"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
     <config key="factory_settings"/>
     <config key="node_creation_config">
         <config key="Collector"/>

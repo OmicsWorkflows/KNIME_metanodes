@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="workflow.knime">
-    <entry key="created_by" type="xstring" value="4.6.3.v202209271016"/>
+    <entry key="created_by" type="xstring" value="4.7.7.v202308161346"/>
     <entry key="created_by_nightly" type="xboolean" value="false"/>
     <entry key="version" type="xstring" value="4.1.0"/>
     <entry key="name" type="xstring" value="Normalization tests"/>
@@ -174,7 +174,7 @@
         </config>
         <config key="node_1711">
             <entry key="id" type="xint" value="1711"/>
-            <entry key="node_settings_file" type="xstring" value="Python Script (#1711)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Script _legacy_ (#1711)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -184,7 +184,7 @@
                     <entry key="0" type="xint" value="2184"/>
                     <entry key="1" type="xint" value="377"/>
                     <entry key="2" type="xint" value="113"/>
-                    <entry key="3" type="xint" value="80"/>
+                    <entry key="3" type="xint" value="97"/>
                 </config>
             </config>
         </config>
@@ -270,7 +270,7 @@
         </config>
         <config key="node_1719">
             <entry key="id" type="xint" value="1719"/>
-            <entry key="node_settings_file" type="xstring" value="Python Edit Variable (#1719)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Python Edit Variable _legacy_ (#1719)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -279,7 +279,7 @@
                     <entry key="array-size" type="xint" value="4"/>
                     <entry key="0" type="xint" value="1344"/>
                     <entry key="1" type="xint" value="657"/>
-                    <entry key="2" type="xint" value="95"/>
+                    <entry key="2" type="xint" value="144"/>
                     <entry key="3" type="xint" value="97"/>
                 </config>
             </config>

@@ -6,20 +6,6 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="possible_choices">
-            <entry key="array-size" type="xint" value="9"/>
-            <entry key="0" type="xstring" value="violin plot (width based on count)"/>
-            <entry key="1" type="xstring" value="violin plot (width same for all)"/>
-            <entry key="2" type="xstring" value="box plot"/>
-            <entry key="3" type="xstring" value="kernel density plot"/>
-            <entry key="4" type="xstring" value="correlation clustermap (manual center)"/>
-            <entry key="5" type="xstring" value="correlation clustermap (automatic center)"/>
-            <entry key="6" type="xstring" value="hierarchical clustering"/>
-            <entry key="7" type="xstring" value="scatter plot matrix"/>
-            <entry key="8" type="xstring" value="scatter plot matrix (MA plots)"/>
-        </config>
-        <entry key="flowVariableName" type="xstring" value="subset_graphs"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <config key="variable_value">
                 <entry key="array-size" type="xint" value="9"/>
@@ -34,13 +20,27 @@
                 <entry key="8" type="xstring" value="scatter plot matrix (MA plots)"/>
             </config>
         </config>
-        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
-        <entry key="description" type="xstring" value="Select which graphs do you want to create for the given subset(s)"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="subset_graphs"/>
         <entry key="label" type="xstring" value="Graphs for a sample subset"/>
-        <entry key="type" type="xstring" value="Check boxes (vertical)"/>
-        <entry key="number_visible_options" type="xint" value="10"/>
+        <entry key="description" type="xstring" value="Select which graphs do you want to create for the given subset(s)"/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="subset_graphs"/>
+        <config key="possible_choices">
+            <entry key="array-size" type="xint" value="9"/>
+            <entry key="0" type="xstring" value="violin plot (width based on count)"/>
+            <entry key="1" type="xstring" value="violin plot (width same for all)"/>
+            <entry key="2" type="xstring" value="box plot"/>
+            <entry key="3" type="xstring" value="kernel density plot"/>
+            <entry key="4" type="xstring" value="correlation clustermap (manual center)"/>
+            <entry key="5" type="xstring" value="correlation clustermap (automatic center)"/>
+            <entry key="6" type="xstring" value="hierarchical clustering"/>
+            <entry key="7" type="xstring" value="scatter plot matrix"/>
+            <entry key="8" type="xstring" value="scatter plot matrix (MA plots)"/>
+        </config>
+        <entry key="type" type="xstring" value="Check boxes (vertical)"/>
+        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
+        <entry key="number_visible_options" type="xint" value="10"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="select graphs%%00010for subset"/>
@@ -63,11 +63,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202302071224"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.4.v202306091222"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Multiple Selection Configuration"/>
     <entry key="hasContent" type="xboolean" value="false"/>
