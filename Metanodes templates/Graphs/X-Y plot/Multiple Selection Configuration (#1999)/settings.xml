@@ -8,7 +8,8 @@
     <config key="model">
         <config key="defaultValue">
             <config key="variable_value">
-                <entry key="array-size" type="xint" value="0"/>
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="point"/>
             </config>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
@@ -52,7 +53,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.selection.multiple.MultipleSelectionDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="Multiple Selection Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
