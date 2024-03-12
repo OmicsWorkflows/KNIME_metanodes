@@ -15,7 +15,7 @@
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="methods"/>
         <entry key="label" type="xstring" value="Normalization methods"/>
-        <entry key="description" type="xstring" value="Select data sets you want to compare"/>
+        <entry key="description" type="xstring" value="Select which normalization methods you want to test"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="methods"/>
         <config key="possible_choices">

@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="sourceCode" type="xstring" value="# Split method indices into list%%00010method = [x.strip() for x in flow_variables['methods_list'].split(',')]%%00010flow_variables['current_method'] = int(method[flow_variables['currentIteration']])%%00010%%00010# Strings containing normalization method%%00010normalization_filenames = ['no-norm', 'median-norm', 'quantile-norm', 'loessf-norm', 'vsn-norm']%%00010normalization_subtitles = ['no norm.', 'median norm.', 'quantile norm.', 'loessF norm.', 'vsn norm.']%%00010%%00010# Put together filename and subtitle name%%00010flow_variables['subset_filename'] = 'all-samples'%%00010flow_variables['normalization_filename'] = normalization_filenames[flow_variables['current_method']]%%00010flow_variables['final_subtitle'] = ' - '.join([flow_variables['plot_subtitle'], normalization_subtitles[flow_variables['current_method']]])"/>
+        <entry key="sourceCode" type="xstring" value="# Split method indices into list%%00010method = [x.strip() for x in flow_variables['methods_list'].split(',')]%%00010flow_variables['current_method'] = int(method[flow_variables['currentIteration']])%%00010%%00010# Strings containing normalization method%%00010normalization_filenames = ['no-norm', 'median-norm', 'quantile-norm', 'loessf-norm', 'vsn-norm']%%00010normalization_subtitles = ['no norm.', 'median norm.', 'quantile norm.', 'loessF norm.', 'vsn norm.']%%00010%%00010# Put together filename and subtitle name%%00010flow_variables['subset_filename'] = 'all-samples'%%00010flow_variables['normalization_filename'] = normalization_filenames[flow_variables['current_method']]%%00010%%00010subtitle_substrings = []%%00010if flow_variables['plot_subtitle'].strip() != '':%%00010%%00009subtitle_substrings.append(flow_variables['plot_subtitle'])%%00010subtitle_substrings.append(normalization_subtitles[flow_variables['current_method']])%%00010%%00010flow_variables['final_subtitle'] = ' - '.join(subtitle_substrings)"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>
@@ -15,7 +15,7 @@
         <entry key="chunkSize" type="xint" value="500000"/>
         <entry key="pythonVersionOption" type="xstring" value="python3"/>
         <entry key="python2Command" type="xstring" value=""/>
-        <entry key="python3Command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+        <entry key="python3Command" type="xstring" value="unknown_flow_variable_selected"/>
     </config>
     <config key="variables">
         <entry key="version" type="xstring" value="V_2019_09_13"/>

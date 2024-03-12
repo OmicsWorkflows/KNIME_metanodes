@@ -12,7 +12,7 @@
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="plot_subtitle"/>
         <entry key="label" type="xstring" value="Plot subtitle"/>
-        <entry key="description" type="xstring" value="Enter Description"/>
+        <entry key="description" type="xstring" value="Enter common subtitle for all plots"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="plot_subtitle"/>
         <entry key="regex" type="xstring" value=""/>

@@ -12,7 +12,7 @@
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="prefix_to_remove"/>
         <entry key="label" type="xstring" value="Prefix to remove"/>
-        <entry key="description" type="xstring" value="Enter Description"/>
+        <entry key="description" type="xstring" value="Enter common prefix to remove from column names prior to plotting"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="prefix_to_remove"/>
         <entry key="regex" type="xstring" value=""/>
