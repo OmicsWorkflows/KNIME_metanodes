@@ -24,12 +24,14 @@
         </config>
         <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
         <config key="port-names">
-            <entry key="array-size" type="xint" value="1"/>
+            <entry key="array-size" type="xint" value="2"/>
             <entry key="0" type="xstring" value="HTML link"/>
+            <entry key="1" type="xstring" value="Used accessions"/>
         </config>
         <config key="port-descriptions">
-            <entry key="array-size" type="xint" value="1"/>
+            <entry key="array-size" type="xint" value="2"/>
             <entry key="0" type="xstring" value="Link to the String-db"/>
+            <entry key="1" type="xstring" value="List of used accessions, to be checked or pasted manually to the STRING-db web interface"/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -40,14 +42,20 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Core API"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.core"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.3.v202209271016"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.7.v202308161346"/>
     <entry key="node-feature-name" type="xstring" value="KNIME AP Core feature"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.core.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.3.v202209271016"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
     <config key="factory_settings">
         <config key="port_0">
             <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
             <config key="type">
                 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
             </config>
