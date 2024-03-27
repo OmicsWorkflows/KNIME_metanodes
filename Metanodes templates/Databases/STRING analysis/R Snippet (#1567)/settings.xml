@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="script" type="xstring" value="link &lt;- &quot;https://version-11-5.string-db.org/&quot;%%00010%%00010# open link?%%00010if(knime.flow.in[[&quot;open_link&quot;]] == 1){%%00010%%00009browseURL(link)%%00010}%%00010%%00010#output_df &lt;- data.frame(Link = link)%%00010knime.out &lt;- knime.in"/>
+        <entry key="script" type="xstring" value="version &lt;- gsub('.', '-', knime.flow.in[[&quot;version&quot;]], fixed = TRUE)%%00010link &lt;- paste0(&quot;https://version-&quot;, version, &quot;.string-db.org/&quot;)%%00010%%00010# open link?%%00010if(knime.flow.in[[&quot;open_link&quot;]] == 1){%%00010%%00009browseURL(link)%%00010}%%00010%%00010output_df &lt;- data.frame(Error = 'Too many accessions to perform API call, use the STRING-db web interface')%%00010knime.out &lt;- output_df"/>
         <entry key="templateUUID" type="xstring" isnull="true" value=""/>
         <entry key="version" type="xstring" value="version 1.x"/>
         <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
@@ -57,11 +57,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202205161326"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202206271529"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.0.v202205161326"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.0.v202211090002"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="R Snippet"/>
     <entry key="hasContent" type="xboolean" value="false"/>
