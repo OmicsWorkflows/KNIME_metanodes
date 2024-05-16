@@ -10,7 +10,7 @@
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value=""/>
         <entry key="bgcolor" type="xint" value="16777215"/>
-        <entry key="x-coordinate" type="xint" value="1389"/>
+        <entry key="x-coordinate" type="xint" value="1369"/>
         <entry key="y-coordinate" type="xint" value="-241"/>
         <entry key="width" type="xint" value="142"/>
         <entry key="height" type="xint" value="17"/>
@@ -23,6 +23,10 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="R View (Workspace) 8:1748:0:1671: Errors overwriting node settings with flow variables: Unknown variable &quot;width&quot;"/>
+    </config>
     <entry key="workflow-file" type="xstring" value="workflow.knime"/>
     <entry key="virtual-in-ID" type="xint" value="1655"/>
     <config key="inports">
@@ -49,7 +53,7 @@
         </config>
     </config>
     <config key="metadata">
-        <entry key="description" type="xstring" value="Calculates clusters and visualizes them in heatmap.%%00010%%00010Input data are scaled row-wise, then the Euclidean method for distance calculation and Ward method for clustering are used to assign these rows into predetermined number of clusters. The recommended use of this metanode is first running it with the number of clusters set to 1 and then adjusting and reruning this metanode based on the input.%%00010%%00010Clustering cannot be calculated for rows with any missing data. This metanode therefore either filters out all rows with missing values prior to clustering, or user can choose a simple method of imputation. More advanced imputation methods need to be performed prior to running this metanode.%%00010%%00010================= %%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms. %%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html) %%00010R 4.2.0 (The R consists of the following GPL-3 License. License terms are available here: https://www.r-project.org/Licenses/GPL-3)%%00010ComplexHeatmap (R package) (License file available here: https://bioconductor.org/packages/release/bioc/licenses/ComplexHeatmap/LICENSE, uses the MIT License, terms are available here: https://opensource.org/license/mit)%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3/license.html) %%00010%%00010The metanode was created in KNIME 4.7.7 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.7.7a. %%00010%%00010================= %%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html. %%00010Version: 1.6.0 from 2024-05-16%%00010Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)"/>
+        <entry key="description" type="xstring" value="Calculates clusters and visualizes them in heatmap.%%00010%%00010Input data are scaled row-wise, then the Euclidean method for distance calculation and Ward method for clustering are used to assign these rows into predetermined number of clusters. The recommended use of this metanode is first running it with the number of clusters set to 1 and then adjusting and reruning this metanode based on the input.%%00010%%00010Clustering cannot be calculated for rows with any missing data. This metanode therefore either filters out all rows with missing values prior to clustering, or user can choose a simple method of imputation. More advanced imputation methods need to be performed prior to running this metanode.%%00010%%00010================= %%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms. %%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html) %%00010R 4.2.0 (The R consists of the following GPL-3 License. License terms are available here: https://www.r-project.org/Licenses/GPL-3)%%00010ComplexHeatmap (R package) (License file available here: https://bioconductor.org/packages/release/bioc/licenses/ComplexHeatmap/LICENSE, uses the MIT License, terms are available here: https://opensource.org/license/mit)%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3/license.html) %%00010%%00010The metanode was created in KNIME 4.7.7 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.7.7a. %%00010%%00010================= %%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html. %%00010Version: 1.6.1 from 2024-05-16%%00010Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)"/>
         <config key="inports">
             <config key="inport_0">
                 <entry key="name" type="xstring" value="Input data"/>
@@ -72,7 +76,7 @@
     </config>
     <config key="workflow_template_information">
         <entry key="role" type="xstring" value="Template"/>
-        <entry key="timestamp" type="xstring" value="2024-05-16 12:43:08 +0200"/>
+        <entry key="timestamp" type="xstring" value="2024-05-16 17:19:52 +0200"/>
         <entry key="sourceURI" type="xstring" isnull="true" value=""/>
         <entry key="templateType" type="xstring" value="SubNode"/>
     </config>
