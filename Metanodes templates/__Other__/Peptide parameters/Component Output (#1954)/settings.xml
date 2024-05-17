@@ -24,12 +24,14 @@
         </config>
         <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
         <config key="port-names">
-            <entry key="array-size" type="xint" value="1"/>
+            <entry key="array-size" type="xint" value="2"/>
             <entry key="0" type="xstring" value="Output table"/>
+            <entry key="1" type="xstring" value="Unprocessed sequences"/>
         </config>
         <config key="port-descriptions">
-            <entry key="array-size" type="xint" value="1"/>
+            <entry key="array-size" type="xint" value="2"/>
             <entry key="0" type="xstring" value="Output table with added peptide parameter columns"/>
+            <entry key="1" type="xstring" value="Sequences that couldn't be processed using the Peptides package, possibly due to containing forbidden characters"/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -48,6 +50,12 @@
     <config key="factory_settings">
         <config key="port_0">
             <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
             <config key="type">
                 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
             </config>
