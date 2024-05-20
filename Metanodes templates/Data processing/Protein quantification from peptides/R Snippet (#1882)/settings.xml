@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="script" type="xstring" value="library(dplyr)%%00010%%00010df &lt;- knime.in%%00010%%00010i &lt;- sapply(df, is.factor)%%00010df[i] &lt;- lapply(df[i], as.character)%%00010%%00010top_colname &lt;- knime.flow.in[[&quot;pg_column&quot;]]%%00010%%00010df$NewPGColumnReordered &lt;- unlist(lapply(df[,top_colname], function(x) {%%00010%%00009%%00009temp &lt;- unlist(strsplit(x, ';'))%%00010%%00009%%00009temp &lt;- sort(temp)%%00010%%00009%%00009return(paste(temp, collapse = ';'))%%00010%%00009}))%%00010%%00010knime.out &lt;- df"/>
+        <entry key="script" type="xstring" value="library(dplyr)%%00010%%00010df &lt;- knime.in%%00010%%00010df$JoiningColumn &lt;- df[,knime.flow.in[[&quot;pg_column&quot;]]]%%00010%%00010knime.out &lt;- df"/>
         <entry key="templateUUID" type="xstring" isnull="true" value=""/>
         <entry key="version" type="xstring" value="version 1.x"/>
         <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
