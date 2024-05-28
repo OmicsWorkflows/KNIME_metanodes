@@ -6,20 +6,20 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="error_message" type="xstring" value=""/>
-        <entry key="flowVariableName" type="xstring" value="graph_subtitle"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value=""/>
         </config>
-        <entry key="description" type="xstring" value="Additional information that should be present as the graph subtitle"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="graph_subtitle"/>
         <entry key="label" type="xstring" value="Graph subtitle"/>
+        <entry key="description" type="xstring" value="Additional information that should be present as the graph subtitle"/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="graph_subtitle"/>
         <entry key="regex" type="xstring" value=""/>
+        <entry key="error_message" type="xstring" value=""/>
         <entry key="editorType" type="xstring" value="Single-line"/>
         <entry key="multilineEditorWidth" type="xint" value="40"/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="graph subtitle"/>
@@ -45,7 +45,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <config key="nodecontainer_message">
         <entry key="type" type="xstring" value="WARNING"/>
         <entry key="message" type="xstring" value="Component does not have input data, execute upstream nodes first"/>
@@ -55,11 +55,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202302071224"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.4.v202306091222"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="String Configuration"/>
     <entry key="hasContent" type="xboolean" value="false"/>
