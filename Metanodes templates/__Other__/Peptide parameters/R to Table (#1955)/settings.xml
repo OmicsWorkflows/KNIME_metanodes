@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="script" type="xstring" value="library(dplyr)%%00010library(tibble)%%00010%%00010out &lt;- df |&gt;%%00010%%00009rownames_to_column('RowID') |&gt;%%00010%%00009filter(is.na(seq)) |&gt;%%00010%%00009select_('RowID', knime.flow.in[[&quot;aa_column&quot;]]) |&gt;%%00010%%00009column_to_rownames('RowID')%%00010%%00010knime.out &lt;- out%%00010"/>
+        <entry key="script" type="xstring" value="library(dplyr)%%00010library(tibble)%%00010%%00010out &lt;- df |&gt;%%00010%%00009rownames_to_column('RowID') |&gt;%%00010%%00009filter(is.na(seq)) |&gt;%%00010%%00009select('RowID', knime.flow.in[[&quot;aa_column&quot;]]) |&gt;%%00010%%00009column_to_rownames('RowID')%%00010%%00010knime.out &lt;- out%%00010"/>
         <entry key="templateUUID" type="xstring" isnull="true" value=""/>
         <entry key="version" type="xstring" value="version 1.x"/>
         <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
@@ -42,7 +42,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.r.RToTableNodeFactory"/>
     <entry key="node-name" type="xstring" value="R to Table"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
