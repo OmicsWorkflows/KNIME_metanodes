@@ -7,9 +7,9 @@
     </config>
     <config key="model">
         <entry key="searchString" type="xstring" value="(.+)"/>
+        <entry key="replaceString" type="xstring" value="prefix_$1"/>
         <entry key="isCaseInsensitive" type="xboolean" value="false"/>
         <entry key="isLiteral" type="xboolean" value="false"/>
-        <entry key="replaceString" type="xstring" value="prefix_$1"/>
     </config>
     <config key="variables">
         <config key="replaceString">
@@ -33,16 +33,20 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Errors overwriting node settings with flow variables: Unknown variable &quot;added_column_base_name&quot;"/>
+    </config>
     <entry key="factory" type="xstring" value="org.knime.base.node.preproc.columnrenameregex.ColumnRenameRegexNodeFactory"/>
     <entry key="node-name" type="xstring" value="Column Rename (Regex)"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.7.v202308021457"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Column Rename (Regex)"/>
     <entry key="hasContent" type="xboolean" value="false"/>
