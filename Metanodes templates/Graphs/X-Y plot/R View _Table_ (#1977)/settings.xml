@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="Image width" type="xint" value="640"/>
+        <entry key="Image height" type="xint" value="640"/>
+        <entry key="Image resolution" type="xstring" value="NA"/>
+        <entry key="Image background color" type="xstring" value="#ffffff"/>
+        <entry key="Text point size" type="xint" value="12"/>
+        <config key="R settings">
+            <entry key="script" type="xstring" value="library(ggplot2)%%00010library(dplyr)%%00010library(ggpubr)%%00010%%00010df &lt;- knime.in |&gt; %%00010%%00009na.omit() |&gt;%%00010%%00009mutate(Sample = as.character(Sample)) |&gt;%%00010%%00009arrange(Sample) |&gt;%%00010%%00009mutate(Sample = factor(Sample))%%00010%%00009%%00010plot_types &lt;- unlist(strsplit(knime.flow.in[[&quot;plot_type&quot;]], ','))%%00010%%00010# default colors%%00010gg_color_hue &lt;- function(n) {%%00010  hues = seq(15, 375, length = n + 1)%%00010  hcl(h = hues, l = 65, c = 100)[1:n]%%00010}%%00010%%00010samples &lt;- unique(df$Sample)%%00010color_df &lt;- data.frame(Sample = samples,%%00010%%00009%%00009%%00009%%00009   Color = gg_color_hue(length(samples)))%%00010df &lt;- merge(df, color_df)%%00010%%00010# plot for legend extraction%%00010color_df &lt;- rbind(color_df, color_df)%%00010color_df &lt;- rbind(color_df, color_df)%%00010color_df$X &lt;- seq(1, nrow(color_df))%%00010color_df$Y &lt;- seq(1, nrow(color_df))%%00010%%00010l &lt;- color_df |&gt;%%00010%%00009ggplot(aes(x = X, y = Y)) +%%00010%%00009scale_color_manual(labels = color_df$Sample, values = color_df$Color) +%%00010%%00009scale_fill_manual(labels = color_df$Sample, values = color_df$Color) +%%00010%%00009theme_bw() +%%00010%%00009theme(legend.title = element_blank())%%00010%%00010# calculate density%%00010if (knime.flow.in[[&quot;point_color&quot;]] == 'density') {%%00010%%00009if (as.logical(knime.flow.in[[&quot;facet&quot;]])) {%%00010%%00009%%00009bw_density &lt;- df |&gt;%%00010%%00009%%00009%%00009group_by(Sample) |&gt;%%00010%%00009%%00009%%00009mutate(Density = densCols(X, Y, colramp = colorRampPalette(c(&quot;black&quot;, &quot;white&quot;)))) |&gt;%%00010%%00009%%00009%%00009ungroup() |&gt;%%00010%%00009%%00009%%00009pull(Density)%%00010%%00009} else {%%00010%%00009%%00009bw_density &lt;- densCols(df$X, df$Y, colramp = colorRampPalette(c(&quot;black&quot;, &quot;white&quot;)))%%00010%%00009}%%00010%%00009cols &lt;-  colorRampPalette(c(&quot;#000080&quot;, &quot;#004cff&quot;, &quot;#29ffce&quot;,&quot;#ceff29&quot;, &quot;#ff6800&quot;, &quot;#800000&quot;))(256)%%00010%%00009%%00010  %%00009df$Order &lt;- col2rgb(bw_density)[1,] + 1L%%00010  %%00009df$Density &lt;- cols[df$Order]%%00010  %%00009df &lt;- arrange(df, Order)%%00010  %%00009%%00010}%%00010%%00010p &lt;- df |&gt;%%00010%%00009ggplot(aes(x = X, y = Y)) +%%00010%%00009theme_bw() +%%00010%%00009scale_colour_identity(guide = 'none') +%%00010%%00009scale_fill_identity(guide = 'none') +%%00010%%00009theme(legend.position = 'none',%%00010%%00009%%00009 strip.background = element_rect(fill = 'white', colour = 'white'),%%00010%%00009%%00009 strip.text = element_text(face = 'bold'))%%00010%%00009%%00009%%00010if (as.logical(knime.flow.in[[&quot;facet&quot;]])) {%%00010%%00009p &lt;- p +%%00010%%00009%%00009facet_wrap(Sample~.)%%00010}%%00010%%00010# create selected plot types%%00010if ('dotplot' %in% plot_types) { %%00010%%00009if (knime.flow.in[[&quot;point_color&quot;]] == 'sample-based') {%%00010%%00009%%00009p &lt;- p + geom_point(aes(color = Color))%%00010%%00009%%00009l &lt;- l + geom_point(aes(color = Sample))%%00010%%00009} else if (knime.flow.in[[&quot;point_color&quot;]] == 'density') {%%00010%%00009%%00009p &lt;- p + geom_point(aes(color = Density))%%00010%%00009%%00009l &lt;- l + geom_point(color = 'black')%%00010%%00009} else {%%00010%%00009%%00009p &lt;- p + geom_point(color = knime.flow.in[[&quot;point_color&quot;]])%%00010%%00009%%00009l &lt;- l + geom_point(color = knime.flow.in[[&quot;point_color&quot;]])%%00010%%00009}%%00010}%%00010%%00010if ('smooth line' %in% plot_types) {%%00010%%00009if (knime.flow.in[[&quot;line_color&quot;]] == 'sample-based' &amp; knime.flow.in[[&quot;ci_color&quot;]] == 'sample-based'){%%00010%%00009%%00009%%00010%%00009%%00009p &lt;- p + geom_smooth(aes(color = Color, fill = Color),%%00010%%00009%%00009%%00009%%00009%%00009%%00009 linetype = knime.flow.in[[&quot;linetype&quot;]],%%00010%%00009%%00009%%00009%%00009%%00009%%00009 se = as.logical(knime.flow.in[[&quot;show_se&quot;]]))%%00010%%00009%%00009%%00009%%00009%%00009%%00009 %%00010%%00009%%00009l &lt;- l + geom_smooth(aes(color = Sample, fill = Sample),%%00010%%00009%%00009%%00009%%00009%%00009%%00009 linetype = knime.flow.in[[&quot;linetype&quot;]],%%00010%%00009%%00009%%00009%%00009%%00009%%00009 se = as.logical(knime.flow.in[[&quot;show_se&quot;]]))%%00010%%00009%%00009%%00009    %%00010%%00009} else if (knime.flow.in[[&quot;line_color&quot;]] == 'sample-based') {%%00010%%00009%%00009%%00010%%00009%%00009p &lt;- p + geom_smooth(aes(color = Color),%%00010%%00009%%00009%%00009%%00009%%00009%%00009 linetype = knime.flow.in[[&quot;linetype&quot;]],%%00010%%00009%%00009%%00009%%00009%%00009%%00009 se = as.logical(knime.flow.in[[&quot;show_se&quot;]]),%%00010%%00009%%00009%%00009%%00009%%00009%%00009 fill = knime.flow.in[[&quot;ci_color&quot;]])%%00010%%00009%%00009%%00009%%00009%%00009%%00009 %%00010%%00009%%00009l &lt;- l + geom_smooth(aes(color = Sample), %%00010%%00009%%00009%%00009%%00009%%00009%%00009 linetype = knime.flow.in[[&quot;linetype&quot;]],%%00010%%00009%%00009%%00009%%00009%%00009%%00009 se = as.logical(knime.flow.in[[&quot;show_se&quot;]]),%%00010%%00009%%00009%%00009%%00009%%00009%%00009 fill = knime.flow.in[[&quot;ci_color&quot;]])%%00010%%00009%%00009%%00009    %%00010%%00009} else if (knime.flow.in[[&quot;ci_color&quot;]] == 'sample-based') {%%00010%%00009%%00009%%00010%%00009%%00009p &lt;- p + geom_smooth(aes(fill = Color),%%00010%%00009%%00009%%00009%%00009%%00009%%00009 linetype = knime.flow.in[[&quot;linetype&quot;]],%%00010%%00009%%00009%%00009%%00009%%00009%%00009 se = as.logical(knime.flow.in[[&quot;show_se&quot;]]),%%00010%%00009%%00009%%00009%%00009%%00009%%00009 color = knime.flow.in[[&quot;line_color&quot;]])%%00010%%00009%%00009%%00009%%00009%%00010         %%00009l &lt;- l + geom_smooth(aes(fill = Sample),%%00010%%00009%%00009%%00009%%00009%%00009%%00009 linetype = knime.flow.in[[&quot;linetype&quot;]],%%00010%%00009%%00009%%00009%%00009%%00009%%00009 se = as.logical(knime.flow.in[[&quot;show_se&quot;]]),%%00010%%00009%%00009%%00009%%00009%%00009%%00009 color = knime.flow.in[[&quot;line_color&quot;]])%%00010%%00009%%00009%%00009    %%00010%%00009} else {%%00010%%00009%%00009%%00010%%00009%%00009p &lt;- p + geom_smooth(se = as.logical(knime.flow.in[[&quot;show_se&quot;]]),%%00010%%00009%%00009%%00009%%00009%%00009%%00009 linetype = knime.flow.in[[&quot;linetype&quot;]],%%00010%%00009%%00009%%00009%%00009%%00009%%00009 color = knime.flow.in[[&quot;line_color&quot;]],%%00010%%00009%%00009%%00009%%00009%%00009%%00009 fill = knime.flow.in[[&quot;ci_color&quot;]])%%00010%%00009%%00009%%00010%%00009%%00009l &lt;- l + geom_smooth(linetype = knime.flow.in[[&quot;linetype&quot;]],%%00010%%00009%%00009%%00009%%00009%%00009%%00009 se = as.logical(knime.flow.in[[&quot;show_se&quot;]]),%%00010%%00009%%00009%%00009%%00009%%00009%%00009 color = knime.flow.in[[&quot;line_color&quot;]],%%00010%%00009%%00009%%00009%%00009%%00009%%00009 fill = knime.flow.in[[&quot;ci_color&quot;]])%%00010%%00009%%00009%%00009%%00009%%00009%%00009 %%00010%%00009}%%00010}%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00010p &lt;- p + labs(x = knime.flow.in[[&quot;x_title&quot;]], y = knime.flow.in[[&quot;y_title&quot;]])%%00010%%00010if (knime.flow.in[[&quot;plot_title&quot;]] != '') p &lt;- p + labs(title = knime.flow.in[[&quot;plot_title&quot;]])%%00010%%00010if ((knime.flow.in[[&quot;point_color&quot;]] == 'sample-based' || knime.flow.in[[&quot;line_color&quot;]] == 'sample-based' || knime.flow.in[[&quot;ci_color&quot;]] == 'sample-based') &amp;&amp; knime.flow.in[[&quot;facet&quot;]] == 0) {%%00010%%00009leg &lt;- get_legend(l)%%00010%%00009leg_width &lt;- max(nchar(as.character(color_df$Sample))) * 8 + 50%%00010%%00009ggarrange(p, leg, widths = c(1, leg_width/knime.flow.in[[&quot;plot_width&quot;]]))%%00010} else {%%00010%%00009p%%00009%%00010}"/>
+            <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+            <entry key="version" type="xstring" value="version 1.x"/>
+            <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+            <entry key="sendRowNames" type="xboolean" value="true"/>
+            <entry key="sendBatchSize" type="xint" value="10000"/>
+            <entry key="knimeInType" type="xstring" value="data.frame"/>
+            <entry key="overwriteRHome" type="xboolean" value="false"/>
+            <entry key="rHome" type="xstring" value=""/>
+            <entry key="useRPathHome" type="xboolean" value="true"/>
+            <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
+        </config>
+        <entry key="Image type" type="xstring" value="PNG"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="Image width">
+                <entry key="used_variable" type="xstring" value="plot_width"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+            <config key="Image height">
+                <entry key="used_variable" type="xstring" value="plot_height"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+            <config key="R settings">
+                <config key="rHome">
+                    <entry key="used_variable" type="xstring" value="Rcommand"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.r.RViewNodeFactory"/>
+    <entry key="node-name" type="xstring" value="R View (Table)"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202206271529"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.0.v202211090002"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="R View (Table)"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
