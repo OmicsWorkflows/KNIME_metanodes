@@ -13,7 +13,7 @@
                 <entry key="0" type="xstring" value="path"/>
             </config>
             <config key="excluded_names">
-                <entry key="array-size" type="xint" value="73"/>
+                <entry key="array-size" type="xint" value="85"/>
                 <entry key="0" type="xstring" value="scatter_unity"/>
                 <entry key="1" type="xstring" value="scatter_y"/>
                 <entry key="2" type="xstring" value="scatter_x"/>
@@ -40,55 +40,67 @@
                 <entry key="23" type="xstring" value="distance_metric_hierarchy"/>
                 <entry key="24" type="xstring" value="cluster_method_hierarchy"/>
                 <entry key="25" type="xstring" value="hierarchy_size"/>
-                <entry key="26" type="xstring" value="data_to_normalize"/>
-                <entry key="27" type="xstring" value="output_folder"/>
-                <entry key="28" type="xstring" value="output_subfolder"/>
-                <entry key="29" type="xstring" value="context.workflow.name"/>
-                <entry key="30" type="xstring" value="context.workflow.path"/>
-                <entry key="31" type="xstring" value="context.workflow.absolute-path"/>
-                <entry key="32" type="xstring" value="context.workflow.user"/>
-                <entry key="33" type="xstring" value="context.workflow.temp.location"/>
-                <entry key="34" type="xstring" value="context.workflow.author.name"/>
-                <entry key="35" type="xstring" value="context.workflow.last.editor.name"/>
-                <entry key="36" type="xstring" value="context.workflow.creation.date"/>
-                <entry key="37" type="xstring" value="context.workflow.last.time.modified"/>
-                <entry key="38" type="xstring" value="context.job.id"/>
-                <entry key="39" type="xstring" value="exclude_switch"/>
-                <entry key="40" type="xstring" value="all_samples_list"/>
-                <entry key="41" type="xstring" value="exclude"/>
-                <entry key="42" type="xstring" value="sample_list"/>
-                <entry key="43" type="xstring" value="subset_switch"/>
-                <entry key="44" type="xstring" value="graph_ma"/>
-                <entry key="45" type="xstring" value="graph_scatter"/>
-                <entry key="46" type="xstring" value="graph_hierarchy"/>
-                <entry key="47" type="xstring" value="graph_correlation_automatic"/>
-                <entry key="48" type="xstring" value="graph_correlation_manual"/>
+                <entry key="26" type="xstring" value="context.workflow.name"/>
+                <entry key="27" type="xstring" value="context.workflow.path"/>
+                <entry key="28" type="xstring" value="context.workflow.absolute-path"/>
+                <entry key="29" type="xstring" value="context.workflow.user"/>
+                <entry key="30" type="xstring" value="context.workflow.temp.location"/>
+                <entry key="31" type="xstring" value="context.workflow.author.name"/>
+                <entry key="32" type="xstring" value="context.workflow.last.editor.name"/>
+                <entry key="33" type="xstring" value="context.workflow.creation.date"/>
+                <entry key="34" type="xstring" value="context.workflow.last.time.modified"/>
+                <entry key="35" type="xstring" value="context.job.id"/>
+                <entry key="36" type="xstring" value="data_to_normalize"/>
+                <entry key="37" type="xstring" value="output_folder"/>
+                <entry key="38" type="xstring" value="output_subfolder"/>
+                <entry key="39" type="xstring" value="errors"/>
+                <entry key="40" type="xstring" value="graph_subtitle"/>
+                <entry key="41" type="xstring" value="prefix"/>
+                <entry key="42" type="xstring" value="suffix"/>
+                <entry key="43" type="xstring" value="methods_list"/>
+                <entry key="44" type="xstring" value="data_to_normalize_file_name_part"/>
+                <entry key="45" type="xstring" value="data_to_normalize_subtitle_part"/>
+                <entry key="46" type="xstring" value="graph_violin_widthcount"/>
+                <entry key="47" type="xstring" value="graph_violin_widthsame"/>
+                <entry key="48" type="xstring" value="graph_boxplot"/>
                 <entry key="49" type="xstring" value="graph_density"/>
-                <entry key="50" type="xstring" value="graph_boxplot"/>
-                <entry key="51" type="xstring" value="graph_violin_widthsame"/>
-                <entry key="52" type="xstring" value="graph_violin_widthcount"/>
-                <entry key="53" type="xstring" value="methods_list"/>
-                <entry key="54" type="xstring" value="suffix"/>
-                <entry key="55" type="xstring" value="prefix"/>
-                <entry key="56" type="xstring" value="graph_subtitle"/>
-                <entry key="57" type="xstring" value="python3command"/>
-                <entry key="58" type="xstring" value="all_suffix"/>
-                <entry key="59" type="xstring" value="all_prefix"/>
-                <entry key="60" type="xstring" value="subset_graphs"/>
-                <entry key="61" type="xstring" value="graphs"/>
-                <entry key="62" type="xstring" value="methods"/>
-                <entry key="63" type="xstring" value="subset_list"/>
-                <entry key="64" type="xstring" value="design"/>
-                <entry key="65" type="xstring" value="column_selection"/>
-                <entry key="66" type="xstring" value="all_samples"/>
-                <entry key="67" type="xstring" value="ma_size"/>
-                <entry key="68" type="xstring" value="ma_regres"/>
-                <entry key="69" type="xstring" value="ma_imp"/>
-                <entry key="70" type="xstring" value="ma_x"/>
-                <entry key="71" type="xstring" value="ma_y"/>
-                <entry key="72" type="xstring" value="ma_unity"/>
+                <entry key="50" type="xstring" value="graph_correlation_manual"/>
+                <entry key="51" type="xstring" value="graph_correlation_automatic"/>
+                <entry key="52" type="xstring" value="graph_hierarchy"/>
+                <entry key="53" type="xstring" value="graph_scatter"/>
+                <entry key="54" type="xstring" value="graph_ma"/>
+                <entry key="55" type="xstring" value="subset_switch"/>
+                <entry key="56" type="xstring" value="subset_violin_widthcount"/>
+                <entry key="57" type="xstring" value="subset_violin_widthsame"/>
+                <entry key="58" type="xstring" value="subset_boxplot"/>
+                <entry key="59" type="xstring" value="subset_density"/>
+                <entry key="60" type="xstring" value="subset_correlation_manual"/>
+                <entry key="61" type="xstring" value="subset_correlation_automatic"/>
+                <entry key="62" type="xstring" value="subset_hierarchy"/>
+                <entry key="63" type="xstring" value="subset_scatter"/>
+                <entry key="64" type="xstring" value="subset_ma"/>
+                <entry key="65" type="xstring" value="sample_list"/>
+                <entry key="66" type="xstring" value="exclude"/>
+                <entry key="67" type="xstring" value="all_samples_list"/>
+                <entry key="68" type="xstring" value="exclude_switch"/>
+                <entry key="69" type="xstring" value="subset_list"/>
+                <entry key="70" type="xstring" value="python3command"/>
+                <entry key="71" type="xstring" value="all_suffix"/>
+                <entry key="72" type="xstring" value="all_prefix"/>
+                <entry key="73" type="xstring" value="subset_graphs"/>
+                <entry key="74" type="xstring" value="graphs"/>
+                <entry key="75" type="xstring" value="methods"/>
+                <entry key="76" type="xstring" value="design"/>
+                <entry key="77" type="xstring" value="column_selection"/>
+                <entry key="78" type="xstring" value="all_samples"/>
+                <entry key="79" type="xstring" value="ma_size"/>
+                <entry key="80" type="xstring" value="ma_regres"/>
+                <entry key="81" type="xstring" value="ma_imp"/>
+                <entry key="82" type="xstring" value="ma_x"/>
+                <entry key="83" type="xstring" value="ma_y"/>
+                <entry key="84" type="xstring" value="ma_unity"/>
             </config>
-            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
             <config key="name_pattern">
                 <entry key="pattern" type="xstring" value=""/>
                 <entry key="type" type="xstring" value="Wildcard"/>
