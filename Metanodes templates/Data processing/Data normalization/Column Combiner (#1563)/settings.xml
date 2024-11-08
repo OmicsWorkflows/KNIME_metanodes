@@ -45,10 +45,10 @@
             </config>
         </config>
         <entry key="delimiter" type="xstring" value=","/>
-        <entry key="new_column_name" type="xstring" value="columns"/>
         <entry key="is_quoting" type="xboolean" value="true"/>
         <entry key="quote_char" type="xchar" value="&quot;"/>
         <entry key="is_quoting_always" type="xboolean" value="false"/>
+        <entry key="new_column_name" type="xstring" value="columns"/>
         <entry key="remove_included_columns" type="xboolean" value="true"/>
     </config>
     <config key="nodeAnnotation">

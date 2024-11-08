@@ -24,7 +24,7 @@
         <entry key="x-coordinate" type="xint" value="469"/>
         <entry key="y-coordinate" type="xint" value="299"/>
         <entry key="width" type="xint" value="142"/>
-        <entry key="height" type="xint" value="68"/>
+        <entry key="height" type="xint" value="64"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
