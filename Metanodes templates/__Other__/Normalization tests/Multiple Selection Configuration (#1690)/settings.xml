@@ -8,12 +8,8 @@
     <config key="model">
         <config key="defaultValue">
             <config key="variable_value">
-                <entry key="array-size" type="xint" value="5"/>
+                <entry key="array-size" type="xint" value="1"/>
                 <entry key="0" type="xstring" value="[0] no normalization"/>
-                <entry key="1" type="xstring" value="[1] median normalization"/>
-                <entry key="2" type="xstring" value="[2] quantile normalization"/>
-                <entry key="3" type="xstring" value="[3] loessF normalization"/>
-                <entry key="4" type="xstring" value="[4] vsn normalization"/>
             </config>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
