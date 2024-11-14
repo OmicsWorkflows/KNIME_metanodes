@@ -11,8 +11,8 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="show_raw_data"/>
-        <entry key="label" type="xstring" value="Show raw data?"/>
-        <entry key="description" type="xstring" value="Whether to show the raw values in each heatmap cell"/>
+        <entry key="label" type="xstring" value="Show correlation coefficients in the heatmap?"/>
+        <entry key="description" type="xstring" value="Whether to show the raw values of the correlation coefficients in each heatmap cell"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="show_raw_data"/>
         <entry key="pushIntVar" type="xboolean" value="true"/>

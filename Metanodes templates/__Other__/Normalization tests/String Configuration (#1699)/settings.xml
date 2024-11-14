@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <config key="defaultValue">
-            <entry key="string" type="xstring" value="&quot;&quot;prefix&quot;, &quot;suffix&quot;, &quot;Name for graphs subtitle&quot;, &quot;name for image filename&quot;, &quot;optional: norm. methods IDs&quot;"/>
+            <entry key="string" type="xstring" value="&quot;prefix&quot;, &quot;suffix&quot;, &quot;Name for graphs subtitle&quot;, &quot;name for image filename&quot;, &quot;optional: norm. methods IDs&quot;"/>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="data_to_test_lists"/>
