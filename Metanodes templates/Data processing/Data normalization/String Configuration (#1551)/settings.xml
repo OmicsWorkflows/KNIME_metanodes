@@ -11,8 +11,8 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="design"/>
-        <entry key="label" type="xstring" value="Experimental design"/>
-        <entry key="description" type="xstring" value="Enter design in format 'A,A,B,B'. Number of provided samples needs to correspond to the number of selected columns"/>
+        <entry key="label" type="xstring" value="Normalization design"/>
+        <entry key="description" type="xstring" value="Enter the normalization design in format like 'A,A,B,B' (values separated by comma). Number of provided values needs to match the number of selected columns. Columns with the same values will be normalized together"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="design"/>
         <entry key="regex" type="xstring" value=""/>

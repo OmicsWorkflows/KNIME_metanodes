@@ -11,8 +11,8 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="design_bool"/>
-        <entry key="label" type="xstring" value="Use experimental design?"/>
-        <entry key="description" type="xstring" value="If checked, samples will be grouped based on experimental design and normalized per partes"/>
+        <entry key="label" type="xstring" value="Normalize data in subsets?"/>
+        <entry key="description" type="xstring" value="If checked, samples will be grouped based on the normalization design and normalized in subsets"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="design_bool"/>
         <entry key="pushIntVar" type="xboolean" value="true"/>
