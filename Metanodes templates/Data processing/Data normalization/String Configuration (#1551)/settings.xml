@@ -11,8 +11,8 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="design"/>
-        <entry key="label" type="xstring" value="Normalization design"/>
-        <entry key="description" type="xstring" value="Enter the normalization design in format like 'A,A,B,B' (values separated by comma). Number of provided values needs to match the number of selected columns. Columns with the same values will be normalized together"/>
+        <entry key="label" type="xstring" value="Subsets design"/>
+        <entry key="description" type="xstring" value="Enter the subsets design in format like 'A,A,B,B' (values separated by comma). Number of provided values needs to match the number of selected columns. Columns with the same values will be processed together as one subset"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="design"/>
         <entry key="regex" type="xstring" value=""/>
@@ -45,7 +45,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.input.string.StringDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="String Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
