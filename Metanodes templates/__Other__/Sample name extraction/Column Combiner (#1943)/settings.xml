@@ -29,20 +29,20 @@
             </config>
             <config key="datatype">
                 <config key="typelist">
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                 </config>
             </config>
         </config>
         <entry key="delimiter" type="xstring" value=","/>
+        <entry key="new_column_name" type="xstring" value="design_sample_names"/>
         <entry key="is_quoting" type="xboolean" value="true"/>
         <entry key="quote_char" type="xchar" value="&quot;"/>
         <entry key="is_quoting_always" type="xboolean" value="false"/>
-        <entry key="new_column_name" type="xstring" value="all_samples"/>
         <entry key="remove_included_columns" type="xboolean" value="false"/>
     </config>
     <config key="nodeAnnotation">

@@ -47,6 +47,11 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="createSet" type="xboolean" value="false"/>
+        <config key="ignoreMissingValue_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="ignoreMissingValue" type="xboolean" value="false"/>
         <config key="removeCols_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -56,12 +61,7 @@
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="newColName" type="xstring" value="AggregatedValues"/>
-        <config key="ignoreMissingValue_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="ignoreMissingValue" type="xboolean" value="false"/>
+        <entry key="newColName" type="xstring" value="design_sample_names_list"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="create a list containing%%00010 column names"/>
