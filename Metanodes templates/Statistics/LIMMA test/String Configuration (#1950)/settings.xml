@@ -11,7 +11,7 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="qual_changes_categories"/>
-        <entry key="label" type="xstring" value="Categorical evaluation categories"/>
+        <entry key="label" type="xstring" value="[Categorical evaluation] categories"/>
         <entry key="description" type="xstring" value="provide texts separated by comma to be used for the categorical comparisons evaluation if requested; order and the default values for the A-B comparison is as follows:%%00010quant - in both A and B%%00010qual_up - only in A%%00010qual_down - only in B%%00010missing - nor in A or B%%00010%%00010please note the strings separated by values are not stripped of e.g. leasding or trailing spaces"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="qual_changes_categories"/>
@@ -45,7 +45,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.input.string.StringDialogNodeFactory"/>
     <entry key="node-name" type="xstring" value="String Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
