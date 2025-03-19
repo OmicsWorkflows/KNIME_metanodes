@@ -11,8 +11,8 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="separate_norm"/>
-        <entry key="label" type="xstring" value="column-wise statistics/data normalization calculation?"/>
-        <entry key="description" type="xstring" value="whether to calculate statistics and or data normalization for multiple columns separately for individual columns (checked) or combined using all columns data (not checked)"/>
+        <entry key="label" type="xstring" value="[hist/kde] column-wise statistics/data normalization calculation?"/>
+        <entry key="description" type="xstring" value="whether to calculate statistics and or data normalization for multiple columns separately for individual columns (checked) or combined using all columns data (not checked); applicable to hist or kde plot only"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="separate_norm"/>
         <entry key="pushIntVar" type="xboolean" value="true"/>

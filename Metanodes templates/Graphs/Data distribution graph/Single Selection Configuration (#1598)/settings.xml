@@ -14,7 +14,7 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="stat_ecdf"/>
-        <entry key="label" type="xstring" value="ecdf: distribution statistic to compute"/>
+        <entry key="label" type="xstring" value="[ecdf] distribution statistic to compute"/>
         <entry key="description" type="xstring" value="what distribution statistic to compute and show on the y axis"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="stat_ecdf"/>

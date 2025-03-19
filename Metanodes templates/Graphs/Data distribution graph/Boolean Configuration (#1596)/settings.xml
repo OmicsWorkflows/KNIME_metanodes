@@ -11,7 +11,7 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="cumulative"/>
-        <entry key="label" type="xstring" value="hist/kde: cumulative?"/>
+        <entry key="label" type="xstring" value="[hist/kde] cumulative?"/>
         <entry key="description" type="xstring" value="whether the cumulative variant of the histogram or kde plot should be plotted"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="cumulative"/>
