@@ -28,7 +28,7 @@
         <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
             <config key="possible_choices">
-                <entry key="used_variable" type="xstring" value="outer_design_sample_names_list"/>
+                <entry key="used_variable" type="xstring" value="design_sample_names_list"/>
                 <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
             </config>
         </config>
