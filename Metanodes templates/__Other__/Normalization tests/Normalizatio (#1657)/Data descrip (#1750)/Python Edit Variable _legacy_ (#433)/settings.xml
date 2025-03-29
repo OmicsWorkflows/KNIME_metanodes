@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="sourceCode" type="xstring" value="# create a flow variable for filename%%00010flow_variables['filename_ma'] = flow_variables['path'] + flow_variables['all_prefix'] + flow_variables['subset_filename'] + '_ma-plot_' + flow_variables['normalization_filename'] + flow_variables['all_suffix'] + '.png'%%00010"/>
+        <entry key="sourceCode" type="xstring" value="# create a flow variable for filename%%00010flow_variables['filename_pca'] = flow_variables['path'] + flow_variables['all_prefix'] + flow_variables['subset_filename'] + '_pca-plot_' + flow_variables['normalization_filename'] + flow_variables['all_suffix'] + '.png'%%00010"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>
@@ -15,16 +15,16 @@
         <entry key="chunkSize" type="xint" value="500000"/>
         <entry key="pythonVersionOption" type="xstring" value="python3"/>
         <entry key="python2Command" type="xstring" value=""/>
-        <entry key="python3Command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+        <entry key="python3Command" type="xstring" value="unknown_flow_variable_selected"/>
     </config>
     <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
             <config key="python3Command">
                 <entry key="used_variable" type="xstring" value="python3command"/>
                 <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
             </config>
         </config>
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="modify filename"/>

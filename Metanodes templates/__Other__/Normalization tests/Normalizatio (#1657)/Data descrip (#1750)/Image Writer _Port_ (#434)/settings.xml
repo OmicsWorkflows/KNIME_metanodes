@@ -14,7 +14,7 @@
             <config key="file_system_chooser__Internals">
                 <entry key="has_fs_port" type="xboolean" value="false"/>
                 <entry key="overwritten_by_variable" type="xboolean" value="true"/>
-                <entry key="convenience_fs_category" type="xstring" value="RELATIVE"/>
+                <entry key="convenience_fs_category" type="xstring" value="LOCAL"/>
                 <entry key="relative_to" type="xstring" value="knime.workflow.data"/>
                 <entry key="mountpoint" type="xstring" value="LOCAL"/>
                 <entry key="spaceId" type="xstring" value=""/>
@@ -24,9 +24,8 @@
             </config>
             <config key="path">
                 <entry key="location_present" type="xboolean" value="true"/>
-                <entry key="file_system_type" type="xstring" value="RELATIVE"/>
-                <entry key="file_system_specifier" type="xstring" value="knime.workflow.data"/>
-                <entry key="path" type="xstring" value="knime:/knime.workflow/__outputs__/figures/normalization_tests/all-samples_ma-plot_not-norm.png"/>
+                <entry key="file_system_type" type="xstring" value="LOCAL"/>
+                <entry key="path" type="xstring" value="/home/knimeuser/knime-workspace/Orders/6129/6129_DIA-NN_PGs_LFQ_general_v1.2.6_03/__outputs__/figures/normalization_tests_per contrast/PGs_DIANN_6h com/PG_F_Ctrl_6h-M_Ctrl_6h_pca-plot_pg-not-norm.png"/>
             </config>
             <config key="filter_mode_Internals">
                 <entry key="SettingsModelID" type="xstring" value="SMID_FilterMode"/>
@@ -37,15 +36,15 @@
         </config>
     </config>
     <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
             <config key="filechooser">
                 <config key="path">
-                    <entry key="used_variable" type="xstring" value="filename_ma_location"/>
+                    <entry key="used_variable" type="xstring" value="filename_pca_location"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
         </config>
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="writes out image"/>
