@@ -13,7 +13,7 @@
         <config key="dir_location">
             <config key="file_system_chooser__Internals">
                 <entry key="has_fs_port" type="xboolean" value="false"/>
-                <entry key="overwritten_by_variable" type="xboolean" value="true"/>
+                <entry key="overwritten_by_variable" type="xboolean" value="false"/>
                 <entry key="convenience_fs_category" type="xstring" value="LOCAL"/>
                 <entry key="relative_to" type="xstring" value="knime.workflow.data"/>
                 <entry key="mountpoint" type="xstring" value="LOCAL"/>
@@ -46,6 +46,7 @@
         </config>
     </config>
     <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
             <config key="dir_location">
                 <config key="path">
@@ -54,7 +55,6 @@
                 </config>
             </config>
         </config>
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
