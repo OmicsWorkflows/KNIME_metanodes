@@ -25,13 +25,13 @@
         <entry key="number_visible_options" type="xint" value="10"/>
     </config>
     <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
             <config key="possible_choices">
-                <entry key="used_variable" type="xstring" value="AggregatedValues"/>
+                <entry key="used_variable" type="xstring" value="design_sample_names_list"/>
                 <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
             </config>
         </config>
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="column selection"/>
