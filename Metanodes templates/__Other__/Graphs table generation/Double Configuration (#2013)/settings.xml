@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <config key="defaultValue">
-            <entry key="double" type="xdouble" value="1.0"/>
+            <entry key="double" type="xdouble" value="0.05"/>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="p_value_threshold"/>
