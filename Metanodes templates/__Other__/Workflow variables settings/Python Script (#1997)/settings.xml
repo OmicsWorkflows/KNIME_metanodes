@@ -6,8 +6,17 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010%%00010# writes the flow variables based on the selected columns%%00010%%00010if knio.flow_variables['comparisons_ratio_new'] == 1:%%00010    knio.flow_variables['comp_names_ratio'] = knio.flow_variables['new_comparisons_ratio']%%00010%%00010if knio.flow_variables['comparisons_LIMMA_new'] == 1:%%00010    knio.flow_variables['comp_names_LIMMA'] = knio.flow_variables['new_comparisons_LIMMA']%%00010%%00010if knio.flow_variables['design_sample_prep_batch_names_new'] == 1:%%00010    knio.flow_variables['design_sample_prep_batch_names'] = knio.flow_variables['new_design_sample_prep_batch_names']%%00010%%00010if knio.flow_variables['design_sample_group_names_new'] == 1:%%00010    knio.flow_variables['design_sample_group_names'] = knio.flow_variables['new_design_sample_group_names']%%00010%%00010if knio.flow_variables['design_sample_names_new'] == 1:%%00010    knio.flow_variables['design_sample_names'] = knio.flow_variables['new_design_sample_names']%%00010    knio.flow_variables['design_sample_names_list'] = knio.flow_variables['new_design_sample_names'].split()%%00010  %%00010"/>
-        <entry key="python3_command" type="xstring" value=""/>
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010%%00010# writes the flow variables based on the selected columns%%00010%%00010if knio.flow_variables['design_sample_names_new'] == 1:%%00010    knio.flow_variables['design_sample_names'] = knio.flow_variables['new_design_sample_names']%%00010    knio.flow_variables['design_sample_names_list'] = knio.flow_variables['new_design_sample_names'].split()%%00010    #print(knio.flow_variables['design_sample_names'])%%00010    %%00010if knio.flow_variables['design_sample_group_names_new'] == 1:%%00010    knio.flow_variables['design_sample_group_names'] = knio.flow_variables['new_design_sample_group_names']%%00010%%00010if knio.flow_variables['design_sample_prep_batch_names_new'] == 1:%%00010    knio.flow_variables['design_sample_prep_batch_names'] = knio.flow_variables['new_design_sample_prep_batch_names']%%00010%%00010if knio.flow_variables['comparisons_LIMMA_new'] == 1:%%00010    knio.flow_variables['comparisons_LIMMA'] = knio.flow_variables['new_comparisons_LIMMA']%%00010%%00010if knio.flow_variables['comparisons_ratio_new'] == 1:%%00010    knio.flow_variables['comparisons_ratio'] = knio.flow_variables['new_comparisons_ratio']%%00010"/>
+        <entry key="python3_command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3_command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="changes the flow variable %%00010holding sample rep. names %%00010to the associated list variable"/>
