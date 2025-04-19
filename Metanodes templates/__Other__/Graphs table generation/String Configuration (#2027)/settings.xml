@@ -11,8 +11,8 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="volcano_logfc_suffix"/>
-        <entry key="label" type="xstring" value="P value suffix"/>
-        <entry key="description" type="xstring" value="P (or adjusted P) value columns suffix"/>
+        <entry key="label" type="xstring" value="[Volcano plot] log fold change suffix"/>
+        <entry key="description" type="xstring" value="log fold change value columns suffix"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="volcano_logfc_suffix"/>
         <entry key="regex" type="xstring" value=""/>

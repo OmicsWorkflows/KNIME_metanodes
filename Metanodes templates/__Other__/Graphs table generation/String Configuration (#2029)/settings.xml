@@ -11,7 +11,7 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="volcano_prefix"/>
-        <entry key="label" type="xstring" value="[Volcano plot] prefix"/>
+        <entry key="label" type="xstring" value="[Volcano plot] input columns prefix"/>
         <entry key="description" type="xstring" value="common prefix of all fold change and P value columns to be used for the Volcano plots specifications; if left empty, it will be automatically guessed"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="volcano_prefix"/>
