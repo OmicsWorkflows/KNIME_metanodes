@@ -20,7 +20,7 @@
                 <entry key="4" type="xstring" value="Sequence.Modifications"/>
             </config>
             <config key="ExclList">
-                <entry key="array-size" type="xint" value="69"/>
+                <entry key="array-size" type="xint" value="68"/>
                 <entry key="0" type="xstring" value="Run.Index"/>
                 <entry key="1" type="xstring" value="Run"/>
                 <entry key="2" type="xstring" value="Channel"/>
@@ -88,8 +88,7 @@
                 <entry key="64" type="xstring" value="Global.PG.Q.Value"/>
                 <entry key="65" type="xstring" value="Best.Fr.Mz"/>
                 <entry key="66" type="xstring" value="Best.Fr.Mz.Delta"/>
-                <entry key="67" type="xstring" value="UniMod:4 count"/>
-                <entry key="68" type="xstring" value="Phospho count"/>
+                <entry key="67" type="xstring" value="Phospho count"/>
             </config>
             <entry key="keep_all_columns_selected" type="xboolean" value="false"/>
         </config>
@@ -103,14 +102,24 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="enableHilite" type="xboolean" value="false"/>
+        <config key="valueDelimiter_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="valueDelimiter" type="xstring" value=" &amp; "/>
         <config key="sortInMemory_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="sortInMemory" type="xboolean" value="false"/>
+        <config key="columnNamePolicy_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="columnNamePolicy" type="xstring" value="Column name (aggregation method)"/>
         <config key="aggregationColumn">
             <config key="columnNames">
-                <entry key="array-size" type="xint" value="16"/>
+                <entry key="array-size" type="xint" value="17"/>
                 <entry key="0" type="xstring" value="Precursor.Quantity"/>
                 <entry key="1" type="xstring" value="Precursor.Normalised"/>
                 <entry key="2" type="xstring" value="Q.Value"/>
@@ -127,9 +136,10 @@
                 <entry key="13" type="xstring" value="Lib.PTM.Site.Confidence"/>
                 <entry key="14" type="xstring" value="Site.Occupancy.Probabilities"/>
                 <entry key="15" type="xstring" value="Peptidoform.Q.Value"/>
+                <entry key="16" type="xstring" value="Protein.Sites"/>
             </config>
             <config key="columnTypes">
-                <entry key="array-size" type="xint" value="16"/>
+                <entry key="array-size" type="xint" value="17"/>
                 <config key="0">
                     <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                     <entry key="is_null" type="xboolean" value="false"/>
@@ -194,9 +204,13 @@
                     <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                     <entry key="is_null" type="xboolean" value="false"/>
                 </config>
+                <config key="16">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
             </config>
             <config key="aggregationMethod">
-                <entry key="array-size" type="xint" value="16"/>
+                <entry key="array-size" type="xint" value="17"/>
                 <entry key="0" type="xstring" value="Maximum"/>
                 <entry key="1" type="xstring" value="Maximum"/>
                 <entry key="2" type="xstring" value="Minimum"/>
@@ -213,9 +227,10 @@
                 <entry key="13" type="xstring" value="Concatenate_V2.4"/>
                 <entry key="14" type="xstring" value="Concatenate_V2.4"/>
                 <entry key="15" type="xstring" value="Concatenate_V2.4"/>
+                <entry key="16" type="xstring" value="Concatenate_V2.4"/>
             </config>
             <config key="inclMissingVals">
-                <entry key="array-size" type="xint" value="16"/>
+                <entry key="array-size" type="xint" value="17"/>
                 <entry key="0" type="xboolean" value="false"/>
                 <entry key="1" type="xboolean" value="false"/>
                 <entry key="2" type="xboolean" value="false"/>
@@ -232,16 +247,12 @@
                 <entry key="13" type="xboolean" value="false"/>
                 <entry key="14" type="xboolean" value="true"/>
                 <entry key="15" type="xboolean" value="false"/>
+                <entry key="16" type="xboolean" value="true"/>
             </config>
         </config>
         <config key="aggregationOperatorSettings"/>
         <config key="patternAggregators"/>
         <config key="dataTypeAggregators"/>
-        <config key="columnNamePolicy_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="columnNamePolicy" type="xstring" value="Column name (aggregation method)"/>
         <config key="retainOrder_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -252,11 +263,6 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="inMemory" type="xboolean" value="false"/>
-        <config key="valueDelimiter_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="valueDelimiter" type="xstring" value=" &amp; "/>
         <config key="nodeVersion_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -273,7 +279,7 @@
                 <entry key="0" type="xstring" value="Run"/>
             </config>
             <config key="ExclList">
-                <entry key="array-size" type="xint" value="73"/>
+                <entry key="array-size" type="xint" value="72"/>
                 <entry key="0" type="xstring" value="Run.Index"/>
                 <entry key="1" type="xstring" value="Channel"/>
                 <entry key="2" type="xstring" value="Precursor.Id"/>
@@ -345,8 +351,7 @@
                 <entry key="68" type="xstring" value="Best.Fr.Mz"/>
                 <entry key="69" type="xstring" value="Best.Fr.Mz.Delta"/>
                 <entry key="70" type="xstring" value="Sequence.Modifications"/>
-                <entry key="71" type="xstring" value="UniMod:4 count"/>
-                <entry key="72" type="xstring" value="Phospho count"/>
+                <entry key="71" type="xstring" value="Phospho count"/>
             </config>
             <entry key="keep_all_columns_selected" type="xboolean" value="false"/>
         </config>

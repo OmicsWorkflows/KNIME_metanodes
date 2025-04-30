@@ -556,9 +556,9 @@
                 </config>
             </config>
         </config>
-        <config key="node_2056">
-            <entry key="id" type="xint" value="2056"/>
-            <entry key="node_settings_file" type="xstring" value="Pivoting (#2056)/settings.xml"/>
+        <config key="node_2057">
+            <entry key="id" type="xint" value="2057"/>
+            <entry key="node_settings_file" type="xstring" value="Pivoting (#2057)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -1006,7 +1006,7 @@
         </config>
         <config key="connection_43">
             <entry key="sourceID" type="xint" value="2052"/>
-            <entry key="destID" type="xint" value="2056"/>
+            <entry key="destID" type="xint" value="2057"/>
             <entry key="sourcePort" type="xint" value="1"/>
             <entry key="destPort" type="xint" value="1"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
@@ -1035,7 +1035,7 @@
             </config>
         </config>
         <config key="connection_46">
-            <entry key="sourceID" type="xint" value="2056"/>
+            <entry key="sourceID" type="xint" value="2057"/>
             <entry key="destID" type="xint" value="2050"/>
             <entry key="sourcePort" type="xint" value="1"/>
             <entry key="destPort" type="xint" value="2"/>
