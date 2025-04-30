@@ -9,10 +9,6 @@
         <entry key="append_suffix" type="xboolean" value="true"/>
         <entry key="suffix" type="xstring" value="_dup"/>
         <entry key="enable_hiliting" type="xboolean" value="false"/>
-        <config key="multipleActiveHandling_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
         <entry key="multipleActiveHandling" type="xstring" value="Fail"/>
     </config>
     <config key="nodeAnnotation">
