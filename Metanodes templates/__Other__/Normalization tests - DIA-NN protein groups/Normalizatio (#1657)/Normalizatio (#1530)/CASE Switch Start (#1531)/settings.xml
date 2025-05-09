@@ -6,14 +6,14 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="activate_all_outputs_during_configure_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="PortIndex" type="xstring" value="0"/>
         <config key="PortIndex_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="false"/>
+        </config>
+        <entry key="PortIndex" type="xstring" value="0"/>
+        <config key="activate_all_outputs_during_configure_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="activate_all_outputs_during_configure" type="xboolean" value="true"/>
     </config>
@@ -33,11 +33,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.7.v202308021457"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
     <config key="factory_settings"/>
     <config key="node_creation_config">
         <config key="Input">

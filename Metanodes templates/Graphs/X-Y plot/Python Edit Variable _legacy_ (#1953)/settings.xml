@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="sourceCode" type="xstring" value="# create variables for if switches%%00010if flow_variables['x_design_bool'] == 1:%%00010%%00009flow_variables['x_design_switch'] = 'top'%%00010else:%%00010%%00009flow_variables['x_design_switch'] = 'bottom'%%00010%%00010# create variables for if switches%%00010if flow_variables['y_design_bool'] == 1:%%00010%%00009flow_variables['y_design_switch'] = 'top'%%00010else:%%00010%%00009flow_variables['y_design_switch'] = 'bottom'%%00010%%00010# regex for design group name retrieval%%00010flow_variables['x_regex_design'] = 'PLOT_(.+)_' + flow_variables['merging_x_axis']%%00010flow_variables['y_regex_design'] = 'PLOT_(.+)_' + flow_variables['merging_y_axis']%%00010flow_variables['x_regex'] = flow_variables['x_prefix'] + '(.+)' + flow_variables['x_suffix']%%00010flow_variables['y_regex'] = flow_variables['y_prefix'] + '(.+)' + flow_variables['y_suffix']%%00010%%00010# if axis titles are left empty, fill in default values%%00010if flow_variables['x_title'] == '':%%00010%%00009flow_variables['x_title'] = 'X'%%00010if flow_variables['y_title'] == '':%%00010%%00009flow_variables['y_title'] = 'Y'%%00010%%00010# raise error if no plot type is selected%%00010if flow_variables['plot_type'] == '':%%00010%%00009raise ValueError('No plot type was selected')%%00010%%00010# adjust the plot type variable%%00010plot_type_list = [x for x in flow_variables['plot_type'].split(',')]%%00010%%00010if 'smooth line' in plot_type_list:%%00010%%00009flow_variables['linetype'] = 1%%00010else:%%00010%%00009flow_variables['linetype'] = 0%%00010%%00009%%00010if '95% confidence interval' in plot_type_list:%%00010%%00009flow_variables['show_se'] = 'TRUE'%%00010%%00009plot_type_list.remove('95% confidence interval')%%00010%%00009if 'smooth line' not in plot_type_list:%%00010%%00009%%00009plot_type_list.append('smooth line')%%00010else:%%00010%%00009flow_variables['show_se'] = 'FALSE'%%00010%%00010flow_variables['plot_type'] = ','.join(plot_type_list)%%00010%%00010# plot size%%00010if flow_variables['plot_size'] == '':%%00010%%00009flow_variables['plot_width'] = 800%%00010%%00009flow_variables['plot_height'] = 600%%00010else:%%00010%%00009flow_variables['plot_width'], flow_variables['plot_height'] = flow_variables['plot_size'].split(';')%%00010%%00009flow_variables['plot_width'] = int(flow_variables['plot_width'])%%00010%%00009flow_variables['plot_height'] = int(flow_variables['plot_height'])"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3Command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="org.knime.python2.nodes.variables.Python2VariablesNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Edit Variable (legacy)"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202211291448"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python 2 Integration (legacy)"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.1.v202301311311"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Python Edit Variable (legacy)"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

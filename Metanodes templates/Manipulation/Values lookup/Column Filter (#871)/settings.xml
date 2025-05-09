@@ -7,6 +7,26 @@
     </config>
     <config key="model">
         <config key="column-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="5"/>
+                <entry key="0" type="xstring" value="Phospho (ST)Sites_Proteins"/>
+                <entry key="1" type="xstring" value="Phospho (ST)Sites_Sequence window"/>
+                <entry key="2" type="xstring" value="Phospho (ST)Sites_Modification window"/>
+                <entry key="3" type="xstring" value="Phospho (ST)Sites_Peptide window coverage"/>
+                <entry key="4" type="xstring" value="Phospho (ST)Sites_Positions_Amino acid"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="rowIndex_original"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
             <config key="datatype">
                 <config key="typelist">
                     <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
@@ -17,26 +37,6 @@
                     <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                 </config>
             </config>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value=""/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
-            </config>
-            <config key="excluded_names">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="rowIndex_original"/>
-            </config>
-            <config key="included_names">
-                <entry key="array-size" type="xint" value="5"/>
-                <entry key="0" type="xstring" value="Phospho (ST)Sites_Proteins"/>
-                <entry key="1" type="xstring" value="Phospho (ST)Sites_Sequence window"/>
-                <entry key="2" type="xstring" value="Phospho (ST)Sites_Modification window"/>
-                <entry key="3" type="xstring" value="Phospho (ST)Sites_Peptide window coverage"/>
-                <entry key="4" type="xstring" value="Phospho (ST)Sites_Positions_Amino acid"/>
-            </config>
-            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
         </config>
     </config>
     <config key="nodeAnnotation">
@@ -60,11 +60,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.7.v202308021457"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Column Filter"/>
     <entry key="hasContent" type="xboolean" value="false"/>

@@ -6,19 +6,19 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="useMin" type="xboolean" value="true"/>
-        <entry key="min" type="xdouble" value="0.0"/>
-        <entry key="flowVariableName" type="xstring" value="logfc"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="max" type="xdouble" value="1.0"/>
         <config key="defaultValue">
             <entry key="double" type="xdouble" value="1.0"/>
         </config>
-        <entry key="useMax" type="xboolean" value="false"/>
-        <entry key="description" type="xstring" value="Select the threshold for logFC. This threshold will be used for filtering both upregulated (logFC &gt; threshold) and downregulated (logFC &lt; negative threshold) proteins."/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="logfc"/>
         <entry key="label" type="xstring" value="Threshold for logFC"/>
+        <entry key="description" type="xstring" value="Select the threshold for logFC. This threshold will be used for filtering both upregulated (logFC &gt; threshold) and downregulated (logFC &lt; negative threshold) proteins."/>
         <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="logfc"/>
+        <entry key="useMin" type="xboolean" value="true"/>
+        <entry key="useMax" type="xboolean" value="false"/>
+        <entry key="min" type="xdouble" value="0.0"/>
+        <entry key="max" type="xdouble" value="1.0"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="logFC%%00010threshold"/>
@@ -44,7 +44,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <config key="nodecontainer_message">
         <entry key="type" type="xstring" value="WARNING"/>
         <entry key="message" type="xstring" value="Component does not have input data, execute upstream nodes first"/>
@@ -54,11 +54,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202302071224"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.4.v202306091222"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Double Configuration"/>
     <entry key="hasContent" type="xboolean" value="false"/>

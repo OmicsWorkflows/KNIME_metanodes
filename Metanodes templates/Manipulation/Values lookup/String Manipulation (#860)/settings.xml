@@ -6,12 +6,12 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="return_type" type="xstring" value="java.lang.String"/>
         <entry key="expression" type="xstring" value="string($$ROWID$$)"/>
         <entry key="replaced_column" type="xstring" value="rowID_original"/>
         <entry key="append_column" type="xboolean" value="false"/>
-        <entry key="insert_missing_as_null" type="xboolean" value="false"/>
         <entry key="test_compilation_on_dialog_close" type="xboolean" value="true"/>
+        <entry key="insert_missing_as_null" type="xboolean" value="false"/>
+        <entry key="return_type" type="xstring" value="java.lang.String"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="adds rowID_original%%00010column"/>
@@ -34,11 +34,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Java Snippet Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.jsnippets"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280847"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202211082357"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Javasnippet"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.javasnippet.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.0.v202202280847"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.0.v202211082357"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="String Manipulation"/>
     <entry key="hasContent" type="xboolean" value="false"/>

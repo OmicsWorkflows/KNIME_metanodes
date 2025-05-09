@@ -11,13 +11,18 @@
             <entry key="0" type="xstring" value="rowIndex_original"/>
             <entry key="1" type="xstring" value="rowIndex_ungroupped"/>
         </config>
-        <entry key="missingToEnd" type="xboolean" value="false"/>
-        <entry key="sortinmemory" type="xboolean" value="false"/>
         <config key="sortOrder">
             <entry key="array-size" type="xint" value="2"/>
             <entry key="0" type="xboolean" value="true"/>
             <entry key="1" type="xboolean" value="true"/>
         </config>
+        <config key="alphaNumStringComp">
+            <entry key="array-size" type="xint" value="2"/>
+            <entry key="0" type="xboolean" value="false"/>
+            <entry key="1" type="xboolean" value="false"/>
+        </config>
+        <entry key="sortinmemory" type="xboolean" value="false"/>
+        <entry key="missingToEnd" type="xboolean" value="false"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="resorts to the order %%00010before the join step"/>
@@ -40,11 +45,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.7.v202308021457"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Sorter"/>
     <entry key="hasContent" type="xboolean" value="false"/>
