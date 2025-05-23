@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <config key="defaultValue">
-            <entry key="string" type="xstring" value="Top3+"/>
+            <entry key="string" type="xstring" value="PG.Top3_imp+"/>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="prefix_top"/>

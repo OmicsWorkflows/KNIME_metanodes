@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <config key="defaultValue">
-            <entry key="string" type="xstring" value=""/>
+            <entry key="string" type="xstring" value="_log2_norm_imp_delog"/>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="old_suffix"/>

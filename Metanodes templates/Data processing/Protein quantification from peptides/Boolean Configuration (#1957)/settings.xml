@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <config key="defaultValue">
-            <entry key="boolean" type="xboolean" value="true"/>
+            <entry key="boolean" type="xboolean" value="false"/>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="median_bool"/>
