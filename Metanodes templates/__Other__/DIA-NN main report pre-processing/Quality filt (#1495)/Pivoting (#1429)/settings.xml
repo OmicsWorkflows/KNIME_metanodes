@@ -100,14 +100,24 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="enableHilite" type="xboolean" value="false"/>
+        <config key="valueDelimiter_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="valueDelimiter" type="xstring" value=", "/>
         <config key="sortInMemory_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="sortInMemory" type="xboolean" value="false"/>
+        <config key="columnNamePolicy_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="columnNamePolicy" type="xstring" value="Column name (aggregation method)"/>
         <config key="aggregationColumn">
             <config key="columnNames">
-                <entry key="array-size" type="xint" value="9"/>
+                <entry key="array-size" type="xint" value="11"/>
                 <entry key="0" type="xstring" value="PG.MaxLFQ"/>
                 <entry key="1" type="xstring" value="Global.Q.Value"/>
                 <entry key="2" type="xstring" value="Protein.Q.Value"/>
@@ -117,9 +127,11 @@
                 <entry key="6" type="xstring" value="Precursor.Id"/>
                 <entry key="7" type="xstring" value="Precursor.Quantity"/>
                 <entry key="8" type="xstring" value="Precursor.Normalised"/>
+                <entry key="9" type="xstring" value="Quantity.Quality"/>
+                <entry key="10" type="xstring" value="PG.MaxLFQ.Quality"/>
             </config>
             <config key="columnTypes">
-                <entry key="array-size" type="xint" value="9"/>
+                <entry key="array-size" type="xint" value="11"/>
                 <config key="0">
                     <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                     <entry key="is_null" type="xboolean" value="false"/>
@@ -156,9 +168,17 @@
                     <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                     <entry key="is_null" type="xboolean" value="false"/>
                 </config>
+                <config key="9">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <config key="10">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
             </config>
             <config key="aggregationMethod">
-                <entry key="array-size" type="xint" value="9"/>
+                <entry key="array-size" type="xint" value="11"/>
                 <entry key="0" type="xstring" value="Maximum"/>
                 <entry key="1" type="xstring" value="Minimum"/>
                 <entry key="2" type="xstring" value="Minimum"/>
@@ -168,9 +188,11 @@
                 <entry key="6" type="xstring" value="Count"/>
                 <entry key="7" type="xstring" value="Maximum"/>
                 <entry key="8" type="xstring" value="Maximum"/>
+                <entry key="9" type="xstring" value="Maximum"/>
+                <entry key="10" type="xstring" value="Maximum"/>
             </config>
             <config key="inclMissingVals">
-                <entry key="array-size" type="xint" value="9"/>
+                <entry key="array-size" type="xint" value="11"/>
                 <entry key="0" type="xboolean" value="false"/>
                 <entry key="1" type="xboolean" value="false"/>
                 <entry key="2" type="xboolean" value="false"/>
@@ -180,16 +202,13 @@
                 <entry key="6" type="xboolean" value="true"/>
                 <entry key="7" type="xboolean" value="false"/>
                 <entry key="8" type="xboolean" value="false"/>
+                <entry key="9" type="xboolean" value="false"/>
+                <entry key="10" type="xboolean" value="false"/>
             </config>
         </config>
         <config key="aggregationOperatorSettings"/>
         <config key="patternAggregators"/>
         <config key="dataTypeAggregators"/>
-        <config key="columnNamePolicy_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="columnNamePolicy" type="xstring" value="Column name (aggregation method)"/>
         <config key="retainOrder_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -200,11 +219,6 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="inMemory" type="xboolean" value="false"/>
-        <config key="valueDelimiter_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="valueDelimiter" type="xstring" value=", "/>
         <config key="nodeVersion_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>

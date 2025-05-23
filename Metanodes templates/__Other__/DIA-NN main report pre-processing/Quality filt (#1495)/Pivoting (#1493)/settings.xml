@@ -13,64 +13,80 @@
         <config key="grouByColumns">
             <config key="InclList">
                 <entry key="array-size" type="xint" value="4"/>
-                <entry key="0" type="xstring" value="Protein.Group"/>
+                <entry key="0" type="xstring" value="Stripped.Sequence"/>
                 <entry key="1" type="xstring" value="Protein.Ids"/>
-                <entry key="2" type="xstring" value="Stripped.Sequence"/>
+                <entry key="2" type="xstring" value="Protein.Group"/>
                 <entry key="3" type="xstring" value="Lib.PG.Q.Value"/>
             </config>
             <config key="ExclList">
-                <entry key="array-size" type="xint" value="51"/>
-                <entry key="0" type="xstring" value="File.Name"/>
+                <entry key="array-size" type="xint" value="67"/>
+                <entry key="0" type="xstring" value="Run.Index"/>
                 <entry key="1" type="xstring" value="Run"/>
-                <entry key="2" type="xstring" value="Protein.Names"/>
-                <entry key="3" type="xstring" value="Genes"/>
-                <entry key="4" type="xstring" value="PG.Quantity"/>
-                <entry key="5" type="xstring" value="PG.Normalised"/>
-                <entry key="6" type="xstring" value="PG.MaxLFQ"/>
-                <entry key="7" type="xstring" value="Genes.Quantity"/>
-                <entry key="8" type="xstring" value="Genes.Normalised"/>
-                <entry key="9" type="xstring" value="Genes.MaxLFQ"/>
-                <entry key="10" type="xstring" value="Genes.MaxLFQ.Unique"/>
-                <entry key="11" type="xstring" value="Modified.Sequence"/>
-                <entry key="12" type="xstring" value="Precursor.Id"/>
-                <entry key="13" type="xstring" value="Precursor.Charge"/>
-                <entry key="14" type="xstring" value="Q.Value"/>
-                <entry key="15" type="xstring" value="PEP"/>
-                <entry key="16" type="xstring" value="Global.Q.Value"/>
-                <entry key="17" type="xstring" value="Protein.Q.Value"/>
-                <entry key="18" type="xstring" value="PG.Q.Value"/>
-                <entry key="19" type="xstring" value="Global.PG.Q.Value"/>
-                <entry key="20" type="xstring" value="GG.Q.Value"/>
-                <entry key="21" type="xstring" value="Translated.Q.Value"/>
-                <entry key="22" type="xstring" value="Proteotypic"/>
-                <entry key="23" type="xstring" value="Precursor.Quantity"/>
-                <entry key="24" type="xstring" value="Precursor.Normalised"/>
-                <entry key="25" type="xstring" value="Precursor.Translated"/>
-                <entry key="26" type="xstring" value="Ms1.Translated"/>
+                <entry key="2" type="xstring" value="Channel"/>
+                <entry key="3" type="xstring" value="Precursor.Id"/>
+                <entry key="4" type="xstring" value="Modified.Sequence"/>
+                <entry key="5" type="xstring" value="Precursor.Charge"/>
+                <entry key="6" type="xstring" value="Precursor.Lib.Index"/>
+                <entry key="7" type="xstring" value="Decoy"/>
+                <entry key="8" type="xstring" value="Proteotypic"/>
+                <entry key="9" type="xstring" value="Precursor.Mz"/>
+                <entry key="10" type="xstring" value="Protein.Names"/>
+                <entry key="11" type="xstring" value="Genes"/>
+                <entry key="12" type="xstring" value="RT"/>
+                <entry key="13" type="xstring" value="iRT"/>
+                <entry key="14" type="xstring" value="Predicted.RT"/>
+                <entry key="15" type="xstring" value="Predicted.iRT"/>
+                <entry key="16" type="xstring" value="IM"/>
+                <entry key="17" type="xstring" value="iIM"/>
+                <entry key="18" type="xstring" value="Predicted.IM"/>
+                <entry key="19" type="xstring" value="Predicted.iIM"/>
+                <entry key="20" type="xstring" value="Precursor.Quantity"/>
+                <entry key="21" type="xstring" value="Precursor.Normalised"/>
+                <entry key="22" type="xstring" value="Ms1.Area"/>
+                <entry key="23" type="xstring" value="Ms1.Normalised"/>
+                <entry key="24" type="xstring" value="Ms1.Apex.Area"/>
+                <entry key="25" type="xstring" value="Ms1.Apex.Mz.Delta"/>
+                <entry key="26" type="xstring" value="Normalisation.Factor"/>
                 <entry key="27" type="xstring" value="Quantity.Quality"/>
-                <entry key="28" type="xstring" value="RT"/>
-                <entry key="29" type="xstring" value="RT.Start"/>
-                <entry key="30" type="xstring" value="RT.Stop"/>
-                <entry key="31" type="xstring" value="iRT"/>
-                <entry key="32" type="xstring" value="Predicted.RT"/>
-                <entry key="33" type="xstring" value="Predicted.iRT"/>
-                <entry key="34" type="xstring" value="Lib.Q.Value"/>
-                <entry key="35" type="xstring" value="Ms1.Profile.Corr"/>
-                <entry key="36" type="xstring" value="Ms1.Area"/>
-                <entry key="37" type="xstring" value="Evidence"/>
-                <entry key="38" type="xstring" value="Spectrum.Similarity"/>
-                <entry key="39" type="xstring" value="Mass.Evidence"/>
-                <entry key="40" type="xstring" value="CScore"/>
-                <entry key="41" type="xstring" value="Decoy.Evidence"/>
-                <entry key="42" type="xstring" value="Decoy.CScore"/>
-                <entry key="43" type="xstring" value="Fragment.Quant.Raw"/>
-                <entry key="44" type="xstring" value="Fragment.Quant.Corrected"/>
-                <entry key="45" type="xstring" value="Fragment.Correlations"/>
-                <entry key="46" type="xstring" value="MS2.Scan"/>
-                <entry key="47" type="xstring" value="IM"/>
-                <entry key="48" type="xstring" value="iIM"/>
-                <entry key="49" type="xstring" value="Predicted.IM"/>
-                <entry key="50" type="xstring" value="Predicted.iIM"/>
+                <entry key="28" type="xstring" value="Empirical.Quality"/>
+                <entry key="29" type="xstring" value="Normalisation.Noise"/>
+                <entry key="30" type="xstring" value="Ms1.Profile.Corr"/>
+                <entry key="31" type="xstring" value="Evidence"/>
+                <entry key="32" type="xstring" value="Mass.Evidence"/>
+                <entry key="33" type="xstring" value="Channel.Evidence"/>
+                <entry key="34" type="xstring" value="Ms1.Total.Signal.Before"/>
+                <entry key="35" type="xstring" value="Ms1.Total.Signal.After"/>
+                <entry key="36" type="xstring" value="RT.Start"/>
+                <entry key="37" type="xstring" value="RT.Stop"/>
+                <entry key="38" type="xstring" value="FWHM"/>
+                <entry key="39" type="xstring" value="PG.TopN"/>
+                <entry key="40" type="xstring" value="PG.MaxLFQ"/>
+                <entry key="41" type="xstring" value="Genes.TopN"/>
+                <entry key="42" type="xstring" value="Genes.MaxLFQ"/>
+                <entry key="43" type="xstring" value="Genes.MaxLFQ.Unique"/>
+                <entry key="44" type="xstring" value="PG.MaxLFQ.Quality"/>
+                <entry key="45" type="xstring" value="Genes.MaxLFQ.Quality"/>
+                <entry key="46" type="xstring" value="Genes.MaxLFQ.Unique.Quality"/>
+                <entry key="47" type="xstring" value="Q.Value"/>
+                <entry key="48" type="xstring" value="PEP"/>
+                <entry key="49" type="xstring" value="Global.Q.Value"/>
+                <entry key="50" type="xstring" value="Lib.Q.Value"/>
+                <entry key="51" type="xstring" value="Peptidoform.Q.Value"/>
+                <entry key="52" type="xstring" value="Global.Peptidoform.Q.Value"/>
+                <entry key="53" type="xstring" value="Lib.Peptidoform.Q.Value"/>
+                <entry key="54" type="xstring" value="PTM.Site.Confidence"/>
+                <entry key="55" type="xstring" value="Site.Occupancy.Probabilities"/>
+                <entry key="56" type="xstring" value="Protein.Sites"/>
+                <entry key="57" type="xstring" value="Lib.PTM.Site.Confidence"/>
+                <entry key="58" type="xstring" value="Translated.Q.Value"/>
+                <entry key="59" type="xstring" value="Channel.Q.Value"/>
+                <entry key="60" type="xstring" value="PG.Q.Value"/>
+                <entry key="61" type="xstring" value="PG.PEP"/>
+                <entry key="62" type="xstring" value="GG.Q.Value"/>
+                <entry key="63" type="xstring" value="Protein.Q.Value"/>
+                <entry key="64" type="xstring" value="Global.PG.Q.Value"/>
+                <entry key="65" type="xstring" value="Best.Fr.Mz"/>
+                <entry key="66" type="xstring" value="Best.Fr.Mz.Delta"/>
             </config>
             <entry key="keep_all_columns_selected" type="xboolean" value="false"/>
         </config>
@@ -84,14 +100,24 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="enableHilite" type="xboolean" value="false"/>
+        <config key="valueDelimiter_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="valueDelimiter" type="xstring" value=", "/>
         <config key="sortInMemory_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="sortInMemory" type="xboolean" value="false"/>
+        <config key="columnNamePolicy_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="columnNamePolicy" type="xstring" value="Column name (aggregation method)"/>
         <config key="aggregationColumn">
             <config key="columnNames">
-                <entry key="array-size" type="xint" value="11"/>
+                <entry key="array-size" type="xint" value="12"/>
                 <entry key="0" type="xstring" value="Precursor.Quantity"/>
                 <entry key="1" type="xstring" value="Precursor.Normalised"/>
                 <entry key="2" type="xstring" value="Q.Value"/>
@@ -103,9 +129,10 @@
                 <entry key="8" type="xstring" value="RT"/>
                 <entry key="9" type="xstring" value="RT.Start"/>
                 <entry key="10" type="xstring" value="RT.Stop"/>
+                <entry key="11" type="xstring" value="Quantity.Quality"/>
             </config>
             <config key="columnTypes">
-                <entry key="array-size" type="xint" value="11"/>
+                <entry key="array-size" type="xint" value="12"/>
                 <config key="0">
                     <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                     <entry key="is_null" type="xboolean" value="false"/>
@@ -150,9 +177,13 @@
                     <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                     <entry key="is_null" type="xboolean" value="false"/>
                 </config>
+                <config key="11">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
             </config>
             <config key="aggregationMethod">
-                <entry key="array-size" type="xint" value="11"/>
+                <entry key="array-size" type="xint" value="12"/>
                 <entry key="0" type="xstring" value="Maximum"/>
                 <entry key="1" type="xstring" value="Maximum"/>
                 <entry key="2" type="xstring" value="Minimum"/>
@@ -164,9 +195,10 @@
                 <entry key="8" type="xstring" value="Mean_V4.6"/>
                 <entry key="9" type="xstring" value="Mean_V4.6"/>
                 <entry key="10" type="xstring" value="Mean_V4.6"/>
+                <entry key="11" type="xstring" value="Maximum"/>
             </config>
             <config key="inclMissingVals">
-                <entry key="array-size" type="xint" value="11"/>
+                <entry key="array-size" type="xint" value="12"/>
                 <entry key="0" type="xboolean" value="false"/>
                 <entry key="1" type="xboolean" value="false"/>
                 <entry key="2" type="xboolean" value="false"/>
@@ -178,16 +210,12 @@
                 <entry key="8" type="xboolean" value="false"/>
                 <entry key="9" type="xboolean" value="false"/>
                 <entry key="10" type="xboolean" value="false"/>
+                <entry key="11" type="xboolean" value="false"/>
             </config>
         </config>
         <config key="aggregationOperatorSettings"/>
         <config key="patternAggregators"/>
         <config key="dataTypeAggregators"/>
-        <config key="columnNamePolicy_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="columnNamePolicy" type="xstring" value="Column name (aggregation method)"/>
         <config key="retainOrder_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -198,11 +226,6 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="inMemory" type="xboolean" value="false"/>
-        <config key="valueDelimiter_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="valueDelimiter" type="xstring" value=", "/>
         <config key="nodeVersion_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -219,61 +242,77 @@
                 <entry key="0" type="xstring" value="Run"/>
             </config>
             <config key="ExclList">
-                <entry key="array-size" type="xint" value="54"/>
-                <entry key="0" type="xstring" value="File.Name"/>
-                <entry key="1" type="xstring" value="Protein.Group"/>
-                <entry key="2" type="xstring" value="Protein.Ids"/>
-                <entry key="3" type="xstring" value="Protein.Names"/>
-                <entry key="4" type="xstring" value="Genes"/>
-                <entry key="5" type="xstring" value="PG.Quantity"/>
-                <entry key="6" type="xstring" value="PG.Normalised"/>
-                <entry key="7" type="xstring" value="PG.MaxLFQ"/>
-                <entry key="8" type="xstring" value="Genes.Quantity"/>
-                <entry key="9" type="xstring" value="Genes.Normalised"/>
-                <entry key="10" type="xstring" value="Genes.MaxLFQ"/>
-                <entry key="11" type="xstring" value="Genes.MaxLFQ.Unique"/>
-                <entry key="12" type="xstring" value="Modified.Sequence"/>
-                <entry key="13" type="xstring" value="Stripped.Sequence"/>
-                <entry key="14" type="xstring" value="Precursor.Id"/>
-                <entry key="15" type="xstring" value="Precursor.Charge"/>
-                <entry key="16" type="xstring" value="Q.Value"/>
-                <entry key="17" type="xstring" value="PEP"/>
-                <entry key="18" type="xstring" value="Global.Q.Value"/>
-                <entry key="19" type="xstring" value="Protein.Q.Value"/>
-                <entry key="20" type="xstring" value="PG.Q.Value"/>
-                <entry key="21" type="xstring" value="Global.PG.Q.Value"/>
-                <entry key="22" type="xstring" value="GG.Q.Value"/>
-                <entry key="23" type="xstring" value="Translated.Q.Value"/>
-                <entry key="24" type="xstring" value="Proteotypic"/>
-                <entry key="25" type="xstring" value="Precursor.Quantity"/>
-                <entry key="26" type="xstring" value="Precursor.Normalised"/>
-                <entry key="27" type="xstring" value="Precursor.Translated"/>
-                <entry key="28" type="xstring" value="Ms1.Translated"/>
+                <entry key="array-size" type="xint" value="70"/>
+                <entry key="0" type="xstring" value="Run.Index"/>
+                <entry key="1" type="xstring" value="Channel"/>
+                <entry key="2" type="xstring" value="Precursor.Id"/>
+                <entry key="3" type="xstring" value="Modified.Sequence"/>
+                <entry key="4" type="xstring" value="Stripped.Sequence"/>
+                <entry key="5" type="xstring" value="Precursor.Charge"/>
+                <entry key="6" type="xstring" value="Precursor.Lib.Index"/>
+                <entry key="7" type="xstring" value="Decoy"/>
+                <entry key="8" type="xstring" value="Proteotypic"/>
+                <entry key="9" type="xstring" value="Precursor.Mz"/>
+                <entry key="10" type="xstring" value="Protein.Ids"/>
+                <entry key="11" type="xstring" value="Protein.Group"/>
+                <entry key="12" type="xstring" value="Protein.Names"/>
+                <entry key="13" type="xstring" value="Genes"/>
+                <entry key="14" type="xstring" value="RT"/>
+                <entry key="15" type="xstring" value="iRT"/>
+                <entry key="16" type="xstring" value="Predicted.RT"/>
+                <entry key="17" type="xstring" value="Predicted.iRT"/>
+                <entry key="18" type="xstring" value="IM"/>
+                <entry key="19" type="xstring" value="iIM"/>
+                <entry key="20" type="xstring" value="Predicted.IM"/>
+                <entry key="21" type="xstring" value="Predicted.iIM"/>
+                <entry key="22" type="xstring" value="Precursor.Quantity"/>
+                <entry key="23" type="xstring" value="Precursor.Normalised"/>
+                <entry key="24" type="xstring" value="Ms1.Area"/>
+                <entry key="25" type="xstring" value="Ms1.Normalised"/>
+                <entry key="26" type="xstring" value="Ms1.Apex.Area"/>
+                <entry key="27" type="xstring" value="Ms1.Apex.Mz.Delta"/>
+                <entry key="28" type="xstring" value="Normalisation.Factor"/>
                 <entry key="29" type="xstring" value="Quantity.Quality"/>
-                <entry key="30" type="xstring" value="RT"/>
-                <entry key="31" type="xstring" value="RT.Start"/>
-                <entry key="32" type="xstring" value="RT.Stop"/>
-                <entry key="33" type="xstring" value="iRT"/>
-                <entry key="34" type="xstring" value="Predicted.RT"/>
-                <entry key="35" type="xstring" value="Predicted.iRT"/>
-                <entry key="36" type="xstring" value="Lib.Q.Value"/>
-                <entry key="37" type="xstring" value="Lib.PG.Q.Value"/>
-                <entry key="38" type="xstring" value="Ms1.Profile.Corr"/>
-                <entry key="39" type="xstring" value="Ms1.Area"/>
-                <entry key="40" type="xstring" value="Evidence"/>
-                <entry key="41" type="xstring" value="Spectrum.Similarity"/>
-                <entry key="42" type="xstring" value="Mass.Evidence"/>
-                <entry key="43" type="xstring" value="CScore"/>
-                <entry key="44" type="xstring" value="Decoy.Evidence"/>
-                <entry key="45" type="xstring" value="Decoy.CScore"/>
-                <entry key="46" type="xstring" value="Fragment.Quant.Raw"/>
-                <entry key="47" type="xstring" value="Fragment.Quant.Corrected"/>
-                <entry key="48" type="xstring" value="Fragment.Correlations"/>
-                <entry key="49" type="xstring" value="MS2.Scan"/>
-                <entry key="50" type="xstring" value="IM"/>
-                <entry key="51" type="xstring" value="iIM"/>
-                <entry key="52" type="xstring" value="Predicted.IM"/>
-                <entry key="53" type="xstring" value="Predicted.iIM"/>
+                <entry key="30" type="xstring" value="Empirical.Quality"/>
+                <entry key="31" type="xstring" value="Normalisation.Noise"/>
+                <entry key="32" type="xstring" value="Ms1.Profile.Corr"/>
+                <entry key="33" type="xstring" value="Evidence"/>
+                <entry key="34" type="xstring" value="Mass.Evidence"/>
+                <entry key="35" type="xstring" value="Channel.Evidence"/>
+                <entry key="36" type="xstring" value="Ms1.Total.Signal.Before"/>
+                <entry key="37" type="xstring" value="Ms1.Total.Signal.After"/>
+                <entry key="38" type="xstring" value="RT.Start"/>
+                <entry key="39" type="xstring" value="RT.Stop"/>
+                <entry key="40" type="xstring" value="FWHM"/>
+                <entry key="41" type="xstring" value="PG.TopN"/>
+                <entry key="42" type="xstring" value="PG.MaxLFQ"/>
+                <entry key="43" type="xstring" value="Genes.TopN"/>
+                <entry key="44" type="xstring" value="Genes.MaxLFQ"/>
+                <entry key="45" type="xstring" value="Genes.MaxLFQ.Unique"/>
+                <entry key="46" type="xstring" value="PG.MaxLFQ.Quality"/>
+                <entry key="47" type="xstring" value="Genes.MaxLFQ.Quality"/>
+                <entry key="48" type="xstring" value="Genes.MaxLFQ.Unique.Quality"/>
+                <entry key="49" type="xstring" value="Q.Value"/>
+                <entry key="50" type="xstring" value="PEP"/>
+                <entry key="51" type="xstring" value="Global.Q.Value"/>
+                <entry key="52" type="xstring" value="Lib.Q.Value"/>
+                <entry key="53" type="xstring" value="Peptidoform.Q.Value"/>
+                <entry key="54" type="xstring" value="Global.Peptidoform.Q.Value"/>
+                <entry key="55" type="xstring" value="Lib.Peptidoform.Q.Value"/>
+                <entry key="56" type="xstring" value="PTM.Site.Confidence"/>
+                <entry key="57" type="xstring" value="Site.Occupancy.Probabilities"/>
+                <entry key="58" type="xstring" value="Protein.Sites"/>
+                <entry key="59" type="xstring" value="Lib.PTM.Site.Confidence"/>
+                <entry key="60" type="xstring" value="Translated.Q.Value"/>
+                <entry key="61" type="xstring" value="Channel.Q.Value"/>
+                <entry key="62" type="xstring" value="PG.Q.Value"/>
+                <entry key="63" type="xstring" value="PG.PEP"/>
+                <entry key="64" type="xstring" value="GG.Q.Value"/>
+                <entry key="65" type="xstring" value="Protein.Q.Value"/>
+                <entry key="66" type="xstring" value="Global.PG.Q.Value"/>
+                <entry key="67" type="xstring" value="Lib.PG.Q.Value"/>
+                <entry key="68" type="xstring" value="Best.Fr.Mz"/>
+                <entry key="69" type="xstring" value="Best.Fr.Mz.Delta"/>
             </config>
             <entry key="keep_all_columns_selected" type="xboolean" value="false"/>
         </config>
