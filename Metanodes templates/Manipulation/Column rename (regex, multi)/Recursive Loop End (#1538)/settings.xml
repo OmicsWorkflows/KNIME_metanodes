@@ -6,27 +6,27 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="propagateFlowVariables" type="xboolean" value="false"/>
-        <entry key="useFlowVariable" type="xboolean" value="false"/>
+        <config key="flowVariableName_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="false"/>
+        </config>
         <entry key="flowVariableName" type="xstring" value=""/>
+        <entry key="maxNrIterations" type="xint" value="1000"/>
+        <entry key="endLoop_deprecated" type="xboolean" value="false"/>
+        <entry key="useFlowVariable" type="xboolean" value="false"/>
+        <entry key="propagateFlowVariables" type="xboolean" value="false"/>
         <config key="minNumberOfRows">
             <entry key="array-size" type="xint" value="2"/>
             <entry key="0" type="xlong" value="1"/>
             <entry key="1" type="xlong" value="1"/>
         </config>
-        <config key="onlyLastData">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xboolean" value="true"/>
-        </config>
-        <entry key="endLoop_deprecated" type="xboolean" value="false"/>
         <config key="addIterationColumn">
             <entry key="array-size" type="xint" value="1"/>
             <entry key="0" type="xboolean" value="false"/>
         </config>
-        <entry key="maxNrIterations" type="xint" value="1000"/>
-        <config key="flowVariableName_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="false"/>
+        <config key="onlyLastData">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xboolean" value="true"/>
         </config>
     </config>
     <config key="variables">
@@ -45,11 +45,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.7.v202308021457"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.2.v202209150849"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
     <config key="factory_settings"/>
     <config key="node_creation_config">
         <config key="Collector"/>
