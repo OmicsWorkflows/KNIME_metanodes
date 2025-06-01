@@ -11,7 +11,7 @@
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="design"/>
-        <entry key="label" type="xstring" value="Experimental design"/>
+        <entry key="label" type="xstring" value="Subsets design"/>
         <entry key="description" type="xstring" value="Enter the subsets design in format like 'A,A,B,B' (values separated by comma). Number of provided values needs to match the number of selected columns. Columns with the same values will be processed together as one subset"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="design"/>
