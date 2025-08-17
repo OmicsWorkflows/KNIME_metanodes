@@ -24,7 +24,7 @@
             <entry key="useRPathHome" type="xboolean" value="true"/>
             <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
         </config>
-        <entry key="Image type" type="xstring" value="PNG"/>
+        <entry key="Image type" type="xstring" value="SVG"/>
     </config>
     <config key="variables">
         <entry key="version" type="xstring" value="V_2019_09_13"/>
