@@ -33,16 +33,19 @@
         </config>
         <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
         <config key="port-names">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value="Output table"/>
+            <entry key="array-size" type="xint" value="2"/>
+            <entry key="0" type="xstring" value="upper table with sequence coverages"/>
+            <entry key="1" type="xstring" value="bottom table with positions and windows"/>
         </config>
         <config key="port-descriptions">
-            <entry key="array-size" type="xint" value="1"/>
+            <entry key="array-size" type="xint" value="2"/>
             <entry key="0" type="xstring" value="input table 1 supplemented by looked up columns; not used columns does not have to be retained if specified"/>
+            <entry key="1" type="xstring" value="input table 2 supplemented by positions of the starting and ending aminoacids in the associated protein sequences and sequence window around the starting and ending aminoacid"/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="isDeletable" type="xboolean" value="false"/>
     <entry key="factory" type="xstring" value="org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeFactory"/>
     <entry key="node-name" type="xstring" value="Component Output"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Core API"/>
@@ -56,6 +59,12 @@
     <config key="factory_settings">
         <config key="port_0">
             <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
             <config key="type">
                 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
             </config>

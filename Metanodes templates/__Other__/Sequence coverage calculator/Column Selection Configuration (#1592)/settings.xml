@@ -10,36 +10,38 @@
             <entry key="column" type="xstring" value="Stripped.Sequence"/>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="parameterName" type="xstring" value="bottom_input_sequences"/>
+        <entry key="parameterName" type="xstring" value="peptide_sequence_col"/>
         <entry key="label" type="xstring" value="[Bottom input] sequence(s)"/>
         <entry key="description" type="xstring" value="Bottom input table column containing shorter (e.g., peptide) sequences to be mapped onto the sequence(s) provided in the upper table"/>
         <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="bottom_input_sequences"/>
+        <entry key="flowVariableName" type="xstring" value="peptide_sequence_col"/>
         <config key="possibleColumns">
-            <entry key="array-size" type="xint" value="23"/>
+            <entry key="array-size" type="xint" value="25"/>
             <entry key="0" type="xstring" value="Stripped.Sequence"/>
             <entry key="1" type="xstring" value="Protein.Group"/>
-            <entry key="2" type="xstring" value="UniProt_Protein ID"/>
-            <entry key="3" type="xstring" value="UniProt_Entry"/>
-            <entry key="4" type="xstring" value="UniProt_Entry Name"/>
-            <entry key="5" type="xstring" value="UniProt_Reviewed"/>
-            <entry key="6" type="xstring" value="UniProt_Protein names"/>
-            <entry key="7" type="xstring" value="UniProt_Mass"/>
-            <entry key="8" type="xstring" value="UniProt_Length"/>
-            <entry key="9" type="xstring" value="UniProt_Gene Names (primary)"/>
-            <entry key="10" type="xstring" value="UniProt_Organism"/>
-            <entry key="11" type="xstring" value="UniProt_Gene Ontology (GO)"/>
-            <entry key="12" type="xstring" value="UniProt_Gene Ontology (biological process)"/>
-            <entry key="13" type="xstring" value="UniProt_Gene Ontology (molecular function)"/>
-            <entry key="14" type="xstring" value="UniProt_Gene Ontology (cellular component)"/>
-            <entry key="15" type="xstring" value="UniProt_Gene Ontology IDs"/>
-            <entry key="16" type="xstring" value="UniProt_Subcellular location [CC]"/>
-            <entry key="17" type="xstring" value="UniProt_Protein families"/>
-            <entry key="18" type="xstring" value="UniProt_Interacts with"/>
-            <entry key="19" type="xstring" value="UniProt_Sequence"/>
-            <entry key="20" type="xstring" value="UniProt_InterPro"/>
-            <entry key="21" type="xstring" value="UniProt_Pfam"/>
-            <entry key="22" type="xstring" value="UniProt_IntAct"/>
+            <entry key="2" type="xstring" value="Protein.Ids"/>
+            <entry key="3" type="xstring" value="UniProt_Protein ID"/>
+            <entry key="4" type="xstring" value="UniProt_Entry"/>
+            <entry key="5" type="xstring" value="UniProt_Entry Name"/>
+            <entry key="6" type="xstring" value="UniProt_Reviewed"/>
+            <entry key="7" type="xstring" value="UniProt_Protein names"/>
+            <entry key="8" type="xstring" value="UniProt_Mass"/>
+            <entry key="9" type="xstring" value="UniProt_Length"/>
+            <entry key="10" type="xstring" value="UniProt_Gene Names (primary)"/>
+            <entry key="11" type="xstring" value="UniProt_Organism"/>
+            <entry key="12" type="xstring" value="UniProt_Gene Ontology (GO)"/>
+            <entry key="13" type="xstring" value="UniProt_Gene Ontology (biological process)"/>
+            <entry key="14" type="xstring" value="UniProt_Gene Ontology (molecular function)"/>
+            <entry key="15" type="xstring" value="UniProt_Gene Ontology (cellular component)"/>
+            <entry key="16" type="xstring" value="UniProt_Gene Ontology IDs"/>
+            <entry key="17" type="xstring" value="UniProt_Subcellular location [CC]"/>
+            <entry key="18" type="xstring" value="UniProt_Protein families"/>
+            <entry key="19" type="xstring" value="UniProt_Interacts with"/>
+            <entry key="20" type="xstring" value="UniProt_Sequence"/>
+            <entry key="21" type="xstring" value="UniProt_InterPro"/>
+            <entry key="22" type="xstring" value="UniProt_Pfam"/>
+            <entry key="23" type="xstring" value="UniProt_IntAct"/>
+            <entry key="24" type="xstring" value="UniProt_GeneID"/>
         </config>
         <entry key="type" type="xstring" value="Dropdown"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
@@ -81,7 +83,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.selection.column.ColumnSelectionDialogNodeFactory2"/>
     <entry key="node-name" type="xstring" value="Column Selection Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
