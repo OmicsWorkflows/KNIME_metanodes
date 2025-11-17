@@ -34,7 +34,7 @@
             <entry key="boolean" type="xboolean" value="false"/>
         </config>
         <config key="upset_text_size-1570">
-            <entry key="double" type="xdouble" value="2.0"/>
+            <entry key="double" type="xdouble" value="1.5"/>
         </config>
         <config key="upset_label_angle-1571">
             <entry key="integer" type="xint" value="0"/>
@@ -52,7 +52,7 @@
             </config>
         </config>
         <config key="upset_plot_size-1576">
-            <entry key="string" type="xstring" value="800;800"/>
+            <entry key="string" type="xstring" value=""/>
         </config>
     </config>
     <config key="nodeAnnotation">
