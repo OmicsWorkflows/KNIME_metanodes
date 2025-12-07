@@ -32,7 +32,7 @@
         <entry key="x-coordinate" type="xint" value="-216"/>
         <entry key="y-coordinate" type="xint" value="301"/>
         <entry key="width" type="xint" value="142"/>
-        <entry key="height" type="xint" value="51"/>
+        <entry key="height" type="xint" value="48"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
@@ -62,8 +62,8 @@
         <config key="Output">
             <entry key="boundTo" type="xstring" value="Input"/>
             <entry key="fixedPortNumber" type="xint" value="2"/>
-            <entry key="lastConfiguredPortNumber" type="xint" value="4"/>
-            <entry key="configuredPortNumber" type="xint" value="4"/>
+            <entry key="lastConfiguredPortNumber" type="xint" value="5"/>
+            <entry key="configuredPortNumber" type="xint" value="5"/>
             <config key="portType">
                 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
             </config>
@@ -87,6 +87,10 @@
         </config>
         <config key="port_4">
             <entry key="index" type="xint" value="4"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+        <config key="port_5">
+            <entry key="index" type="xint" value="5"/>
             <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
         </config>
     </config>

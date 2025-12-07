@@ -47,8 +47,8 @@
         <config key="Input">
             <entry key="boundTo" type="xstring" value="Output"/>
             <entry key="fixedPortNumber" type="xint" value="1"/>
-            <entry key="lastConfiguredPortNumber" type="xint" value="3"/>
-            <entry key="configuredPortNumber" type="xint" value="3"/>
+            <entry key="lastConfiguredPortNumber" type="xint" value="4"/>
+            <entry key="configuredPortNumber" type="xint" value="4"/>
             <config key="portType">
                 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
             </config>
