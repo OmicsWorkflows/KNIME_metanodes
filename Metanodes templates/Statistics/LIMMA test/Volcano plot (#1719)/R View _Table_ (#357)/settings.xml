@@ -8,7 +8,7 @@
     <config key="model">
         <entry key="Image width" type="xint" value="640"/>
         <entry key="Image height" type="xint" value="640"/>
-        <entry key="Image resolution" type="xstring" value="NA"/>
+        <entry key="Image resolution" type="xstring" value="72"/>
         <entry key="Image background color" type="xstring" value="#ffffff"/>
         <entry key="Text point size" type="xint" value="12"/>
         <config key="R settings">
@@ -42,6 +42,10 @@
                     <entry key="used_variable" type="xstring" value="Rcommand"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
+            </config>
+            <config key="Image type">
+                <entry key="used_variable" type="xstring" value="extension"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
             </config>
         </config>
     </config>
