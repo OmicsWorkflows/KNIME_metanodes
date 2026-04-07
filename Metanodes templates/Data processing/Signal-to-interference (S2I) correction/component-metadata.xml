@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-07T12:55:15.400+02:00</created>
+    <last-modified>2026-04-07T12:55:50.816+02:00</last-modified>
+    <description>Calculates corrected values from the selected columns using selected column containing signal to interference (S2I) ratio (1 = no interference; 0 = complete interference).
+
+Individual rows in data columns are at first normalized/scaled, so their sum is equal to 1 (each value is divided by the sum across the whole row of data columns.
+
+Median values in all columns are used as the estimate of interference values. In case grouping column(s) is selected, median is calculated groupwise. Estimated interference values are normalized to give 1.000 (they are divided by their sum).
+
+Correction is done by subtacting median interference value for each channel multiplied by the (1-S2I) factor for the given PSMs. Negative values after the correction are replaced by specified value.
+
+Calculations based on S2I correction as published here: Savitski, M. M. et al. Measuring and Managing Ratio Compression for Accurate iTRAQ/TMT Quantification. J. Proteome Res. 12, 3586–3598 (2013).
+
+Metanode returns full data matrix with corrected values in selected columns or processed columns only with grouping column(s) if used - based on the setting selected.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)
+Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+Python package Numpy (The Numpy consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 1.0.1 from 2026-04-07
+Contact person: David Potesil (david.potesil@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Input table">Input data table containing columns to be processed including e.g. grouping columns and column with signal-to-interference (S2I) column</port>
+    </in-ports>
+    <out-ports>
+        <port name="Output table">Original datatable with corrected values</port>
+    </out-ports>
+</component-metadata>

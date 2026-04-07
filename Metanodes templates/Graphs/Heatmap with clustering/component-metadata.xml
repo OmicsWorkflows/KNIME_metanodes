@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-07T14:28:38.323+02:00</created>
+    <last-modified>2026-04-07T14:30:03.223+02:00</last-modified>
+    <description>Calculates clusters and visualizes them in heatmap.
+
+Input data are scaled row-wise, then the Euclidean method for distance calculation and Ward method for clustering are used to assign these rows into predetermined number of clusters. The recommended use of this metanode is first running it with the number of clusters set to 1 and then adjusting and reruning this metanode based on the input.
+
+Clustering cannot be calculated for rows with any missing data. This metanode therefore either filters out all rows with missing values prior to clustering, or user can choose a simple method of imputation. More advanced imputation methods need to be performed prior to running this metanode.
+
+================= 
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms. 
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html) 
+R 4.2.0 (The R consists of the following GPL-3 License. License terms are available here: https://www.r-project.org/Licenses/GPL-3)
+ComplexHeatmap (R package) (License file available here: https://bioconductor.org/packages/release/bioc/licenses/ComplexHeatmap/LICENSE, uses the MIT License, terms are available here: https://opensource.org/license/mit)
+Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3/license.html) 
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a. 
+
+================= 
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html. 
+Version: 1.7.1 from 2026-04-07
+Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)</description>
+    <in-ports>
+        <port name="Input data">Input table containing data to be processed</port>
+    </in-ports>
+    <out-ports>
+        <port name="Heatmap">Heatmap with clustered rows</port>
+        <port name="Output table">Output table with added column containing information about assigned cluster</port>
+    </out-ports>
+</component-metadata>

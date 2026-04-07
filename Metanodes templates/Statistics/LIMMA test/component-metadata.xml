@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
-    <created>2026-03-18T10:10:36.237+01:00</created>
-    <last-modified>2026-03-18T10:13:47.722+01:00</last-modified>
+    <created>2026-04-07T15:57:45.450+02:00</created>
+    <last-modified>2026-04-07T16:32:44.459+02:00</last-modified>
     <description>LIMMA (Linear Models for Microarray Data) test for selected experimental design usecases. Expected usecase is 'single-channel' design using lmFit with least square method fitting. Only selected scenarios of experimental designs are implemented as well, namely: several groups, paired samples, one samples block design and combination of paired and single block design (yet to be fully implemented in this version). This metanode also enables the automatic generation of volcano plots and p-distribution plots for all contrasts.
 
 See e.g. LIMMA useguide for more details on selected settings explanation (https://www.bioconductor.org/packages/release/bioc/vignettes/limma/inst/doc/usersguide.pdf).
@@ -94,7 +94,7 @@ The metanode was created in KNIME 5.9.0 running inside the docker image (https:/
 =================
 
 This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
-Version: 4.2.0 from 2026-03-18
+Version: 4.2.1 from 2026-04-07
 Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)
 More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
     <in-ports>

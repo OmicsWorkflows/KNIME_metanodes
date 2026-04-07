@@ -1,0 +1,325 @@
+"row ID"	"Protein.Group"	"UniProt_Organism"	"Stripped.Sequence (Count)"	"PG.MaxLFQ+1_1_log2"	"PG.MaxLFQ+2_1_log2"	"PG.MaxLFQ+1_3_log2"	"PG.MaxLFQ+2_3_log2"	"PG.MaxLFQ+1_log2"	"PG.MaxLFQ+2_log2"
+"Row0"	"A0A024RBG1"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row1"	"A0A087X0M5"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row2"	"A0AV96"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row3"	"A0JLT2"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row4"	"A1L020"	"Homo sapiens (Human)"	1	1	1	1		1	1
+"Row5"	"A2A288"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row6"	"A2VDF0"	"Homo sapiens (Human)"	1	1			1		1
+"Row7"	"A3KN83"	"Homo sapiens (Human)"	13	1	1	1	1	1	1
+"Row8"	"A4D1U4"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row9"	"A5YKK6"	"Homo sapiens (Human)"	56	1	1	1	1	1	1
+"Row10"	"A6NDU8"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row11"	"A6NFQ2"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row12"	"A6NHQ2"	"Homo sapiens (Human)"	1		1	1	1	1	
+"Row13"	"A6NHT5"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row14"	"A6NJ78"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row15"	"A8MVU1"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row16"	"A9QM74"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row17"	"B0I1T2;O94832"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row18"	"E9PAV3"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row19"	"I3L3R5"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row20"	"O00139"	"Homo sapiens (Human)"	19	1	1	1	1	1	1
+"Row21"	"O00148;Q13838"	"Homo sapiens (Human);Homo sapiens (Human)"	10	1	1	1	1	1	1
+"Row22"	"O00159"	"Homo sapiens (Human)"	13	1	1	1	1	1	1
+"Row23"	"O00161"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row24"	"O00178"	"Homo sapiens (Human)"	16	1	1	1	1	1	1
+"Row25"	"O00189"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row26"	"O00214"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row27"	"O00231"	"Homo sapiens (Human)"	21	1	1	1	1	1	1
+"Row28"	"O00244"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row29"	"O00264"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row30"	"O00268"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row31"	"O00291_DOWN"	""	11	1	1	1	1	1	1
+"Row32"	"O00308"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row33"	"O00330"	"Homo sapiens (Human)"	10	1	1	1	1	1	1
+"Row34"	"O00410"	"Homo sapiens (Human)"	42	1	1	1	1	1	1
+"Row35"	"O00418"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row36"	"O00425"	"Homo sapiens (Human)"	23	1	1	1	1	1	1
+"Row37"	"O00442"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row38"	"O00459"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row39"	"O00462"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row40"	"O00471"	"Homo sapiens (Human)"	9	1	1	1	1	1	1
+"Row41"	"O00487"	"Homo sapiens (Human)"	9	1	1	1	1	1	1
+"Row42"	"O00505"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row43"	"O00506;Q9P289"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row44"	"O00507"	"Homo sapiens (Human)"	1	1				1	1
+"Row45"	"O00534"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row46"	"O00562"	"Homo sapiens (Human)"	14	1	1	1	1	1	1
+"Row47"	"O00571"	"Homo sapiens (Human)"	9	1	1	1	1	1	1
+"Row48"	"O00584"	"Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row49"	"O00635"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row50"	"O00754"	"Homo sapiens (Human)"	14	1	1	1	1	1	1
+"Row51"	"O00763;Q13085"	"Homo sapiens (Human);Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row52"	"O14492"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row53"	"O14519"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row54"	"O14524"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row55"	"O14545"	"Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row56"	"O14562"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row57"	"O14579"	"Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row58"	"O14602;P47813"	"Homo sapiens (Human);Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row59"	"O14618"	"Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row60"	"O14646;O14647"	"Homo sapiens (Human);Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row61"	"O14653"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row62"	"O14662"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row63"	"O14681"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row64"	"O14727"	"Homo sapiens (Human)"	10	1	1	1	1	1	1
+"Row65"	"O14734"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row66"	"O14744"	"Homo sapiens (Human)"	21	1	1	1	1	1	1
+"Row67"	"O14763"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row68"	"O14776"	"Homo sapiens (Human)"	29	1	1	1	1	1	1
+"Row69"	"O14787;Q92973"	"Homo sapiens (Human);Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row70"	"O14818"	"Homo sapiens (Human)"	13	1	1	1	1	1	1
+"Row71"	"O14862"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row72"	"O14880"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row73"	"O14920"	"Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row74"	"O14933"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row75"	"O14965"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row76"	"O14966;P57729"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row77"	"O14976"	"Homo sapiens (Human)"	20	1	1	1	1	1	1
+"Row78"	"O14980"	"Homo sapiens (Human)"	43	1	1	1	1	1	1
+"Row79"	"O15020"	"Homo sapiens (Human)"	9	1	1	1	1	1	1
+"Row80"	"O15020;Q01082"	"Homo sapiens (Human);Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row81"	"O15031"	"Homo sapiens (Human)"	9	1	1	1	1	1	1
+"Row82"	"O15040"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row83"	"O15056"	"Homo sapiens (Human)"	2	1	1	1	1		
+"Row84"	"O15066;Q9Y496"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row85"	"O15084;Q8N8A2"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row86"	"O15111"	"Homo sapiens (Human)"	12	1	1	1	1	1	1
+"Row87"	"O15121"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row88"	"O15143"	"Homo sapiens (Human)"	18	1	1	1	1	1	1
+"Row89"	"O15145"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row90"	"O15162"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row91"	"O15178"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row92"	"O15226"	"Homo sapiens (Human)"	15	1	1	1	1	1	1
+"Row93"	"O15235"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row94"	"O15258"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row95"	"O15269"	"Homo sapiens (Human)"	16	1	1	1	1	1	1
+"Row96"	"O15294"	"Homo sapiens (Human)"	19	1	1	1	1	1	1
+"Row97"	"O15318"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row98"	"O15347"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row99"	"O15357;Q92835"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row100"	"O15372"	"Homo sapiens (Human)"	18	1	1	1	1	1	1
+"Row101"	"O15382"	"Homo sapiens (Human)"	14	1	1	1	1	1	1
+"Row102"	"O15397;O95373"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row103"	"O15431"	"Homo sapiens (Human)"	1	1	1	1			1
+"Row104"	"O15446"	"Homo sapiens (Human)"	7	1	1	1	1	1	1
+"Row105"	"O15511"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row106"	"O15523"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row107"	"O15533"	"Homo sapiens (Human)"	10	1	1	1	1	1	1
+"Row108"	"O43143"	"Homo sapiens (Human)"	31	1	1	1	1	1	1
+"Row109"	"O43149"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row110"	"O43164"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row111"	"O43172"	"Homo sapiens (Human)"	20	1	1	1	1	1	1
+"Row112"	"O43182"	"Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row113"	"O43242"	"Homo sapiens (Human)"	32	1	1	1	1	1	1
+"Row114"	"O43264"	"Homo sapiens (Human)"	18	1	1	1	1	1	1
+"Row115"	"O43299"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row116"	"O43314;Q6PFW1"	"Homo sapiens (Human);Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row117"	"O43353"	"Homo sapiens (Human)"	7	1	1	1	1	1	1
+"Row118"	"O43390"	"Homo sapiens (Human)"	20	1	1	1	1	1	1
+"Row119"	"O43396"	"Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row120"	"O43414"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row121"	"O43432"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row122"	"O43463"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row123"	"O43488"	"Homo sapiens (Human)"	9	1	1	1	1	1	1
+"Row124"	"O43502"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row125"	"O43566"	"Homo sapiens (Human)"	12	1	1	1	1	1	1
+"Row126"	"O43598"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row127"	"O43633"	"Homo sapiens (Human)"	7	1	1	1	1	1	1
+"Row128"	"O43660"	"Homo sapiens (Human)"	17	1	1	1	1	1	1
+"Row129"	"O43670"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row130"	"O43677"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row131"	"O43683"	"Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row132"	"O43707;P12814"	"Homo sapiens (Human);Homo sapiens (Human)"	17	1	1	1	1	1	1
+"Row133"	"O43709"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row134"	"O43719"	"Homo sapiens (Human)"	13	1	1	1	1	1	1
+"Row135"	"O43739;Q15438;Q99418;Q9UIA0"	"Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row136"	"O43752"	"Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row137"	"O43765"	"Homo sapiens (Human)"	10	1	1	1	1	1	1
+"Row138"	"O43772"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row139"	"O43790;P78386"	"Homo sapiens (Human);Homo sapiens (Human)"	8					1	
+"Row140"	"O43809"	"Homo sapiens (Human)"	16	1	1	1	1	1	1
+"Row141"	"O43818"	"Homo sapiens (Human)"	14	1	1	1	1	1	1
+"Row142"	"O43824"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row143"	"O43847"	"Homo sapiens (Human)"	26	1	1	1	1	1	1
+"Row144"	"O43903"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row145"	"O43924"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row146"	"O60216"	"Homo sapiens (Human)"	19	1	1	1	1	1	1
+"Row147"	"O60231"	"Homo sapiens (Human)"	19	1	1	1	1	1	1
+"Row148"	"O60234;P60983"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row149"	"O60256;Q14558"	"Homo sapiens (Human);Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row150"	"O60271"	"Homo sapiens (Human)"	32	1	1	1	1	1	1
+"Row151"	"O60293"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row152"	"O60307"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row153"	"O60318"	"Homo sapiens (Human)"	9	1	1	1	1	1	1
+"Row154"	"O60333"	"Homo sapiens (Human)"	7	1	1	1	1	1	1
+"Row155"	"O60346"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row156"	"O60361;P22392"	";Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row157"	"O60449"	"Homo sapiens (Human)"	25	1	1	1	1	1	1
+"Row158"	"O60488"	"Homo sapiens (Human)"	28	1	1	1	1	1	1
+"Row159"	"O60493;Q9UMY4"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row160"	"O60502"	"Homo sapiens (Human)"	23	1	1	1	1	1	1
+"Row161"	"O60518"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row162"	"O60551"	"Homo sapiens (Human)"	7	1	1	1	1	1	1
+"Row163"	"O60566"	"Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row164"	"O60610"	"Homo sapiens (Human)"	51	1	1	1	1	1	1
+"Row165"	"O60664"	"Homo sapiens (Human)"	14	1	1	1	1	1	1
+"Row166"	"O60671"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row167"	"O60684;P52294"	"Homo sapiens (Human);Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row168"	"O60725"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row169"	"O60749"	"Homo sapiens (Human)"	13	1	1	1	1	1	1
+"Row170"	"O60763"	"Homo sapiens (Human)"	28	1	1	1	1	1	1
+"Row171"	"O60825"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row172"	"O60825;Q16877"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row173"	"O60830"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row174"	"O60841"	"Homo sapiens (Human)"	46	1	1	1	1	1	1
+"Row175"	"O60870"	"Homo sapiens (Human)"	7	1	1	1	1	1	1
+"Row176"	"O60885"	"Homo sapiens (Human)"	13	1	1	1	1	1	1
+"Row177"	"O60888"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row178"	"O60927"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row179"	"O60936"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row180"	"O75044"	"Homo sapiens (Human)"	1		1	1	1	1	1
+"Row181"	"O75083"	"Homo sapiens (Human)"	26	1	1	1	1	1	1
+"Row182"	"O75116"	"Homo sapiens (Human)"	17	1	1	1	1	1	1
+"Row183"	"O75122;Q7Z460"	"Homo sapiens (Human);Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row184"	"O75131;Q86YQ8"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row185"	"O75150"	"Homo sapiens (Human)"	21	1	1	1	1	1	1
+"Row186"	"O75151;Q9UPP1"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row187"	"O75155"	"Homo sapiens (Human)"	7	1	1	1	1	1	1
+"Row188"	"O75157;Q9Y3Q8"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row189"	"O75175"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row190"	"O75179;Q8IWZ3"	"Homo sapiens (Human);Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row191"	"O75190;P25686"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row192"	"O75251"	"Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row193"	"O75317"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row194"	"O75326"	"Homo sapiens (Human)"	15	1	1	1	1	1	1
+"Row195"	"O75347"	"Homo sapiens (Human)"	10	1	1	1	1	1	1
+"Row196"	"O75351;Q6PIW4;Q9UN37"	"Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row197"	"O75362"	"Homo sapiens (Human)"	7	1	1	1	1	1	1
+"Row198"	"O75367;Q9P0M6"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row199"	"O75369;P21333"	"Homo sapiens (Human);Homo sapiens (Human)"	7	1	1	1	1	1	1
+"Row200"	"O75379"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row201"	"O75387"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row202"	"O75394"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row203"	"O75410"	"Homo sapiens (Human)"	13	1	1	1	1	1	1
+"Row204"	"O75420"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row205"	"O75436"	"Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row206"	"O75439"	"Homo sapiens (Human)"	19	1	1	1	1	1	1
+"Row207"	"O75449"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row208"	"O75475"	"Homo sapiens (Human)"	18	1	1	1	1	1	1
+"Row209"	"O75477;O94905"	"Homo sapiens (Human);Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row210"	"O75496"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row211"	"O75521"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row212"	"O75531"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row213"	"O75554"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row214"	"O75575"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row215"	"O75600"	"Homo sapiens (Human)"	7	1	1	1	1	1	1
+"Row216"	"O75616"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row217"	"O75648"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row218"	"O75676"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row219"	"O75688;P35813"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row220"	"O75694"	"Homo sapiens (Human)"	31	1	1	1	1	1	1
+"Row221"	"O75746"	"Homo sapiens (Human)"	23	1	1	1	1	1	1
+"Row222"	"O75787"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row223"	"O75794"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row224"	"O75818"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row225"	"O75828"	"Homo sapiens (Human)"	1	1	1	1			1
+"Row226"	"O75843"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row227"	"O75874"	"Homo sapiens (Human)"	18	1	1	1	1	1	1
+"Row228"	"O75880"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row229"	"O75886;Q92783"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row230"	"O75909"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row231"	"O75928"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row232"	"O75937"	"Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row233"	"O75947"	"Homo sapiens (Human)"	13	1	1	1	1	1	1
+"Row234"	"O75964"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row235"	"O76003"	"Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row236"	"O76024"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row237"	"O76071"	"Homo sapiens (Human)"	12	1	1	1	1	1	1
+"Row238"	"O76094"	"Homo sapiens (Human)"	29	1	1	1	1	1	1
+"Row239"	"O94760;O95865"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row240"	"O94763"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row241"	"O94776"	"Homo sapiens (Human)"	24	1	1	1	1	1	1
+"Row242"	"O94804;Q9H2G2"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row243"	"O94806"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row244"	"O94826_UP"	""	24	1	1	1	1	1	1
+"Row245"	"O94830;Q9Y6Y8"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row246"	"O94842;O94900"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row247"	"O94868"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row248"	"O94875"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row249"	"O94888"	"Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row250"	"O94901"	"Homo sapiens (Human)"	16	1	1	1	1	1	1
+"Row251"	"O94906"	"Homo sapiens (Human)"	35	1	1	1	1	1	1
+"Row252"	"O94919"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row253"	"O94925"	"Homo sapiens (Human)"	16	1	1	1	1	1	1
+"Row254"	"O94953"	"Homo sapiens (Human)"	10	1	1	1	1	1	1
+"Row255"	"O94973;O95782"	"Homo sapiens (Human);Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row256"	"O95059"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row257"	"O95071"	"Homo sapiens (Human)"	34	1	1	1	1	1	1
+"Row258"	"O95104;Q9UPN6"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row259"	"O95140"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row260"	"O95155"	"Homo sapiens (Human)"	10	1	1	1	1	1	1
+"Row261"	"O95166"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row262"	"O95168"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row263"	"O95197"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row264"	"O95214"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row265"	"O95229"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row266"	"O95236"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row267"	"O95243"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row268"	"O95251"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row269"	"O95273"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row270"	"O95295"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row271"	"O95299"	"Homo sapiens (Human)"	13	1	1	1	1	1	1
+"Row272"	"O95336"	"Homo sapiens (Human)"	12	1	1	1	1	1	1
+"Row273"	"O95352"	"Homo sapiens (Human)"	11	1	1	1	1	1	1
+"Row274"	"O95372"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row275"	"O95379"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row276"	"O95396"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row277"	"O95429"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row278"	"O95456"	"Homo sapiens (Human)"	12	1	1	1	1	1	1
+"Row279"	"O95478"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row280"	"O95487"	"Homo sapiens (Human)"	10	1	1	1	1	1	1
+"Row281"	"O95544"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row282"	"O95563"	"Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row283"	"O95602"	"Homo sapiens (Human)"	40	1	1	1	1	1	1
+"Row284"	"O95625"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row285"	"O95639"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row286"	"O95674"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row287"	"O95696"	"Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row288"	"O95716"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row289"	"O95716;P20336;P20337;P20338;P61006;P61018;P61026;P61106;P62820;Q15286;Q15771;Q6IQ22;Q86YS6;Q92930;Q96DA2;Q9H0U4"	"Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row290"	"O95716;P62834"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row291"	"O95749"	"Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row292"	"O95757;P34932;Q92598"	"Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row293"	"O95758;P26599"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row294"	"O95782"	"Homo sapiens (Human)"	32	1	1	1	1	1	1
+"Row295"	"O95793"	"Homo sapiens (Human)"	15	1	1	1	1	1	1
+"Row296"	"O95807"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row297"	"O95819"	"Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row298"	"O95825"	"Homo sapiens (Human)"	9	1	1	1	1	1	1
+"Row299"	"O95861"	"Homo sapiens (Human)"	15	1	1	1	1	1	1
+"Row300"	"O95873"	"Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row301"	"O95905"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row302"	"O95977"	"Homo sapiens (Human)"	4	1	1	1	1	1	1
+"Row303"	"O95989"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row304"	"O96005"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row305"	"O96008"	"Homo sapiens (Human)"	7	1	1	1	1	1	1
+"Row306"	"O96017"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row307"	"P00156"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row308"	"P00338;P07195"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row309"	"P00387"	"Homo sapiens (Human)"	15	1	1	1	1	1	1
+"Row310"	"P00403"	"Homo sapiens (Human)"	6	1	1	1	1	1	1
+"Row311"	"P00491"	"Homo sapiens (Human)"	16	1	1	1	1	1	1
+"Row312"	"P00519"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row313"	"P00734"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row314"	"P00813"	"Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row315"	"P00973"	"Homo sapiens (Human)"	8	1	1	1	1	1	1
+"Row316"	"P01111;P01112;P01116"	"Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row317"	"P01116"	"Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row318"	"P01591"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row319"	"P01857;P01860"	"Homo sapiens (Human);Homo sapiens (Human)"	5	1	1	1	1	1	1
+"Row320"	"P01889"	"Homo sapiens (Human)"	3	1	1	1	1	1	1
+"Row321"	"P01889;P01893;P04439;P13747;P17693"	"Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1
+"Row322"	"P01889;P10321"	"Homo sapiens (Human);Homo sapiens (Human)"	2	1	1	1	1	1	1
+"Row323"	"P01893;P04439"	"Homo sapiens (Human);Homo sapiens (Human)"	1	1	1	1	1	1	1

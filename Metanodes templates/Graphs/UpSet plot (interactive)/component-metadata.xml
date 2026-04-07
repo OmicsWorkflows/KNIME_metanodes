@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-07T15:12:02.828+02:00</created>
+    <last-modified>2026-04-07T15:12:49.087+02:00</last-modified>
+    <description>Metanode to create input data for interactive UpSet using UpSet plot application (https://caleydo.org/tools/upset/). UpSet plot application needs to be located e.g. in KNIME workspace, please check the path in the metanode settings (default is "gitfolders/KNIME_metanodes/Applications/UpSet/" folder inside your KNIME workspace).
+
+Metanode creates binary matrix (1 or 0) from the provided data columns and the specified threshold and operator - each value from the data columns is compared with the threshold using the given operator and 1 is returned if the condition is true (e.g. 10 > 1), otherwise 0 is returned (e.g. 0.5 > 1).
+
+You can also specify multiple metacolumns of different data types (e.g. string type) for annotation and summaries of individual row categories based on the binary matrix.
+
+Binary matrix with potential metacolumns is then exported by the metanode into the UpSet application ("data/knime_data" subfolder) and datasets.json file is modified to enable newly created file to be viewed in UpSet application. The metanode then starts the simple python webserver inside the UpSet application folder and opens browser with the UpSet page after the data preparation.
+
+The metanode will be shown as still running to indicate that the webserver is running from that concrete metanode. You can cancel the metanode or close the workflow with the running metanode to stop the webserver.
+
+Please see the application documentation (https://caleydo.org/tools/upset/) for more details on its usage and features explanation.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+UpSet application (https://caleydo.org/tools/upset/) (The UpSet application consists of the following MIT license. Licence terms are available here: https://github.com/VCG/upset/blob/master/LICENSE)
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3.10 License. Licence terms are available here: https://docs.python.org/3/license.html)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 1.0.1 from 2026-04-07
+Contact person: David Potesil (david.potesil@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes</description>
+    <in-ports>
+        <port name="Input dataframe">Input dataframe containing columns to be processed</port>
+    </in-ports>
+    <out-ports>
+        <port name="Output table">Table containing input annotation columns and binary matrix used in UpSet plot</port>
+    </out-ports>
+</component-metadata>

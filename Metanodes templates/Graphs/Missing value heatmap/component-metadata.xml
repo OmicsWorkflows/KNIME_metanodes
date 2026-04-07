@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-07T14:51:42.157+02:00</created>
+    <last-modified>2026-04-07T14:56:00.442+02:00</last-modified>
+    <description>This metanode creates heatmap for the distribution of missing values in the selected data columns. Apart from this heatmap, a density plot is also created, visualizing the mean intensity of rows with and without missing values. The mean intensity is calculated from all valid values in the row, rows which only contain missing values are not plotted. Missing values heatmap can be plotted in the form of missing values correlation coefficient clustermap plotting heatmap of pairwise correlation coefficients. Correlation coefficients are calculated using matrix where the missing value = 1 and non missing value = 0. Correlation coefficients heapmap is also plotted once the raw missing values heatmap does not render within the selected time (60s by default) not to run into issue with too long generating of individual heatmap for large datatables.
+
+As for the heatmap setting, it is possible to select custom distance metric ("manhattan" by default) and clustering method ("average" by default). It is also possible to choose to hide all rows which only contain valid values.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+Python 3 (The Python consists of the following Python 3.10 License. Licence terms are available here: https://docs.python.org/3/license.html) 
+
+R (The R programming language consists of the following GNU General Public Licenses. License terms are available here: https://www.r-project.org/Licenses/)
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+
+Version: 2.1.1 from 2026-04-07
+Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes
+</description>
+    <in-ports>
+        <port name="input data">Input table containing columns to be selected for visualization</port>
+    </in-ports>
+    <out-ports>
+        <port name="Missing value heatmap">Heatmap depicting pattern of missing values across all selected columns</port>
+        <port name="Distribution of missing values">Density distribution of proteins containing missing values</port>
+    </out-ports>
+</component-metadata>

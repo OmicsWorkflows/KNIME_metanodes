@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-07T14:06:25.366+02:00</created>
+    <last-modified>2026-04-07T14:07:05.427+02:00</last-modified>
+    <description>Metanode that makes API call to Reactome.org to retrieve the analysis results. So far only overrepresentation analysis is implemented using the protein IDs present in the selected protein IDs column. Protein IDs have to be in supported format (e.g. UniProtKB identified; see https://reactome.org/dev/analysis for their full list). Multiple protein IDs separated by delimiter (e.g. semicolon) are supported.
+
+You can select whether to include also interactors during the analysis and what resource should be used during the analysis,
+
+Metanode generates 4 outputs in total:
+
+1) Pathways table
+Table of pathways returned by the analysis (similarly to downloading the pathway analysis results in .csv format via web interface)
+
+2) Not mapped identifiers
+Identifiers that were not found/mapped during the Reactome analysis
+
+3) Summary table
+Summary information about the analysis including date of running, database version and more
+
+4) Complete analysis results
+Complete analysis results in .json format for further data mining if needed
+
+More information on the used API can be found here https://reactome.org/AnalysisService/#/identifiers and here https://reactome.org/dev/analysis.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)
+Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+
+Reactome API (The Reactome API consists of the two Creative Commons licenses: Creative Commons Public Domain (CC0) License and Creative Commons Attribution 4.0 International (CC BY 4.0) License. Licence terms are available here: https://reactome.org/license
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 1.0.1 from 2026-04-07
+Contact person: David Potesil (david.potesil@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Input table">Input table containing column with protein IDs to do a query for</port>
+    </in-ports>
+    <out-ports>
+        <port name="Pathway analysis results">Data returned from reactome</port>
+        <port name="Not found IDs">IDs that were on input but not found in Reactome db</port>
+        <port name="Pathway analysis summary">Summary information on the pathway analysis</port>
+        <port name="Complete results (.json)">Complete analysis results in .json format</port>
+    </out-ports>
+</component-metadata>

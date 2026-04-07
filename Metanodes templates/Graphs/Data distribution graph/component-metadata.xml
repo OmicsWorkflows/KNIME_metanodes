@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-07T14:15:31.516+02:00</created>
+    <last-modified>2026-04-07T14:23:14.496+02:00</last-modified>
+    <description>Metanode to create distribution plot of the selected type using the selected column(s) of input table.
+
+Metanode enables input data recalculation to get their cumulative sum per individual column prior the plotting - individual columns data are at first sorted in the ascending order and cumulative sum, ignoring the missing values, is then calculated replacing original column data.
+
+Statistics or data normalization can be done either separately for individual columns or for all selected data combined.
+
+Note: any data preprocessing (like transformation, normalization) should be done prior the metanode usage! The metanode only displays the provided data unless specified otherwise.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)
+Python package Seaborn (The Seaborn consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+Python package Matplotlib (The Matplotlib consists of the following Python Software Foundation License (BSD compatible). Licence terms are available here: https://matplotlib.org/users/license.html)
+Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 1.3.4 from 2026-04-07
+Contact person: David Potesil (david.potesil@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes</description>
+    <in-ports>
+        <port name="Input data">Input table containing columns to be selected for visualization</port>
+    </in-ports>
+    <out-ports>
+        <port name="distribution graph"/>
+    </out-ports>
+</component-metadata>

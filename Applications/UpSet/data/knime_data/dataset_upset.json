@@ -1,0 +1,1 @@
+{"file": "data/knime_data/dataset_upset.csv", "name": "dataset_upset", "header": 0, "separator": "\t", "skip": 0, "author": "UpSet plot (interactive) metanode", "description": "", "source": "", "meta": [{"type": "id", "index": 1}, {"type": "string", "index": 2}, {"type": "integer", "index": 3}], "sets": [{"format": "binary", "start": 4, "end": 9}]}
