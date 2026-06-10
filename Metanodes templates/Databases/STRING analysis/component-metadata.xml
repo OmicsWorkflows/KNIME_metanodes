@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-23T13:55:54.779+01:00</created>
-    <last-modified>2026-03-23T14:03:29.751+01:00</last-modified>
+    <last-modified>2026-06-10T13:28:23.585+02:00</last-modified>
     <description>Metanode makes api call to String-db.org to get the html link with the enrichment analysis results using provided list of protein accessions.
 
 So far only the multiple proteins search using he specified column containing the protein accessions is implemented. Protein accessions have to be in supported format (e.g. UniProtKB identified). Multiple protein accessions separated by delimiter (e.g. semicolon) are supported where you can select whether to use just the first protein accession or all of them.
@@ -30,7 +30,7 @@ The metanode was created in KNIME 5.9.0 unning inside the docker image (https://
 =================
 
 This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
-Version: 2.2.0 from 2026-03-23
+Version: 2.2.1 from 2026-06-10
 Contact person: David Potesil (david.potesil@ceitec.muni.cz)
 More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
     <in-ports>
