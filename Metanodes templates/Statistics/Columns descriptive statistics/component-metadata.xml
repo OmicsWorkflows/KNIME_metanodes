@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-16T16:01:46.448+01:00</created>
-    <last-modified>2026-03-16T16:02:24.339+01:00</last-modified>
+    <last-modified>2026-06-03T14:11:02.348+02:00</last-modified>
     <description>Metanode for computation of selected descriptive statistics for selected columns.
 
 Selected descriptive statistics are:
@@ -36,7 +36,7 @@ The metanode was created in KNIME 5.9.0 running inside the docker image (https:/
 =================
 
 This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
-Version: 2.5.0 from 2026-03-16
+Version: 2.5.1 from 2026-06-03
 Contact person: David Potesil (david.potesil@ceitec.muni.cz)
 More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
     <in-ports>

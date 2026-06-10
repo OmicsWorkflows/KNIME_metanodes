@@ -12,7 +12,7 @@
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="upset_numberint"/>
         <entry key="label" type="xstring" value="Number of intersections to be displayed"/>
-        <entry key="description" type="xstring" value="Number of intersections which should be displayed in the UpSet plot. If set to 0, all intersections will be plotted (unless number of sets is &gt;15, than intersections will be set to 100)"/>
+        <entry key="description" type="xstring" value="Number of intersections which should be displayed in the UpSet plot. If set to 0, all intersections will be plotted (unless number of sets is &gt;15, then it will be set to 100)"/>
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="upset_numberint"/>
         <entry key="useMin" type="xboolean" value="false"/>
