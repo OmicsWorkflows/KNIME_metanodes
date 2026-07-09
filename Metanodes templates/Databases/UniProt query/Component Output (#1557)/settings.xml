@@ -28,16 +28,18 @@
         </config>
         <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
         <config key="port-names">
-            <entry key="array-size" type="xint" value="3"/>
+            <entry key="array-size" type="xint" value="4"/>
             <entry key="0" type="xstring" value="Protein table"/>
             <entry key="1" type="xstring" value="Empty protein table"/>
             <entry key="2" type="xstring" value="Reason for empty"/>
+            <entry key="3" type="xstring" value="Response URLs and response heads"/>
         </config>
         <config key="port-descriptions">
-            <entry key="array-size" type="xint" value="3"/>
+            <entry key="array-size" type="xint" value="4"/>
             <entry key="0" type="xstring" value="Data returned from uniprot containing individual protein IDs and specified columns from UniProt"/>
             <entry key="1" type="xstring" value="Table of protein IDs for which no output was returned by the query, e.g. wrong UniProt accession; table contains also concrete query used for data retrieval"/>
             <entry key="2" type="xstring" value="Table with the problematic protein IDs and possible reason why their lookup may have failed"/>
+            <entry key="3" type="xstring" value="table with response URLs and response heads for troubleshooting if needed"/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -68,6 +70,12 @@
         </config>
         <config key="port_2">
             <entry key="index" type="xint" value="2"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="port_3">
+            <entry key="index" type="xint" value="3"/>
             <config key="type">
                 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
             </config>
