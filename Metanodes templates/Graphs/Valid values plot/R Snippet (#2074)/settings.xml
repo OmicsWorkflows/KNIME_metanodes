@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="suppressPackageStartupMessages(library(dplyr))%%00010suppressPackageStartupMessages(library(tidyr))%%00010suppressPackageStartupMessages(library(rstatix))%%00010suppressPackageStartupMessages(library(stats))%%00010suppressPackageStartupMessages(library(tibble))%%00010%%00010df &lt;- knime.in%%00010%%00010test_bool &lt;- ifelse(knime.flow.in[[&quot;design_bool&quot;]] == TRUE &amp; knime.flow.in[[&quot;test&quot;]] != 'none', TRUE, FALSE)%%00010%%00010if(test_bool) {%%00010%%00009if (knime.flow.in[[&quot;test&quot;]] == 'non-parametric') {%%00010%%00009%%00009if(length(unique(df$&quot;Group&quot;)) &gt; 2) {%%00010%%00009%%00009%%00009kw &lt;- kruskal.test(df$Count ~ df$Group)%%00010%%00009%%00009%%00009result &lt;- data.frame(Contrast = 'all',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 Test = 'Kruskal-Wallis test',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 p = kw$p.value,%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 Significance = case_when(kw$p.value &lt;= 0.05 &amp; kw$p.value &gt; 0.01 ~ '*',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009%%00009 kw$p.value &lt;= 0.01 &amp; kw$p.value &gt; 0.001 ~ '**',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009%%00009 kw$p.value &lt;= 0.001 ~ '***',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009%%00009 TRUE ~ 'ns'))%%00010%%00009%%00009%%00009%%00010%%00009%%00009%%00009if(kw$p.value &lt;= 0.05) {%%00010%%00009%%00009%%00009%%00009result2 &lt;- dunn_test(data = df,Count ~ Group, p.adjust.method = 'bonferroni') |&gt;%%00010%%00009%%00009%%00009%%00009%%00009as.data.frame() |&gt;%%00010%%00009%%00009%%00009%%00009%%00009mutate(Contrast = paste0(group1, '-', group2),%%00010%%00009%%00009%%00009%%00009%%00009%%00009  Test = &quot;post-hoc Dunn's test&quot;) |&gt;%%00010%%00009%%00009%%00009%%00009%%00009select(Contrast, Test, p, p.adj, p.adj.signif) |&gt;%%00010%%00009%%00009%%00009%%00009%%00009rename(Significance = p.adj.signif)%%00010%%00009%%00009%%00009%%00009result &lt;- merge(result, result2, all = TRUE, sort = FALSE)%%00010%%00009%%00009%%00009%%00009result &lt;- relocate(result, Significance, .after = last_col())%%00010%%00009%%00009%%00009}%%00010%%00009%%00009} else {%%00010%%00009%%00009%%00009test &lt;- wilcox.test(df$Count ~ df$Group)%%00010%%00009%%00009%%00009result &lt;- data.frame(Contrast = paste0(unique(df$Group)[1], '-', unique(df$Group)[2]),%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 Test = 'Mann-Whitney U test',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 p = test$p.value,%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 Significance = case_when(test$p.value &lt;= 0.05 &amp; test$p.value &gt; 0.01 ~ '*',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009%%00009 test$p.value &lt;= 0.01 &amp; test$p.value &gt; 0.001 ~ '**',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009%%00009 test$p.value &lt;= 0.001 ~ '***',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009%%00009 TRUE ~ 'ns'))%%00010%%00009%%00009}%%00010%%00009} else if (knime.flow.in[[&quot;test&quot;]] == 'parametric') {%%00010%%00009%%00009if(length(unique(df$&quot;Group&quot;)) &gt; 2) {%%00010%%00009%%00009%%00009test &lt;- aov(df$Count ~ df$Group)%%00010%%00009%%00009%%00009p.value &lt;- summary(test)[[1]][['Pr(&gt;F)']][[1]]%%00010%%00009%%00009%%00009result &lt;- data.frame(Contrast = 'all',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 Test = 'ANOVA test',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 p = p.value,%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 Significance = case_when(p.value &lt;= 0.05 &amp; p.value &gt; 0.01 ~ '*',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009%%00009 p.value &lt;= 0.01 &amp; p.value &gt; 0.001 ~ '**',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009%%00009 p.value &lt;= 0.001 ~ '***',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009%%00009 TRUE ~ 'ns'))%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009%%00009 %%00010%%00009%%00009%%00009if(p.value &lt;= 0.05) {%%00010%%00009%%00009%%00009%%00009result2 &lt;- TukeyHSD(test)[[1]] |&gt;%%00010%%00009%%00009%%00009%%00009%%00009as.data.frame() |&gt;%%00010%%00009%%00009%%00009%%00009%%00009rownames_to_column('Contrast')%%00010%%00009%%00009%%00009%%00009result2$Test &lt;- &quot;post-hoc TukeyHSD test&quot;%%00010%%00009%%00009%%00009%%00009result2 &lt;- result2 |&gt;%%00010%%00009%%00009%%00009%%00009%%00009mutate(Significance = case_when(`p adj` &lt;= 0.05 &amp; `p adj` &gt; 0.01 ~ '*',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009   %%00009  `p adj` &lt;= 0.01 &amp; `p adj` &gt; 0.001 ~ '**',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009  `p adj` &lt;= 0.001 ~ '***',%%00010%%00009%%00009%%00009%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00009  TRUE ~ 'ns')) |&gt;%%00010%%00009%%00009%%00009%%00009%%00009select(Contrast, Test, `p adj`, Significance) |&gt;%%00010%%00009%%00009%%00009%%00009%%00009rename(p.adj = `p adj`)%%00010%%00009%%00009%%00009%%00009result &lt;- merge(result, result2, all = TRUE, sort = FALSE)%%00010%%00009%%00009%%00009}%%00009%%00009%%00009%%00009 %%00009%%00009%%00009%%00010%%00009%%00009}%%00010%%00009}%%00010} else {%%00010%%00009result &lt;- data.frame()%%00010}%%00010%%00010knime.out &lt;- result"/>
+        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+        <entry key="version" type="xstring" value="version 1.x"/>
+        <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+        <entry key="sendRowNames" type="xboolean" value="true"/>
+        <entry key="sendBatchSize" type="xint" value="10000"/>
+        <entry key="knimeInType" type="xstring" value="data.frame"/>
+        <entry key="overwriteRHome" type="xboolean" value="false"/>
+        <entry key="rHome" type="xstring" value=""/>
+        <entry key="useRPathHome" type="xboolean" value="true"/>
+        <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="overwriteRHome">
+                <entry key="used_variable" type="xstring" value="Rreplace"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+            <config key="rHome">
+                <entry key="used_variable" type="xstring" value="Rcommand"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="statistics"/>
+        <entry key="contentType" type="xstring" value="text/plain"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="969"/>
+        <entry key="y-coordinate" type="xint" value="179"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="17"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles">
+            <config key="style_0">
+                <entry key="start" type="xint" value="0"/>
+                <entry key="length" type="xint" value="10"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.r.RSnippetNodeFactory"/>
+    <entry key="node-name" type="xstring" value="R Snippet"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511130856"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511132128"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="R Snippet"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
