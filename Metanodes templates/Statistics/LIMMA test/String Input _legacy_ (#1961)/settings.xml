@@ -7,10 +7,10 @@
     </config>
     <config key="model">
         <config key="defaultValue">
-            <entry key="string" type="xstring" value="quant,qual_up,qual_down,missing"/>
+            <entry key="string" type="xstring" value="quant,qual_up,qual_down,all_missing,complex_no_difference,complex_qual_difference"/>
         </config>
         <entry key="label" type="xstring" value="[Categorical evaluation] categories"/>
-        <entry key="description" type="xstring" value="provide texts separated by comma to be used for the categorical comparisons evaluation if requested; order and the default values for the A-B comparison is as follows:%%00010quant - in both A and B%%00010qual_up - only in A%%00010qual_down - only in B%%00010missing - nor in A or B%%00010%%00010please note the strings separated by values are not stripped of e.g. leading or trailing spaces"/>
+        <entry key="description" type="xstring" value="Provide six category labels, separated by commas, to be used for categorical comparison evaluation when requested. The order and default values are:%%00010%%00010quant – quantified in both groups for a simple A-B comparison%%00010qual_up – quantified only in A for a simple A-B comparison%%00010qual_down – quantified only in B for a simple A-B comparison%%00010missing – not quantified in either A or B; for complex contrasts, not quantified in any contributing group%%00010complex_no_difference – for a complex contrast, the replicate-count contrast evaluates to zero, while at least one contributing group contains quantified values%%00010complex_qual_difference – for a complex contrast, the replicate-count contrast evaluates to a non-zero value%%00010%%00010Do not add leading or trailing spaces around the comma-separated values, as these spaces are retained as part of the category labels."/>
         <entry key="hideInWizard" type="xboolean" value="false"/>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="required" type="xboolean" value="true"/>
