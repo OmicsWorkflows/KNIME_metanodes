@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="workflow.knime">
-    <entry key="created_by" type="xstring" value="5.9.0.v202512101359"/>
+    <entry key="created_by" type="xstring" value="5.11.0.v202603030810"/>
     <entry key="created_by_nightly" type="xboolean" value="false"/>
     <entry key="version" type="xstring" value="5.1.0"/>
     <entry key="name" type="xstring" value="Normalization tests"/>
@@ -287,7 +287,7 @@
         </config>
         <config key="node_1742">
             <entry key="id" type="xint" value="1742"/>
-            <entry key="node_settings_file" type="xstring" value="Column Rename _Regex_ (#1742)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Column Name Replacer (#1742)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -319,7 +319,7 @@
         </config>
         <config key="node_1747">
             <entry key="id" type="xint" value="1747"/>
-            <entry key="node_settings_file" type="xstring" value="Transpose (#1747)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Table Transposer (#1747)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
@@ -335,7 +335,7 @@
         </config>
         <config key="node_1748">
             <entry key="id" type="xint" value="1748"/>
-            <entry key="node_settings_file" type="xstring" value="Row to Column Header (#1748)/settings.xml"/>
+            <entry key="node_settings_file" type="xstring" value="Row to Column Names (#1748)/settings.xml"/>
             <entry key="node_is_meta" type="xboolean" value="false"/>
             <entry key="node_type" type="xstring" value="NativeNode"/>
             <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
