@@ -11,8 +11,8 @@
         <entry key="text" type="xstring" value=""/>
         <entry key="contentType" type="xstring" value="text/plain"/>
         <entry key="bgcolor" type="xint" value="16777215"/>
-        <entry key="x-coordinate" type="xint" value="2689"/>
-        <entry key="y-coordinate" type="xint" value="739"/>
+        <entry key="x-coordinate" type="xint" value="213"/>
+        <entry key="y-coordinate" type="xint" value="81"/>
         <entry key="width" type="xint" value="142"/>
         <entry key="height" type="xint" value="17"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
@@ -24,11 +24,6 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="2 nodes contained nodes raised a warning"/>
-        <entry key="issue" type="xstring" value="IF Switch #1979: Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable &quot;join_switch&quot;"/>
-    </config>
     <entry key="workflow-file" type="xstring" value="workflow.knime"/>
     <entry key="virtual-in-ID" type="xint" value="1975"/>
     <config key="inports">
@@ -45,7 +40,7 @@
             </config>
         </config>
     </config>
-    <entry key="virtual-out-ID" type="xint" value="307"/>
+    <entry key="virtual-out-ID" type="xint" value="1983"/>
     <config key="outports">
         <config key="outport_0">
             <entry key="index" type="xint" value="0"/>
@@ -53,10 +48,16 @@
                 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
             </config>
         </config>
+        <config key="outport_1">
+            <entry key="index" type="xint" value="1"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
     </config>
     <config key="workflow_template_information">
         <entry key="role" type="xstring" value="Template"/>
-        <entry key="timestamp" type="xstring" value="2026-09-14 12:22:15 +0000"/>
+        <entry key="timestamp" type="xstring" value="2026-11-10 12:02:26 +0000"/>
         <entry key="sourceURI" type="xstring" isnull="true" value=""/>
         <entry key="templateType" type="xstring" value="SubNode"/>
     </config>

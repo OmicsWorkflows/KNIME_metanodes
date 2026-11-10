@@ -47,11 +47,7 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable &quot;Rreplace&quot;"/>
-    </config>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.r.RSnippetNodeFactory"/>
     <entry key="node-name" type="xstring" value="R Snippet"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
